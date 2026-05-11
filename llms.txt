@@ -1,8 +1,8 @@
 # REAMIMA
 
-> Engineering and R&D company (Ingeniería, I+D+i) based in Spain. We design and build what conventional engineering considers out of reach: hardware, electronics, real-time control and high-performance software.
+> Engineering and R&D company (Ingeniería, I+D+i) based in Spain. One that treats complexity as an advantage, not an obstacle. One of the few that chooses the hard way when the easy way exists.
 
-REAMIMA TECH, S.L. works at the intersection of low-cost electronics, embedded processing and rigorous design. Core principle: on-device processing — no servers, no cloud, privacy as system architecture. Open hardware when it matters (OSHWA certified).
+REAMIMA TECH, S.L. designs and builds what conventional engineering considers out of reach. Capabilities span the full stack: hardware, electronics, full industrial automation (sensor, network, PLC/Simatic, SCADA, MES), real-time control, high-performance software and product design. On-device processing — no servers, no cloud, privacy as system architecture. Open hardware when it matters (OSHWA certified). What seems impossible to run — simply works.
 
 Company: REAMIMA TECH, S.L. (Spanish limited liability company)
 General contact: info@reamima.com
@@ -10,8 +10,8 @@ Web contact form: https://reamima.com/contacta.html
 
 ## Company
 
-- [Home](https://reamima.com/): Overview of REAMIMA's mission, capabilities and projects.
-- [About REAMIMA](https://reamima.com/sobre.html): Engineering principles, team capabilities — hardware, real-time control, high-performance software, open hardware.
+- [Home](https://reamima.com/): Mission, manifesto, capabilities and projects.
+- [About REAMIMA](https://reamima.com/sobre.html): Engineering principles, team capabilities — hardware, electronics, industrial automation, real-time control, high-performance software, open hardware.
 - [Contact](https://reamima.com/contacta.html): Contact form and details.
 
 ## Projects
@@ -21,10 +21,10 @@ Web contact form: https://reamima.com/contacta.html
 
 ## Origins — Emergency Ventilator (2020)
 
-During the first weeks of the COVID-19 lockdown, REAMIMA designed an open-hardware emergency ventilator using aquarium pumps, Arduino and off-the-shelf sensors — no compressed-air line required. OSHWA certified. Presented at the Arduino Global Conference 2020. Engineering without manufacturing or ordering parts: with what was on the shelf.
+During the first weeks of the COVID-19 lockdown, REAMIMA designed an open-hardware emergency ventilator using off-the-shelf materials — no compressed-air line required. OSHWA certified. Engineering without manufacturing or ordering parts: with what was on the shelf. A crisis does not create capabilities. It reveals them.
 
 - [Origins](https://reamima.com/origenes.html): The full project story, recognitions and the three ventilator models.
-- [Simple Model](https://reamima.com/origenes-simple.html): Base ventilator — aquarium pump, water columns, Arduino control.
+- [Simple Model](https://reamima.com/origenes-simple.html): Base ventilator — aquarium pump, water columns, microcontroller.
 - [Advanced Model](https://reamima.com/origenes-avanzado.html): Pressure control, assisted expiration, inline sensors (Bosch BME family), clinical monitoring. Siemens Simatic S7-1500 H redundancy reference for critical environments.
 - [Air Treatment](https://reamima.com/origenes-tratamiento-aire.html): UV sterilisation, heating and humidity conditioning of the air supply.
 
