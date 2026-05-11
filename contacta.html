@@ -36,4 +36,75 @@
 
 <nav class="rm-nav">
   <div class="rm-container rm-nav__inner">
-    <a href="index.html" class="rm-nav__brand" aria-label="REAMIMA · Inicio"><img class="rm-nav__logo--dark" src="img/reamima-tech.jpeg" alt="REAMIMA" /><img class="rm-nav__logo--light" src="img/Reamima_Solido_oscuro.jpeg" alt="REAMIMA" /></a>
+    <a href="index.html" class="rm-nav__brand" aria-label="REAMIMA · Inicio"><img class="rm-nav__logo--dark" src="img/1_Reamima_transpa_Blanco.png" alt="REAMIMA" /><img class="rm-nav__logo--light" src="img/Reamima_Solido_oscuro.jpeg" alt="REAMIMA" /></a>
+    <div class="rm-nav__links">
+      <a href="sobre.html"><span data-lang="es">Sobre</span><span data-lang="en">About</span></a>
+      <a href="origenes.html"><span data-lang="es">Orígenes</span><span data-lang="en">Origins</span></a>
+      <a href="contacta.html"><span data-lang="es">Contacta</span><span data-lang="en">Contact</span></a>
+    </div>
+    <div class="rm-lang" role="tablist" aria-label="Idioma">
+      <button class="is-active" data-set-lang="es">ES</button>
+      <button data-set-lang="en">EN</button>
+    </div>
+  </div>
+</nav>
+
+<section class="rm-section">
+  <div class="rm-container rm-narrow">
+    <h1 class="rm-h1">
+      <span data-lang="es">Contacta</span>
+      <span data-lang="en">Contact</span>
+    </h1>
+  </div>
+</section>
+
+<footer class="rm-foot">
+  <div class="rm-container">
+    <div class="rm-foot__grid">
+      <div>
+        <img class="rm-foot__logo" src="img/reamima-logo-blanco.png" alt="REAMIMA" />
+        <p class="rm-foot__brand">REAMIMA</p>
+        <p style="margin-top: 12px; max-width: 36ch;">
+          <span data-lang="es">Ingeniería, I+D+i. Pensamos lo que falta y lo construimos.</span>
+          <span data-lang="en">Engineering, R&amp;D. We design what&rsquo;s missing and build it.</span>
+        </p>
+      </div>
+      <div>
+        <p class="rm-eyebrow" style="margin-bottom: 14px;">
+          <span data-lang="es">Empresa</span><span data-lang="en">Company</span>
+        </p>
+        <p><a href="sobre.html"><span data-lang="es">Sobre REAMIMA</span><span data-lang="en">About</span></a></p>
+        <p><a href="origenes.html"><span data-lang="es">Orígenes</span><span data-lang="en">Origins</span></a></p>
+      </div>
+      <div>
+        <p class="rm-eyebrow" style="margin-bottom: 14px;">
+          <span data-lang="es">Contacto</span><span data-lang="en">Contact</span>
+        </p>
+        <p><a href="contacta.html">info@reamima.com</a></p>
+      </div>
+      <div>
+        <p class="rm-eyebrow" style="margin-bottom: 14px;">Legal</p>
+        <p><a href="legal.html"><span data-lang="es">Aviso legal</span><span data-lang="en">Legal notice</span></a></p>
+      </div>
+    </div>
+    <div class="rm-foot__legal">
+      <span>© 2026 Reamima Tech S.L.</span>
+      <span><span data-lang="es">Todos los derechos reservados.</span><span data-lang="en">All rights reserved.</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    const buttons = document.querySelectorAll('[data-set-lang]');
+    buttons.forEach(b => b.addEventListener('click', () => {
+      const lang = b.getAttribute('data-set-lang');
+      document.body.setAttribute('data-active-lang', lang);
+      document.documentElement.setAttribute('lang', lang);
+      buttons.forEach(x => x.classList.toggle('is-active', x === b));
+    }));
+  })();
+</script>
+
+</body>
+</html>

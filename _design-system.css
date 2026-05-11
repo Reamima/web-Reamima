@@ -33,13 +33,8 @@
   --rm-fs-h3:       clamp(1.15rem, 1.5vw, 1.35rem);
   --rm-fs-lead:     clamp(1.1rem, 1.4vw, 1.32rem);
   --rm-fs-body:     1.0625rem;
-<<<<<<< HEAD
   --rm-fs-small:    1.0rem;
   --rm-fs-micro:    0.95rem;
-=======
-  --rm-fs-small:    0.9375rem;
-  --rm-fs-micro:    0.78rem;
->>>>>>> 041c2a680a45637125571cfce3dadc355b63539e
 
   /* Espaciado */
   --rm-section-y:   clamp(72px, 9vw, 144px);
@@ -88,13 +83,8 @@ a { color: inherit; text-decoration: none; }
 .rm-eyebrow {
   font-family: var(--rm-font-mono);
   font-size: var(--rm-fs-micro);
-<<<<<<< HEAD
   font-weight: 500;
   letter-spacing: 0.14em;
-=======
-  font-weight: 400;
-  letter-spacing: 0.16em;
->>>>>>> 041c2a680a45637125571cfce3dadc355b63539e
   text-transform: uppercase;
   color: var(--rm-blue-grey);
 }
@@ -187,17 +177,10 @@ a { color: inherit; text-decoration: none; }
 .rm-section--ink .rm-rule { border-top-color: rgba(255,255,255,.12); }
 
 /* Cabecera y pie de marca */
-<<<<<<< HEAD
 .rm-nav { padding: 12px var(--rm-gutter); border-bottom: 1px solid var(--rm-line); background: var(--rm-paper); }
 .rm-nav__inner { display: flex; align-items: center; justify-content: space-between; }
 .rm-nav__brand { font-family: var(--rm-font-display); font-weight: 500; letter-spacing: 0.01em; color: var(--rm-navy); display: inline-flex; align-items: center; gap: 10px; }
-.rm-nav__brand img { display: block; height: 55px; width: auto; border-radius: 8px; }
-=======
-.rm-nav { padding: 22px 0; border-bottom: 1px solid var(--rm-line); background: var(--rm-paper); }
-.rm-nav__inner { display: flex; align-items: center; justify-content: space-between; }
-.rm-nav__brand { font-family: var(--rm-font-display); font-weight: 500; letter-spacing: 0.01em; color: var(--rm-navy); display: inline-flex; align-items: center; gap: 10px; }
-.rm-nav__brand img { display: block; height: 30px; width: auto; }
->>>>>>> 041c2a680a45637125571cfce3dadc355b63539e
+.rm-nav__brand img { display: block; height: 100px; width: auto; border-radius: 8px; }
 .rm-nav__brand .rm-nav__logo--light { display: none; }
 .rm-nav--ink { background: var(--rm-ink); border-bottom-color: rgba(255,255,255,.08); }
 .rm-nav--ink .rm-nav__brand { color: #fff; }
