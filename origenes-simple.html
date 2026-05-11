@@ -48,6 +48,9 @@
       <button class="is-active" data-set-lang="es">ES</button>
       <button data-set-lang="en">EN</button>
     </div>
+    <button class="rm-nav__toggle" aria-label="Menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
@@ -613,6 +616,23 @@
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
     els.forEach(e => io.observe(e));
+  })();
+  (function(){
+    var toggle = document.querySelector('.rm-nav__toggle');
+    var links = document.querySelector('.rm-nav__links');
+    if (!toggle || !links) return;
+    toggle.addEventListener('click', function() {
+      var open = links.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('click', function(e) {
+      if (!toggle.contains(e.target) && !links.contains(e.target)) {
+        links.classList.remove('is-open');
+        toggle.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
   })();
 </script>
 
