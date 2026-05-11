@@ -219,7 +219,7 @@ p a:hover { border-bottom-color: #F08468; }
 @media (min-width: 760px) { .rm-foot__grid { grid-template-columns: 2fr 1fr 1fr 1fr; } }
 .rm-foot__brand { font-family: var(--rm-font-display); color: #fff; font-weight: 300; font-size: 1.4rem; }
 .rm-foot__logo { display: block; height: 56px; width: auto; margin-bottom: 18px; }
-.rm-foot a { color: #B0B5C8; }
+.rm-foot a { color: #B0B5C8; border-bottom: none; }
 .rm-foot a:hover { color: #fff; }
 .rm-foot__legal { margin-top: 36px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.08); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: var(--rm-fs-micro); color: #6E7494; }
 
