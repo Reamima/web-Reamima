@@ -39,6 +39,8 @@
   .ct-form__msg { font-family: var(--rm-font-mono); font-size: var(--rm-fs-micro); margin-top: 8px; display: none; }
   .ct-form__msg--ok { color: #2a7a4f; }
   .ct-form__msg--err { color: #b93a3a; }
+  .ct-data-grid { display: grid; gap: clamp(24px, 4vw, 48px); grid-template-columns: 1fr; }
+  @media (min-width: 640px) { .ct-data-grid { grid-template-columns: 1.4fr 1fr; } }
 </style>
 </head>
 <body data-active-lang="es">
@@ -76,130 +78,126 @@
   </div>
 </section>
 
-<!-- CONTACT GRID -->
+<!-- FORMULARIO -->
 <section class="rm-section rm-section--paper" style="padding-top: 0;">
-  <div class="rm-container">
-    <div class="ct-grid">
+  <div class="rm-container rm-narrow">
+    <p class="rm-eyebrow rm-fade" style="margin-bottom: 14px;">
+      <span data-lang="es">Cómo escribirnos</span>
+      <span data-lang="en">How to reach us</span>
+    </p>
+    <h2 class="rm-h2 rm-fade" style="font-weight: 300; color: var(--rm-navy); max-width: 18ch;">
+      <span data-lang="es">Lo que ayuda en un primer mensaje.</span>
+      <span data-lang="en">What helps in a first message.</span>
+    </h2>
+    <ul class="rm-list rm-fade" style="margin-top: 1.4em;">
+      <li class="rm-list__item">
+        <span class="rm-list__dot" aria-hidden="true">·</span>
+        <span><strong><span data-lang="es">Qué problema</span><span data-lang="en">The problem</span></strong> — <span data-lang="es">en una frase, lo que no funciona o lo que falta.</span><span data-lang="en">in one sentence, what doesn&rsquo;t work or what is missing.</span></span>
+      </li>
+      <li class="rm-list__item">
+        <span class="rm-list__dot" aria-hidden="true">·</span>
+        <span><strong><span data-lang="es">Quién lo plantea</span><span data-lang="en">Who is asking</span></strong> — <span data-lang="es">tu organización, tu rol y por qué te ha tocado a ti.</span><span data-lang="en">your organisation, your role, and why this landed on your desk.</span></span>
+      </li>
+      <li class="rm-list__item">
+        <span class="rm-list__dot" aria-hidden="true">·</span>
+        <span><strong><span data-lang="es">Cuándo</span><span data-lang="en">When</span></strong> — <span data-lang="es">si hay un plazo, una fase o una decisión que depende de la respuesta.</span><span data-lang="en">if there is a deadline, a phase or a decision waiting on the answer.</span></span>
+      </li>
+    </ul>
+    <form class="ct-form rm-fade" id="ct-form" action="https://api.web3forms.com/submit" method="POST" style="margin-top: 2em;">
+      <input type="hidden" name="access_key" value="643dd053-8d56-45a2-b90f-094a4922b130" />
+      <input type="hidden" name="subject" value="Nuevo mensaje desde reamima.com" />
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
 
-      <!-- Datos de contacto -->
-      <div class="ct-card rm-fade">
-        <p class="rm-eyebrow" style="margin-bottom: 8px;">
-          <span data-lang="es">Datos de contacto</span>
-          <span data-lang="en">Contact details</span>
+      <div class="ct-form__field">
+        <label class="ct-form__label" for="ct-name">
+          <span data-lang="es">Nombre</span><span data-lang="en">Name</span>
+        </label>
+        <input class="ct-form__input" id="ct-name" type="text" name="name" required />
+      </div>
+
+      <div class="ct-form__field">
+        <label class="ct-form__label" for="ct-email">
+          <span data-lang="es">Correo electrónico</span><span data-lang="en">Email</span>
+        </label>
+        <input class="ct-form__input" id="ct-email" type="email" name="email" required />
+      </div>
+
+      <div class="ct-form__field">
+        <label class="ct-form__label" for="ct-msg">
+          <span data-lang="es">Mensaje</span><span data-lang="en">Message</span>
+        </label>
+        <textarea class="ct-form__textarea" id="ct-msg" name="message" required></textarea>
+      </div>
+
+      <div>
+        <button class="rm-btn" type="submit">
+          <span data-lang="es">Enviar mensaje →</span>
+          <span data-lang="en">Send message →</span>
+        </button>
+        <p class="ct-form__msg ct-form__msg--ok" id="ct-ok">
+          <span data-lang="es">Mensaje enviado. Te respondemos pronto.</span>
+          <span data-lang="en">Message sent. We'll get back to you soon.</span>
         </p>
+        <p class="ct-form__msg ct-form__msg--err" id="ct-err">
+          <span data-lang="es">Algo ha fallado. Escríbenos a info@reamima.com</span>
+          <span data-lang="en">Something went wrong. Email us at info@reamima.com</span>
+        </p>
+      </div>
+    </form>
+  </div>
+</section>
 
+<!-- SEPARADOR -->
+<section style="background: var(--rm-navy); background-image: url('img/textura-puntitos.jpg'); background-size: cover; background-blend-mode: multiply; padding: clamp(48px, 7vw, 88px) 0;">
+  <div class="rm-container" style="text-align: center;">
+    <img src="img/reamima-logo-blanco.png" alt="REAMIMA" style="height: 56px; width: auto; opacity: 0.9; margin-bottom: 20px;" />
+    <p style="color: rgba(255,255,255,0.7); font-family: var(--rm-font-mono); font-size: var(--rm-fs-micro); letter-spacing: .18em; text-transform: uppercase;">
+      <span data-lang="es">Ingeniería · I+D+i · Hardware abierto</span>
+      <span data-lang="en">Engineering · R&amp;D · Open hardware</span>
+    </p>
+  </div>
+</section>
+
+<!-- DATOS DE CONTACTO -->
+<section class="rm-section rm-section--paper">
+  <div class="rm-container">
+    <p class="rm-eyebrow rm-fade" style="margin-bottom: 32px;">
+      <span data-lang="es">Datos de contacto</span>
+      <span data-lang="en">Contact details</span>
+    </p>
+    <div class="ct-data-grid rm-fade">
+      <div class="ct-card">
         <div class="ct-row">
           <p class="ct-row__label"><span data-lang="es">Correo principal</span><span data-lang="en">Main e-mail</span></p>
           <p class="ct-row__value"><a href="mailto:info@reamima.com">info@reamima.com</a></p>
         </div>
-
         <div class="ct-row">
           <p class="ct-row__label"><span data-lang="es">Proyectos &amp; colaboración</span><span data-lang="en">Projects &amp; collaboration</span></p>
           <p class="ct-row__value"><a href="mailto:proyectos@reamima.com">proyectos@reamima.com</a></p>
         </div>
-
         <div class="ct-row">
           <p class="ct-row__label"><span data-lang="es">Prensa &amp; académicos</span><span data-lang="en">Press &amp; academia</span></p>
           <p class="ct-row__value"><a href="mailto:info@reamima.com">info@reamima.com</a></p>
         </div>
-
         <div class="ct-row">
           <p class="ct-row__label">Web</p>
           <p class="ct-row__value"><a href="https://www.reamima.com" target="_blank" rel="noopener">www.reamima.com</a></p>
         </div>
-
         <div class="ct-row">
           <p class="ct-row__label"><span data-lang="es">Hardware abierto</span><span data-lang="en">Open hardware</span></p>
           <p class="ct-row__value"><a href="https://certification.oshwa.org/es000009.html" target="_blank" rel="noopener">OSHWA · ES000009</a></p>
         </div>
-
-        <div class="ct-channels">
-          <a class="channel" href="https://www.reamima.com" target="_blank" rel="noopener">
-            <p class="channel__title"><span data-lang="es">Documentación</span><span data-lang="en">Documentation</span></p>
-            <p class="channel__sub">reamima.com</p>
-          </a>
-          <a class="channel" href="https://www.youtube.com/watch?v=Tt1ouUcCUzM" target="_blank" rel="noopener">
-            <p class="channel__title"><span data-lang="es">Vídeos técnicos</span><span data-lang="en">Technical videos</span></p>
-            <p class="channel__sub">YouTube</p>
-          </a>
-        </div>
       </div>
-
-      <!-- Carta abierta -->
-      <div>
-        <p class="rm-eyebrow" style="margin-bottom: 14px;">
-          <span data-lang="es">Cómo escribirnos</span>
-          <span data-lang="en">How to reach us</span>
-        </p>
-        <h2 class="rm-h2" style="font-weight: 300; color: var(--rm-navy); max-width: 18ch;">
-          <span data-lang="es">Lo que ayuda en un primer mensaje.</span>
-          <span data-lang="en">What helps in a first message.</span>
-        </h2>
-        <p style="margin-top: 1.4em;">
-          <span data-lang="es">Tres líneas son suficientes para decidir si REAMIMA puede aportar algo. Cuando escribas, intenta incluir:</span>
-          <span data-lang="en">Three lines are enough to decide whether REAMIMA can add value. When you write, try to include:</span>
-        </p>
-        <ul class="rm-list" style="margin-top: 1.2em;">
-          <li class="rm-list__item">
-            <span class="rm-list__dot" aria-hidden="true">·</span>
-            <span><strong><span data-lang="es">Qué problema</span><span data-lang="en">The problem</span></strong> — <span data-lang="es">en una frase, lo que no funciona o lo que falta.</span><span data-lang="en">in one sentence, what doesn&rsquo;t work or what is missing.</span></span>
-          </li>
-          <li class="rm-list__item">
-            <span class="rm-list__dot" aria-hidden="true">·</span>
-            <span><strong><span data-lang="es">Quién lo plantea</span><span data-lang="en">Who is asking</span></strong> — <span data-lang="es">tu organización, tu rol y por qué te ha tocado a ti.</span><span data-lang="en">your organisation, your role, and why this landed on your desk.</span></span>
-          </li>
-          <li class="rm-list__item">
-            <span class="rm-list__dot" aria-hidden="true">·</span>
-            <span><strong><span data-lang="es">Cuándo</span><span data-lang="en">When</span></strong> — <span data-lang="es">si hay un plazo, una fase o una decisión que depende de la respuesta.</span><span data-lang="en">if there is a deadline, a phase or a decision waiting on the answer.</span></span>
-          </li>
-        </ul>
-        <p style="margin-top: 1.6em;">
-          <span data-lang="es">Respondemos a todos los mensajes que entran por <a href="mailto:info@reamima.com">info@reamima.com</a>. Si el encaje no es claro lo decimos pronto, sin ceremonia.</span>
-          <span data-lang="en">We answer every message that comes in through <a href="mailto:info@reamima.com">info@reamima.com</a>. If there is no fit, we say so early, without ceremony.</span>
-        </p>
-        <form class="ct-form" id="ct-form" action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="643dd053-8d56-45a2-b90f-094a4922b130" />
-          <input type="hidden" name="subject" value="Nuevo mensaje desde reamima.com" />
-          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
-
-          <div class="ct-form__field">
-            <label class="ct-form__label" for="ct-name">
-              <span data-lang="es">Nombre</span><span data-lang="en">Name</span>
-            </label>
-            <input class="ct-form__input" id="ct-name" type="text" name="name" required />
-          </div>
-
-          <div class="ct-form__field">
-            <label class="ct-form__label" for="ct-email">
-              <span data-lang="es">Correo electrónico</span><span data-lang="en">Email</span>
-            </label>
-            <input class="ct-form__input" id="ct-email" type="email" name="email" required />
-          </div>
-
-          <div class="ct-form__field">
-            <label class="ct-form__label" for="ct-msg">
-              <span data-lang="es">Mensaje</span><span data-lang="en">Message</span>
-            </label>
-            <textarea class="ct-form__textarea" id="ct-msg" name="message" required></textarea>
-          </div>
-
-          <div>
-            <button class="rm-btn" type="submit">
-              <span data-lang="es">Enviar mensaje →</span>
-              <span data-lang="en">Send message →</span>
-            </button>
-            <p class="ct-form__msg ct-form__msg--ok" id="ct-ok">
-              <span data-lang="es">Mensaje enviado. Te respondemos pronto.</span>
-              <span data-lang="en">Message sent. We'll get back to you soon.</span>
-            </p>
-            <p class="ct-form__msg ct-form__msg--err" id="ct-err">
-              <span data-lang="es">Algo ha fallado. Escríbenos a info@reamima.com</span>
-              <span data-lang="en">Something went wrong. Email us at info@reamima.com</span>
-            </p>
-          </div>
-        </form>
+      <div class="ct-channels" style="align-content: start;">
+        <a class="channel" href="https://www.reamima.com" target="_blank" rel="noopener">
+          <p class="channel__title"><span data-lang="es">Documentación</span><span data-lang="en">Documentation</span></p>
+          <p class="channel__sub">reamima.com</p>
+        </a>
+        <a class="channel" href="https://www.youtube.com/watch?v=Tt1ouUcCUzM" target="_blank" rel="noopener">
+          <p class="channel__title"><span data-lang="es">Vídeos técnicos</span><span data-lang="en">Technical videos</span></p>
+          <p class="channel__sub">YouTube</p>
+        </a>
       </div>
-
     </div>
   </div>
 </section>
