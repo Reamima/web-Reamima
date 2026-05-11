@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sobre REAMIMA · Ingeniería, I+D+i</title>
+<meta name="description" content="REAMIMA: equipo de ingeniería e I+D+i. Capacidades técnicas, principios y proyectos." />
+<link rel="stylesheet" href="_design-system.css">
+<style>
+  .sobre-hero { background: var(--rm-paper); padding-top: clamp(96px,10vw,160px); padding-bottom: clamp(48px,6vw,96px); }
+  .sobre-hero .rm-display { color: var(--rm-navy); max-width: 16ch; }
+  .principles { display: grid; gap: 0; }
+  .principle { display: grid; grid-template-columns: 1fr; gap: 16px; padding: 36px 0; border-top: 1px solid var(--rm-line); }
+  .principle:last-child { border-bottom: 1px solid var(--rm-line); }
+  @media (min-width: 760px) { .principle { grid-template-columns: 200px 1fr 1fr; gap: 40px; } }
+  .principle__num { font-family: var(--rm-font-mono); font-size: var(--rm-fs-micro); letter-spacing: .16em; text-transform: uppercase; color: var(--rm-blue-grey); }
+  .principle__title { font-size: var(--rm-fs-h2); font-weight: 300; color: var(--rm-navy); }
+  .figure-wide { aspect-ratio: 16/7; background-size: cover; background-position: center; border-radius: var(--rm-radius-lg); }
+  .stat { padding: 28px; border: 1px solid var(--rm-line); border-radius: var(--rm-radius-md); text-align: left; }
+  .stat__num { font-family: var(--rm-font-display); font-weight: 200; font-size: clamp(2.4rem, 5vw, 4rem); color: var(--rm-navy); letter-spacing: -0.02em; line-height: 1; }
+  .stat__label { font-family: var(--rm-font-mono); font-size: var(--rm-fs-micro); letter-spacing: .14em; text-transform: uppercase; color: var(--rm-text-muted); margin-top: 12px; }
+</style>
+</head>
+<body data-active-lang="es">
+
+<!-- NAV -->
+<nav class="rm-nav">
+  <div class="rm-container rm-nav__inner">
+    <a href="inicio.html" class="rm-nav__brand" aria-label="REAMIMA · Inicio"><img class="rm-nav__logo--dark" src="img/reamima-logo.png" alt="REAMIMA" /><img class="rm-nav__logo--light" src="img/reamima-logo-blanco.png" alt="REAMIMA" /></a>
+    <div class="rm-nav__links">
+      <a href="sobre.html"><span data-lang="es">Sobre</span><span data-lang="en">About</span></a>
+      <a href="origenes.html"><span data-lang="es">Orígenes</span><span data-lang="en">Origins</span></a>
+      <a href="contacta.html"><span data-lang="es">Contacta</span><span data-lang="en">Contact</span></a>
+    </div>
+    <div class="rm-lang">
+      <button class="is-active" data-set-lang="es">ES</button>
+      <button data-set-lang="en">EN</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="rm-hero rm-hero--split sobre-hero">
+  <div class="rm-container">
+    <div class="rm-hero__split">
+      <div class="rm-hero__copy">
+        <p class="rm-eyebrow rm-fade">
+          <span data-lang="es">Sobre REAMIMA</span>
+          <span data-lang="en">About REAMIMA</span>
+        </p>
+        <h1 class="rm-hero__title rm-display rm-fade rm-fade--d1" style="margin-top: 1.4rem;">
+          <span data-lang="es">Una ingeniería que diseña<br/>lo que aún no existe.</span>
+          <span data-lang="en">An engineering company<br/>that designs what does not yet exist.</span>
+        </h1>
+        <p class="rm-lead rm-muted rm-fade rm-fade--d2" style="margin-top: 2rem; max-width: 60ch;">
+          <span data-lang="es">REAMIMA es un equipo de ingeniería e I+D+i centrado en resolver problemas que la industria considera fuera de alcance. Hardware, electrónica, control en tiempo real y software de alto rendimiento.</span>
+          <span data-lang="en">REAMIMA is an engineering and R&amp;D team focused on solving problems the industry considers out of reach. Hardware, electronics, real-time control and high-performance software.</span>
+        </p>
+      </div>
+      <div class="rm-hero__media rm-fade rm-fade--d2">
+        <img src="img/1_reamima_Concepto_1.png" alt="REAMIMA — ingeniería e I+D+i" loading="eager" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISIÓN -->
+<section class="rm-section rm-section--stone">
+  <div class="rm-container rm-narrow rm-stack-lg">
+    <p class="rm-eyebrow rm-fade">
+      <span data-lang="es">Misión</span><span data-lang="en">Mission</span>
+    </p>
+    <p class="rm-quote rm-fade rm-fade--d1">
+      <span data-lang="es">Construir lo que la ingeniería convencional descartó como inviable. Volver simple lo complejo. Devolver el control técnico al usuario.</span>
+      <span data-lang="en">To build what conventional engineering discarded as unviable. To make the complex simple. To return technical control to the user.</span>
+    </p>
+    <p class="rm-lead rm-muted rm-fade rm-fade--d2">
+      <span data-lang="es">Trabajamos en la frontera donde la electrónica de bajo coste, el procesamiento embebido y el diseño riguroso convergen para producir sistemas que parecen imposibles — y simplemente funcionan.</span>
+      <span data-lang="en">We operate at the frontier where low-cost electronics, embedded processing and rigorous design converge into systems that seem impossible — and simply work.</span>
+    </p>
+  </div>
+</section>
+
+<!-- PRINCIPIOS -->
+<section class="rm-section rm-section--paper">
+  <div class="rm-container">
+    <p class="rm-eyebrow rm-fade" style="margin-bottom: 2.4rem;">
+      <span data-lang="es">Principios de ingeniería</span>
+      <span data-lang="en">Engineering principles</span>
+    </p>
+    <div class="principles">
+      <div class="principle rm-fade">
+        <p class="principle__num">01 / Rigor</p>
+        <p class="principle__title">
+          <span data-lang="es">Lo difícil, primero</span>
+          <span data-lang="en">The hard part, first</span>
+        </p>
+        <p class="rm-muted">
+          <span data-lang="es">Empezamos por la restricción técnica más severa. Si no se sostiene ahí, no se sostiene en ningún sitio.</span>
+          <span data-lang="en">We start with the toughest technical constraint. If it doesn&rsquo;t hold there, it doesn&rsquo;t hold anywhere.</span>
+        </p>
+      </div>
+      <div class="principle rm-fade rm-fade--d1">
+        <p class="principle__num">02 / Soberanía</p>
+        <p class="principle__title">
+          <span data-lang="es">Procesamiento en el borde</span>
+          <span data-lang="en">Edge processing</span>
+        </p>
+        <p class="rm-muted">
+          <span data-lang="es">Los datos se procesan donde se generan. Sin servidores intermedios. La privacidad es una propiedad del sistema, no una promesa.</span>
+          <span data-lang="en">Data is processed where it is generated. No intermediate servers. Privacy is a system property, not a promise.</span>
+        </p>
+      </div>
+      <div class="principle rm-fade rm-fade--d2">
+        <p class="principle__num">03 / Apertura</p>
+        <p class="principle__title">
+          <span data-lang="es">Hardware abierto cuando importa</span>
+          <span data-lang="en">Open hardware when it matters</span>
+        </p>
+        <p class="rm-muted">
+          <span data-lang="es">Cuando un sistema puede salvar vidas, su diseño se publica. La certificación OSHWA es la prueba documental, no la insignia decorativa.</span>
+          <span data-lang="en">When a system can save lives, its design is published. OSHWA certification is the documentary proof, not a decorative badge.</span>
+        </p>
+      </div>
+      <div class="principle rm-fade rm-fade--d3">
+        <p class="principle__num">04 / Síntesis</p>
+        <p class="principle__title">
+          <span data-lang="es">La complejidad vive dentro</span>
+          <span data-lang="en">Complexity lives inside</span>
+        </p>
+        <p class="rm-muted">
+          <span data-lang="es">El usuario nunca ve la dificultad. Lo que llega a su mano es claro, sereno y útil.</span>
+          <span data-lang="en">The user never sees the difficulty. What reaches their hand is clear, calm and useful.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGEN AMPLIA -->
+<section class="rm-section--tight" style="padding: clamp(24px,3vw,48px) 0;">
+  <div class="rm-container">
+    <figure class="rm-figure">
+      <img src="img/reamima_concepto_1.png" alt="REAMIMA — pensamiento de sistema" loading="lazy" />
+    </figure>
+  </div>
+</section>
+
+<!-- CAPACIDADES TÉCNICAS -->
+<section class="rm-section rm-section--paper">
+  <div class="rm-container">
+    <p class="rm-eyebrow" style="margin-bottom: 2.4rem;">
+      <span data-lang="es">Capacidades técnicas</span>
+      <span data-lang="en">Technical capabilities</span>
+    </p>
+    <div class="rm-grid rm-grid--2">
+      <div>
+        <h3 class="rm-h2" style="font-weight: 300; color: var(--rm-navy); margin-bottom: 1rem;">
+          <span data-lang="es">Hardware y electrónica</span>
+          <span data-lang="en">Hardware and electronics</span>
+        </h3>
+        <p class="rm-muted">
+          <span data-lang="es">Diseño de prototipos rápidos sobre Arduino, ESP32, M5Stack, Portenta, Raspberry y PLC industriales (Simatic, Logo, IOT2020). Integración de sensores, control de relés, electrónica de bajo coste con tolerancia industrial.</span>
+          <span data-lang="en">Rapid prototype design on Arduino, ESP32, M5Stack, Portenta, Raspberry and industrial PLCs (Simatic, Logo, IOT2020). Sensor integration, relay control, low-cost electronics with industrial tolerance.</span>
+        </p>
+      </div>
+      <div>
+        <h3 class="rm-h2" style="font-weight: 300; color: var(--rm-navy); margin-bottom: 1rem;">
+          <span data-lang="es">Software embebido y móvil</span>
+          <span data-lang="en">Embedded and mobile software</span>
+        </h3>
+        <p class="rm-muted">
+          <span data-lang="es">Procesamiento de señal en tiempo real, algoritmos en el dispositivo, arquitecturas sin servidor. Aplicaciones móviles que viven en el teléfono y respetan la privacidad por construcción.</span>
+          <span data-lang="en">Real-time signal processing, on-device algorithms, server-less architectures. Mobile applications that live on the phone and respect privacy by construction.</span>
+        </p>
+      </div>
+      <div>
+        <h3 class="rm-h2" style="font-weight: 300; color: var(--rm-navy); margin-bottom: 1rem;">
+          <span data-lang="es">Diseño de sistemas</span>
+          <span data-lang="en">Systems design</span>
+        </h3>
+        <p class="rm-muted">
+          <span data-lang="es">De la mecánica fluídica al control digital. Pensamos el conjunto y aceptamos la responsabilidad de cada eslabón: válvulas de seguridad, márgenes, ergonomía e interfaz humano-máquina.</span>
+          <span data-lang="en">From fluid mechanics to digital control. We think the whole and own each link: safety valves, margins, ergonomics and human-machine interface.</span>
+        </p>
+      </div>
+      <div>
+        <h3 class="rm-h2" style="font-weight: 300; color: var(--rm-navy); margin-bottom: 1rem;">
+          <span data-lang="es">Documentación y certificación</span>
+          <span data-lang="en">Documentation and certification</span>
+        </h3>
+        <p class="rm-muted">
+          <span data-lang="es">Lo que se entrega va documentado para que cualquiera pueda construirlo, reproducirlo o auditarlo. Trabajamos con marcos de hardware abierto y certificaciones internacionales (OSHWA).</span>
+          <span data-lang="en">What we deliver is documented so anyone can build, reproduce or audit it. We work with open-hardware frameworks and international certifications (OSHWA).</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROYECTOS EN CURSO -->
+<section class="rm-section rm-section--stone">
+  <div class="rm-container">
+    <p class="rm-eyebrow rm-fade" style="margin-bottom: 2rem;">
+      <span data-lang="es">Proyectos en curso</span>
+      <span data-lang="en">Current projects</span>
+    </p>
+
+    <!-- Cardistream -->
+    <div class="rm-grid rm-grid--2 rm-fade" style="align-items: center;">
+      <div>
+        <h2 class="rm-h1" style="color: var(--rm-navy); font-weight: 300;">Cardistream</h2>
+        <p class="rm-lead rm-muted" style="margin-top: 1rem; max-width: 52ch;">
+          <span data-lang="es">Software de optimización del rendimiento físico que construye el patrón único de entrenamiento de cada persona a lo largo del tiempo. Procesamiento en el dispositivo. Cero servidores.</span>
+          <span data-lang="en">Physical performance optimization software that builds each person&rsquo;s unique training pattern over time. On-device processing. Zero servers.</span>
+        </p>
+        <p style="margin-top: 1.6rem;">
+          <a class="rm-btn--inline" href="https://cardistream.com" target="_blank" rel="noopener">cardistream.com</a>
+        </p>
+      </div>
+      <figure class="rm-figure" style="aspect-ratio: 4/3;">
+        <img src="img/2_cardistream-correr.png" alt="Cardistream — entrenamiento personalizado" loading="lazy" style="aspect-ratio: 4/3; object-fit: cover; height: 100%;"/>
+      </figure>
+    </div>
+
+    <!-- Isostream -->
+    <div class="rm-grid rm-grid--2 rm-fade rm-fade--d1" style="align-items: center; margin-top: clamp(56px,7vw,120px);">
+      <figure class="rm-figure" style="aspect-ratio: 4/3; background: #F2F2EE;">
+        <img src="img/isostream-mucho.png" alt="Isostream — render técnico" loading="lazy" style="aspect-ratio: 4/3; object-fit: contain; height: 100%; padding: 6%;"/>
+      </figure>
+      <div>
+        <h2 class="rm-h1" style="color: var(--rm-navy); font-weight: 300;">Isostream</h2>
+        <p class="rm-lead rm-muted" style="margin-top: 1rem; max-width: 52ch;">
+          <span data-lang="es">Producto físico en desarrollo. Diseño industrial, electrónica embebida y firmware propios. Más detalles cuando llegue su momento.</span>
+          <span data-lang="en">Physical product under development. Industrial design, embedded electronics and in-house firmware. Details when the time comes.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LLAMADA ORÍGENES -->
+<section class="rm-section rm-section--ink">
+  <div class="rm-container rm-narrow">
+    <p class="rm-eyebrow">OSHWA · Arduino Global Conference · 2020</p>
+    <h2 class="rm-display" style="margin-top: 1.4rem;">
+      <span data-lang="es">La trayectoria que justifica el método.</span>
+      <span data-lang="en">The track record that justifies the method.</span>
+    </h2>
+    <p class="rm-lead" style="margin-top: 1.6rem; color: #C0C5DC; max-width: 60ch;">
+      <span data-lang="es">En 2020, REAMIMA diseñó un respirador de emergencia con materiales de almacén. Hardware abierto, certificado por OSHWA, presentado en la conferencia global de Arduino. La historia explica el método.</span>
+      <span data-lang="en">In 2020, REAMIMA designed an emergency ventilator from off-the-shelf materials. Open hardware, OSHWA-certified, presented at the Arduino global conference. The story explains the method.</span>
+    </p>
+    <p style="margin-top: 2.4rem;">
+      <a href="origenes.html" class="rm-btn rm-btn--ghost">
+        <span data-lang="es">Leer Orígenes</span>
+        <span data-lang="en">Read Origins</span>
+      </a>
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="rm-foot">
+  <div class="rm-container">
+    <div class="rm-foot__grid">
+      <div>
+        <img class="rm-foot__logo" src="img/reamima-logo-blanco.png" alt="REAMIMA" /><p class="rm-foot__brand">REAMIMA</p>
+        <p style="margin-top: 12px; max-width: 36ch;">
+          <span data-lang="es">Ingeniería, I+D+i. Pensamos lo que falta y lo construimos.</span>
+          <span data-lang="en">Engineering, R&amp;D. We design what&rsquo;s missing and build it.</span>
+        </p>
+      </div>
+      <div>
+        <p class="rm-eyebrow" style="margin-bottom: 14px;"><span data-lang="es">Empresa</span><span data-lang="en">Company</span></p>
+        <p><a href="sobre.html"><span data-lang="es">Sobre REAMIMA</span><span data-lang="en">About</span></a></p>
+        <p><a href="origenes.html"><span data-lang="es">Orígenes</span><span data-lang="en">Origins</span></a></p>
+      </div>
+      <div>
+        <p class="rm-eyebrow" style="margin-bottom: 14px;"><span data-lang="es">Contacto</span><span data-lang="en">Contact</span></p>
+        <p><a href="contacta.html">info@reamima.com</a></p>
+      </div>
+      <div>
+        <p class="rm-eyebrow" style="margin-bottom: 14px;">Legal</p>
+        <p><a href="legal.html"><span data-lang="es">Aviso legal</span><span data-lang="en">Legal notice</span></a></p>
+      </div>
+    </div>
+    <div class="rm-foot__legal">
+      <span>© 2026 Reamima Tech S.L.</span>
+      <span><span data-lang="es">Todos los derechos reservados.</span><span data-lang="en">All rights reserved.</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    const buttons = document.querySelectorAll('[data-set-lang]');
+    buttons.forEach(b => b.addEventListener('click', () => {
+      const lang = b.getAttribute('data-set-lang');
+      document.body.setAttribute('data-active-lang', lang);
+      document.documentElement.setAttribute('lang', lang);
+      buttons.forEach(x => x.classList.toggle('is-active', x === b));
+    }));
+  })();
+  // Fade-up al entrar en viewport (estilo Apple Education)
+  (function(){
+    const els = document.querySelectorAll('.rm-fade');
+    if (!('IntersectionObserver' in window) || !els.length) {
+      els.forEach(e => e.classList.add('is-visible'));
+      return;
+    }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    els.forEach(e => io.observe(e));
+  })();
+</script>
+
+</body>
+</html>
