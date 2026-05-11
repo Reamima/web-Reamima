@@ -14,7 +14,7 @@
   .principle:last-child { border-bottom: 1px solid var(--rm-line); }
   @media (min-width: 760px) { .principle { grid-template-columns: 200px 1fr 1fr; gap: 40px; } }
   .principle__num { font-family: var(--rm-font-mono); font-size: var(--rm-fs-micro); letter-spacing: .16em; text-transform: uppercase; color: var(--rm-blue-grey); }
-  .principle__title { font-size: var(--rm-fs-h2); font-weight: 300; color: var(--rm-navy); }
+  .principle__title { font-size: var(--rm-fs-h2); font-weight: 300; color: var(--rm-navy); margin: 0; }
   .figure-wide { aspect-ratio: 16/7; background-size: cover; background-position: center; border-radius: var(--rm-radius-lg); }
   .stat { padding: 28px; border: 1px solid var(--rm-line); border-radius: var(--rm-radius-md); text-align: left; }
   .stat__num { font-family: var(--rm-font-display); font-weight: 200; font-size: clamp(2.4rem, 5vw, 4rem); color: var(--rm-navy); letter-spacing: -0.02em; line-height: 1; }
@@ -22,13 +22,14 @@
 </style>
 </head>
 <body data-active-lang="es">
+<a class="rm-skip" href="#main-content"><span data-lang="es">Saltar al contenido</span><span data-lang="en">Skip to content</span></a>
 
 <!-- NAV -->
 <nav class="rm-nav">
   <div class="rm-container rm-nav__inner">
-    <a href="index.html" class="rm-nav__brand" aria-label="REAMIMA · Inicio"><img class="rm-nav__logo--dark" src="img/1_Reamima_transpa_Blanco.png" alt="REAMIMA Tech" /><img class="rm-nav__logo--light" src="img/Reamima_Solido_oscuro.jpeg" alt="REAMIMA Tech" /></a>
+    <a href="index.html" class="rm-nav__brand" aria-label="REAMIMA · Inicio"><img class="rm-nav__logo--dark" src="img/1_Reamima_transpa_Blanco.png" alt="" /><img class="rm-nav__logo--light" src="img/Reamima_Solido_oscuro.jpeg" alt="" /></a>
     <div class="rm-nav__links">
-      <a href="sobre.html"><span data-lang="es">Sobre</span><span data-lang="en">About</span></a>
+      <a href="sobre.html" aria-current="page" style="color: var(--rm-navy);"><span data-lang="es">Sobre</span><span data-lang="en">About</span></a>
       <a href="origenes.html"><span data-lang="es">Orígenes</span><span data-lang="en">Origins</span></a>
       <a href="contacta.html"><span data-lang="es">Contacta</span><span data-lang="en">Contact</span></a>
     </div>
@@ -41,6 +42,7 @@
     </button>
   </div>
 </nav>
+<main id="main-content">
 
 <!-- HERO -->
 <section class="rm-hero rm-hero--split sobre-hero">
@@ -94,10 +96,10 @@
     <div class="principles">
       <div class="principle rm-fade">
         <p class="principle__num">01 / Rigor</p>
-        <p class="principle__title">
+        <h3 class="principle__title">
           <span data-lang="es">Lo difícil, primero</span>
           <span data-lang="en">The hard part, first</span>
-        </p>
+        </h3>
         <p class="rm-muted">
           <span data-lang="es">Empezamos por la restricción técnica más severa. Si no se sostiene ahí, no se sostiene en ningún sitio.</span>
           <span data-lang="en">We start with the toughest technical constraint. If it doesn&rsquo;t hold there, it doesn&rsquo;t hold anywhere.</span>
@@ -105,10 +107,10 @@
       </div>
       <div class="principle rm-fade rm-fade--d1">
         <p class="principle__num">02 / Soberanía</p>
-        <p class="principle__title">
+        <h3 class="principle__title">
           <span data-lang="es">Procesamiento en el borde</span>
           <span data-lang="en">Edge processing</span>
-        </p>
+        </h3>
         <p class="rm-muted">
           <span data-lang="es">Los datos se procesan donde se generan. Sin servidores intermedios. La privacidad es una propiedad del sistema, no una promesa.</span>
           <span data-lang="en">Data is processed where it is generated. No intermediate servers. Privacy is a system property, not a promise.</span>
@@ -116,10 +118,10 @@
       </div>
       <div class="principle rm-fade rm-fade--d2">
         <p class="principle__num">03 / Apertura</p>
-        <p class="principle__title">
+        <h3 class="principle__title">
           <span data-lang="es">Hardware abierto cuando importa</span>
           <span data-lang="en">Open hardware when it matters</span>
-        </p>
+        </h3>
         <p class="rm-muted">
           <span data-lang="es">Cuando un sistema puede salvar vidas, su diseño se publica. La certificación OSHWA es la prueba documental, no la insignia decorativa.</span>
           <span data-lang="en">When a system can save lives, its design is published. OSHWA certification is the documentary proof, not a decorative badge.</span>
@@ -127,10 +129,10 @@
       </div>
       <div class="principle rm-fade rm-fade--d3">
         <p class="principle__num">04 / Síntesis</p>
-        <p class="principle__title">
+        <h3 class="principle__title">
           <span data-lang="es">La complejidad vive dentro</span>
           <span data-lang="en">Complexity lives inside</span>
-        </p>
+        </h3>
         <p class="rm-muted">
           <span data-lang="es">El usuario nunca ve la dificultad. Lo que llega a su mano es claro, sereno y útil.</span>
           <span data-lang="en">The user never sees the difficulty. What reaches their hand is clear, calm and useful.</span>
@@ -264,11 +266,13 @@
 </section>
 
 <!-- FOOTER -->
+</main>
+
 <footer class="rm-foot">
   <div class="rm-container">
     <div class="rm-foot__grid">
       <div>
-        <a href="index.html" aria-label="REAMIMA · Inicio"><img class="rm-foot__logo" src="img/reamima-logo-blanco.png" alt="REAMIMA" /></a>
+        <a href="index.html" aria-label="REAMIMA · Inicio"><img class="rm-foot__logo" src="img/reamima-logo-blanco.png" alt="" /></a>
         <p class="rm-foot__brand">REAMIMA</p>
         <p style="margin-top: 12px; max-width: 36ch;">
           <span data-lang="es">Ingeniería, I+D+i. Pensamos lo que falta y lo construimos.</span>
@@ -328,6 +332,7 @@
       var open = links.classList.toggle('is-open');
       toggle.classList.toggle('is-open', open);
       toggle.setAttribute('aria-expanded', String(open));
+      if (open) { var fl = links.querySelector('a'); if (fl) fl.focus(); }
     });
     document.addEventListener('click', function(e) {
       if (!toggle.contains(e.target) && !links.contains(e.target)) {

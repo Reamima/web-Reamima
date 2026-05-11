@@ -80,13 +80,14 @@
 </style>
 </head>
 <body data-active-lang="es">
+<a class="rm-skip" href="#main-content"><span data-lang="es">Saltar al contenido</span><span data-lang="en">Skip to content</span></a>
 
 <nav class="rm-nav">
   <div class="rm-container rm-nav__inner">
-    <a href="index.html" class="rm-nav__brand" aria-label="REAMIMA · Inicio"><img class="rm-nav__logo--dark" src="img/1_Reamima_transpa_Blanco.png" alt="REAMIMA" /><img class="rm-nav__logo--light" src="img/Reamima_Solido_oscuro.jpeg" alt="REAMIMA" /></a>
+    <a href="index.html" class="rm-nav__brand" aria-label="REAMIMA · Inicio"><img class="rm-nav__logo--dark" src="img/1_Reamima_transpa_Blanco.png" alt="" /><img class="rm-nav__logo--light" src="img/Reamima_Solido_oscuro.jpeg" alt="" /></a>
     <div class="rm-nav__links">
       <a href="sobre.html"><span data-lang="es">Sobre</span><span data-lang="en">About</span></a>
-      <a href="origenes.html" style="color: var(--rm-navy);"><span data-lang="es">Orígenes</span><span data-lang="en">Origins</span></a>
+      <a href="origenes.html" aria-current="page" style="color: var(--rm-navy);"><span data-lang="es">Orígenes</span><span data-lang="en">Origins</span></a>
       <a href="contacta.html"><span data-lang="es">Contacta</span><span data-lang="en">Contact</span></a>
     </div>
     <div class="rm-lang">
@@ -98,6 +99,7 @@
     </button>
   </div>
 </nav>
+<main id="main-content">
 
 <!-- HERO -->
 <section class="or-hero">
@@ -421,11 +423,13 @@
 </section>
 
 <!-- FOOTER -->
+</main>
+
 <footer class="rm-foot">
   <div class="rm-container">
     <div class="rm-foot__grid">
       <div>
-        <a href="index.html" aria-label="REAMIMA · Inicio"><img class="rm-foot__logo" src="img/reamima-logo-blanco.png" alt="REAMIMA" /></a>
+        <a href="index.html" aria-label="REAMIMA · Inicio"><img class="rm-foot__logo" src="img/reamima-logo-blanco.png" alt="" /></a>
         <p class="rm-foot__brand">REAMIMA</p>
         <p style="margin-top: 12px; max-width: 36ch;">
           <span data-lang="es">Ingeniería, I+D+i. Pensamos lo que falta y lo construimos.</span>
@@ -484,6 +488,7 @@
       var open = links.classList.toggle('is-open');
       toggle.classList.toggle('is-open', open);
       toggle.setAttribute('aria-expanded', String(open));
+      if (open) { var fl = links.querySelector('a'); if (fl) fl.focus(); }
     });
     document.addEventListener('click', function(e) {
       if (!toggle.contains(e.target) && !links.contains(e.target)) {

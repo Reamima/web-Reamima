@@ -52,6 +52,16 @@
   --rm-ease:        cubic-bezier(.2,.7,.2,1);
 }
 
+/* Skip link (accesibilidad) */
+.rm-skip {
+  position: absolute; top: -100%; left: 0; z-index: 9999;
+  padding: .8em 1.6em;
+  background: var(--rm-navy); color: #fff;
+  font-weight: 500; font-size: var(--rm-fs-small);
+  text-decoration: none; transition: top .15s;
+}
+.rm-skip:focus { top: 0; }
+
 /* Reset suave */
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
