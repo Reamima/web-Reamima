@@ -6,6 +6,7 @@ CLAUDE.md
 *.backup
 navbar_template.txt
 ultimasOrdenes.md
+pendiente*
 
 # macOS
 .DS_Store
