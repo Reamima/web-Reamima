@@ -1,0 +1,34 @@
+# REAMIMA
+
+> Engineering and R&D company (Ingeniería, I+D+i) based in Spain. We design and build what conventional engineering considers out of reach: hardware, electronics, real-time control and high-performance software.
+
+REAMIMA TECH, S.L. works at the intersection of low-cost electronics, embedded processing and rigorous design. Core principle: on-device processing — no servers, no cloud, privacy as system architecture. Open hardware when it matters (OSHWA certified).
+
+Company: REAMIMA TECH, S.L. (Spanish limited liability company)
+General contact: info@reamima.com
+Web contact form: https://reamima.com/contacta.html
+
+## Company
+
+- [Home](https://reamima.com/): Overview of REAMIMA's mission, capabilities and projects.
+- [About REAMIMA](https://reamima.com/sobre.html): Engineering principles, team capabilities — hardware, real-time control, high-performance software, open hardware.
+- [Contact](https://reamima.com/contacta.html): Contact form and details.
+
+## Projects
+
+- [Cardistream](https://cardistream.com): Physical performance optimisation software. Long-term athlete tracking — day by day, month by month, year by year.
+- [Isostream](https://reamima.com/sobre.html): Hardware product with industrial-grade design and embedded electronics.
+
+## Origins — Emergency Ventilator (2020)
+
+During the first weeks of the COVID-19 lockdown, REAMIMA designed an open-hardware emergency ventilator using aquarium pumps, Arduino and off-the-shelf sensors — no compressed-air line required. OSHWA certified. Presented at the Arduino Global Conference 2020. Engineering without manufacturing or ordering parts: with what was on the shelf.
+
+- [Origins](https://reamima.com/origenes.html): The full project story, recognitions and the three ventilator models.
+- [Simple Model](https://reamima.com/origenes-simple.html): Base ventilator — aquarium pump, water columns, Arduino control.
+- [Advanced Model](https://reamima.com/origenes-avanzado.html): Pressure control, assisted expiration, inline sensors (Bosch BME family), clinical monitoring. Siemens Simatic S7-1500 H redundancy reference for critical environments.
+- [Air Treatment](https://reamima.com/origenes-tratamiento-aire.html): UV sterilisation, heating and humidity conditioning of the air supply.
+
+## Legal
+
+- [Legal notice](https://reamima.com/legal.html): Legal notice, privacy and cookies (LSSI-CE 34/2002, GDPR EU 2016/679, LOPD 3/2018).
+- [Accessibility](https://reamima.com/accesibilidad.html): Accessibility commitment (WCAG 2.1 AA) and barrier report form.
