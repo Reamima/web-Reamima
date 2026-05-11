@@ -188,10 +188,10 @@ a { color: inherit; text-decoration: none; }
 
 /* Cabecera y pie de marca */
 <<<<<<< HEAD
-.rm-nav { padding: 8px var(--rm-gutter); border-bottom: 1px solid var(--rm-line); background: var(--rm-paper); }
+.rm-nav { padding: 12px var(--rm-gutter); border-bottom: 1px solid var(--rm-line); background: var(--rm-paper); }
 .rm-nav__inner { display: flex; align-items: center; justify-content: space-between; }
 .rm-nav__brand { font-family: var(--rm-font-display); font-weight: 500; letter-spacing: 0.01em; color: var(--rm-navy); display: inline-flex; align-items: center; gap: 10px; }
-.rm-nav__brand img { display: block; height: 100px; width: auto; border-radius: 8px; }
+.rm-nav__brand img { display: block; height: 55px; width: auto; border-radius: 8px; }
 =======
 .rm-nav { padding: 22px 0; border-bottom: 1px solid var(--rm-line); background: var(--rm-paper); }
 .rm-nav__inner { display: flex; align-items: center; justify-content: space-between; }
