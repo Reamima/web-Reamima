@@ -189,8 +189,8 @@
       <span data-lang="en">The Advanced Model keeps the water column and the inverted bottle of the Simple Model — that idea remains the heart of the system — and adds what separates emergency equipment from clinically safe equipment: pressure control, in-line sensors, assisted expiration, redundant safety valves and real-time monitoring.</span>
     </p>
     <p>
-      <span data-lang="es">REAMIMA mantiene activa la línea de I+D del proyecto. Esta página recoge el alcance funcional previsto: cualquier persona u organización que quiera colaborar puede escribirnos. La documentación detallada — esquemas, código y fichas de validación — se publicará por bloques, igual que se hizo con el Modelo Simple.</span>
-      <span data-lang="en">REAMIMA keeps the project&rsquo;s R&amp;D line active. This page sets out the planned functional scope: anyone or any organisation interested in collaborating is welcome to get in touch. Detailed documentation — schematics, code and validation sheets — will be published in blocks, the same way the Simple Model was.</span>
+      <span data-lang="es">Construimos los prototipos necesarios para demostrar que funcionaba. Cuando la pandemia se estabilizó, no había razón para continuar — y eso es exactamente lo que queríamos: que no hiciera falta. Esta página documenta el diseño completo.</span>
+      <span data-lang="en">We built the prototypes needed to prove it worked. When the pandemic stabilised, there was no reason to continue — and that is exactly what we wanted: for it not to be needed. This page documents the complete design.</span>
     </p>
   </div>
 </section>
@@ -208,6 +208,10 @@
         <p>
           <span data-lang="es">Un sensor diferencial mide la presión de la línea inspiratoria en tiempo real. El controlador modula el caudal de la bomba mediante PWM para mantener la presión dentro de la ventana clínica fijada por el operador. Si se supera el umbral, la válvula de seguridad alivia inmediatamente.</span>
           <span data-lang="en">A differential sensor measures inspiratory line pressure in real time. The controller modulates pump flow via PWM to keep pressure within the clinical window set by the operator. If the threshold is exceeded, the safety valve relieves immediately.</span>
+        </p>
+        <p>
+          <span data-lang="es">Para la medición evaluamos la familia de sensores ambientales de Bosch Sensortec: <a href="https://www.bosch-sensortec.com/products/environmental-sensors/humidity-sensors-bme280/">BME280</a>, <a href="https://www.bosch-sensortec.com/products/environmental-sensors/gas-sensors/bme680/">BME680</a>, <a href="https://www.bosch-sensortec.com/products/environmental-sensors/gas-sensors/bme690/">BME690</a> y <a href="https://www.bosch-sensortec.com/products/environmental-sensors/gas-sensors/bme688/">BME688</a>. Combinan presión barométrica, temperatura y humedad en un encapsulado compacto, con precisión suficiente para ventilación de emergencia y disponibilidad razonable durante la crisis de suministro de 2020.</span>
+          <span data-lang="en">For measurement we evaluated Bosch Sensortec's environmental sensor family: <a href="https://www.bosch-sensortec.com/products/environmental-sensors/humidity-sensors-bme280/">BME280</a>, <a href="https://www.bosch-sensortec.com/products/environmental-sensors/gas-sensors/bme680/">BME680</a>, <a href="https://www.bosch-sensortec.com/products/environmental-sensors/gas-sensors/bme690/">BME690</a> and <a href="https://www.bosch-sensortec.com/products/environmental-sensors/gas-sensors/bme688/">BME688</a>. They combine barometric pressure, temperature and humidity in a compact package, with sufficient accuracy for emergency ventilation and reasonable availability during the 2020 supply crisis.</span>
         </p>
         <div class="feat-grid">
           <div class="feat rm-fade">
@@ -276,6 +280,10 @@
         <p>
           <span data-lang="es">Doble válvula de alivio, sensor de presión redundante, watchdog en el firmware, alimentación con SAI integrado y un modo manual independiente del controlador. Si el sistema digital falla, la columna de agua sigue funcionando: ese fue, desde el principio, uno de los principios de diseño.</span>
           <span data-lang="en">Dual relief valve, redundant pressure sensor, firmware watchdog, integrated UPS power and a manual mode independent of the controller. If the digital system fails, the water column keeps running: that was, from the beginning, one of the design principles.</span>
+        </p>
+        <p>
+          <span data-lang="es">Para entornos de mayor exigencia — unidades de cuidados intensivos con cero tolerancia a la interrupción —, el salto natural es la redundancia a nivel de controlador. El <a href="https://www.siemens.com/es-es/products/simatic/s7-1500-rh-cpus/">Siemens Simatic S7-1500 H</a> es la referencia industrial: dos CPUs sincronizadas en caliente que conmutan sin pérdida de estado si una falla. Una arquitectura pensada exactamente para esto.</span>
+          <span data-lang="en">For more demanding environments — intensive care units with zero tolerance for interruption — the natural step up is controller-level redundancy. The <a href="https://www.siemens.com/es-es/products/simatic/s7-1500-rh-cpus/">Siemens Simatic S7-1500 H</a> is the industrial reference: two hot-synchronised CPUs that switch without state loss if one fails. An architecture designed exactly for this.</span>
         </p>
       </div>
     </div>
