@@ -66,8 +66,8 @@ body {
 }
 img, svg, video { display: block; max-width: 100%; height: auto; }
 a { color: inherit; text-decoration: none; }
-p a { color: var(--rm-navy); border-bottom: 1px solid var(--rm-line); padding-bottom: 1px; transition: border-color .2s var(--rm-ease); }
-p a:hover { border-bottom-color: var(--rm-navy); }
+p a { color: var(--rm-navy); border-bottom: 2px solid #E8694A; padding-bottom: 1px; transition: border-color .2s var(--rm-ease); }
+p a:hover { border-bottom-color: #F08468; }
 
 /* Tipografía */
 .rm-display, h1.rm-display {
