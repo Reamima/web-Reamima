@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>REAMIMA · Ingeniería imposible por dentro, magia por fuera</title>
+<meta name="description" content="REAMIMA. Ingeniería, I+D+i, software de alto rendimiento. Resolvemos lo que la ingeniería convencional descartó como inviable." />
+<link rel="stylesheet" href="_design-system.css">
+<style>
+  /* Estilos específicos de la página Inicio */
+  .hero-inicio {
+    background: radial-gradient(ellipse at 10% 0%, #1A2E6B 0%, #0E2483 35%, #050B2C 100%);
+    color: #EAEBF0;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-inicio::after {
+    content: "";
+    position: absolute; inset: 0;
+    background-image: url('img/textura-puntitos.jpg');
+    background-size: cover; background-position: center;
+    opacity: .08; mix-blend-mode: screen;
+    pointer-events: none;
+  }
+  .hero-inicio .rm-eyebrow { color: #C0C5DC; }
+  .hero-inicio__display {
+    background: linear-gradient(180deg, #FFFFFF 0%, #C0C5DC 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .hero-inicio__lead { color: #C0C5DC; max-width: 56ch; }
+  .hero-inicio .rm-hero__split { position: relative; z-index: 1; }
+  .hero-inicio .rm-hero__media {
+    box-shadow: 0 30px 80px rgba(0,0,0,.45);
+    aspect-ratio: 16 / 9;
+  }
+  .hero-inicio .rm-hero__media img { object-fit: cover; object-position: right center; }
+
+  .pillars { display: grid; gap: 28px; grid-template-columns: 1fr; }
+  @media (min-width: 760px) { .pillars { grid-template-columns: repeat(3, 1fr); } }
+  .pillar { padding: 32px 0; border-top: 1px solid var(--rm-line); }
+  .pillar h3 { margin-bottom: .5em; }
+
+  .quiet-cta {
+    display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 24px;
+    padding: 28px 0;
+    border-top: 1px solid var(--rm-line);
+    border-bottom: 1px solid var(--rm-line);
+  }
+  .origins-callout {
+    background:
+      linear-gradient(135deg, rgba(5,11,44,.86) 0%, rgba(14,36,131,.78) 100%),
+      url('img/1_reamima_Concepto_2.png') center/cover no-repeat;
+    color: #fff;
+    border-radius: var(--rm-radius-lg);
+    padding: clamp(40px, 6vw, 88px);
+    overflow: hidden;
+    position: relative;
+  }
+  .origins-callout .rm-display { font-weight: 200; max-width: 18ch; }
+  .origins-callout .rm-eyebrow { color: var(--rm-blue-grey); }
+</style>
+</head>
+<body data-active-lang="es">
+
+<!-- ========================== NAV ========================== -->
+<nav class="rm-nav rm-nav--ink">
+  <div class="rm-container rm-nav__inner">
+    <a href="inicio.html" class="rm-nav__brand" aria-label="REAMIMA · Inicio">
+      <img class="rm-nav__logo--dark" src="img/reamima-logo.png" alt="REAMIMA" />
+      <img class="rm-nav__logo--light" src="img/reamima-logo-blanco.png" alt="REAMIMA" />
+    </a>
+    <div class="rm-nav__links">
+      <a href="sobre.html"><span data-lang="es">Sobre</span><span data-lang="en">About</span></a>
+      <a href="origenes.html"><span data-lang="es">Orígenes</span><span data-lang="en">Origins</span></a>
+      <a href="contacta.html"><span data-lang="es">Contacta</span><span data-lang="en">Contact</span></a>
+    </div>
+    <div class="rm-lang" role="tablist" aria-label="Idioma">
+      <button class="is-active" data-set-lang="es">ES</button>
+      <button data-set-lang="en">EN</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ========================== HERO (a dos columnas) ========================== -->
+<section class="rm-hero rm-hero--split hero-inicio">
+  <div class="rm-container">
+    <div class="rm-hero__split">
+      <div>
+        <p class="rm-eyebrow rm-reveal">REAMIMA</p>
+        <h1 class="rm-display hero-inicio__display rm-hero__title rm-reveal rm-reveal--d1">
+          <span data-lang="es">Ingeniería imposible por dentro,<br/>magia por fuera.</span>
+          <span data-lang="en">Impossible engineering inside,<br/>pure magic outside.</span>
+        </h1>
+        <p class="rm-lead hero-inicio__lead rm-reveal rm-reveal--d2">
+          <span data-lang="es">Otros ven lo que existe. Nosotros vemos lo que falta. Y lo diseñamos.</span>
+          <span data-lang="en">Others see what exists. We see what&rsquo;s missing. And then we design it.</span>
+        </p>
+      </div>
+      <figure class="rm-hero__media rm-reveal rm-reveal--d3" style="margin:0;">
+        <img src="img/descanso-ejercicio.png" alt="Descanso y ejercicio" loading="eager" style="object-fit:cover; object-position: center;" />
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ========================== MANIFIESTO ========================== -->
+<section class="rm-section rm-section--paper">
+  <div class="rm-container rm-narrow rm-stack-lg">
+    <p class="rm-eyebrow rm-fade">
+      <span data-lang="es">Manifiesto</span>
+      <span data-lang="en">Manifesto</span>
+    </p>
+    <p class="rm-quote rm-fade rm-fade--d1">
+      <span data-lang="es">REAMIMA es una ingeniería. No una app, no una plataforma. Una ingeniería de las que eligen lo difícil cuando lo fácil existe.</span>
+      <span data-lang="en">REAMIMA is an engineering company. Not an app, not a platform. The kind that chooses the hard way when the easy way exists.</span>
+    </p>
+    <p class="rm-lead rm-muted rm-fade rm-fade--d2">
+      <span data-lang="es">Nadie lo resuelve porque nadie cuestiona el estándar. Nosotros no nos conformamos con lo que hay — porque lo que hay no es el futuro.</span>
+      <span data-lang="en">Nobody solves it because nobody questions the standard. We don&rsquo;t settle for what exists — because what exists is not the future.</span>
+    </p>
+    <p class="rm-lead rm-muted rm-fade rm-fade--d3">
+      <span data-lang="es">Construimos lo que la ingeniería convencional descartó como inviable. Procesamiento real, en tu mano, sin servidores, sin nubes. Lo que parece imposible de ejecutar — simplemente funciona.</span>
+      <span data-lang="en">We build what conventional engineering discarded as unviable. Real processing, in your hand, no servers, no clouds. What seems impossible to run — simply works.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ========================== PILARES ========================== -->
+<section class="rm-section rm-section--stone rm-section--tight">
+  <div class="rm-container">
+    <p class="rm-eyebrow rm-fade" style="margin-bottom: 2.4rem;">
+      <span data-lang="es">Capacidades</span>
+      <span data-lang="en">Capabilities</span>
+    </p>
+    <div class="pillars">
+      <div class="pillar rm-fade rm-fade--d1">
+        <p class="rm-mono rm-muted" style="font-size: var(--rm-fs-micro); letter-spacing:.16em; text-transform:uppercase;">01</p>
+        <h3 class="rm-h3" style="margin-top: 12px;">
+          <span data-lang="es">Ingeniería e I+D+i</span>
+          <span data-lang="en">Engineering &amp; R&amp;D</span>
+        </h3>
+        <p class="rm-muted" style="margin-top: 8px;">
+          <span data-lang="es">Diseñamos sistemas que otros consideran fuera del alcance. Hardware, electrónica, control en tiempo real.</span>
+          <span data-lang="en">We design systems others consider out of reach. Hardware, electronics, real-time control.</span>
+        </p>
+      </div>
+      <div class="pillar rm-fade rm-fade--d2">
+        <p class="rm-mono rm-muted" style="font-size: var(--rm-fs-micro); letter-spacing:.16em; text-transform:uppercase;">02</p>
+        <h3 class="rm-h3" style="margin-top: 12px;">
+          <span data-lang="es">Software de alto rendimiento</span>
+          <span data-lang="en">High-performance software</span>
+        </h3>
+        <p class="rm-muted" style="margin-top: 8px;">
+          <span data-lang="es">Procesamiento en el dispositivo. Sin servidores, sin nubes, sin compromisos. La privacidad como arquitectura, no como cláusula.</span>
+          <span data-lang="en">On-device processing. No servers, no clouds, no compromises. Privacy as architecture, not as a clause.</span>
+        </p>
+      </div>
+      <div class="pillar rm-fade rm-fade--d3">
+        <p class="rm-mono rm-muted" style="font-size: var(--rm-fs-micro); letter-spacing:.16em; text-transform:uppercase;">03</p>
+        <h3 class="rm-h3" style="margin-top: 12px;">
+          <span data-lang="es">Diseño y experiencia</span>
+          <span data-lang="en">Design &amp; experience</span>
+        </h3>
+        <p class="rm-muted" style="margin-top: 8px;">
+          <span data-lang="es">La complejidad técnica vive dentro. Lo que el usuario ve es claro, sereno y útil. Magia, sin complicación.</span>
+          <span data-lang="en">Technical complexity lives inside. What the user sees is clear, calm and useful. Magic, without complication.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================== TILES (estilo Apple Education) ========================== -->
+<section class="rm-section rm-section--paper">
+  <div class="rm-container">
+    <p class="rm-eyebrow rm-fade" style="margin-bottom: clamp(28px,3vw,48px);">
+      <span data-lang="es">Proyectos</span>
+      <span data-lang="en">Projects</span>
+    </p>
+    <div class="rm-tile-grid rm-tile-grid--3">
+      <a class="rm-tile rm-fade rm-fade--d1" href="https://cardistream.com" target="_blank" rel="noopener">
+        <div class="rm-tile__media"><img src="img/2_cardistream-bici.jpg" alt="Cardistream — rendimiento físico" loading="lazy" /></div>
+        <div class="rm-tile__body">
+          <p class="rm-eyebrow">Cardistream</p>
+          <h3 class="rm-tile__title">
+            <span data-lang="es">Una trayectoria entera. Solo tuya.</span>
+            <span data-lang="en">An entire trajectory. Only yours.</span>
+          </h3>
+          <p class="rm-tile__excerpt">
+            <span data-lang="es">Software de optimización del rendimiento físico. Día a día, mes a mes, año a año.</span>
+            <span data-lang="en">Physical performance optimization software. Day after day, month after month, year after year.</span>
+          </p>
+          <span class="rm-tile__more">cardistream.com</span>
+        </div>
+      </a>
+      <a class="rm-tile rm-fade rm-fade--d2" href="sobre.html">
+        <div class="rm-tile__media"><img src="img/isostream-solido.png" alt="Isostream — render de producto" loading="lazy" style="object-fit:contain;background:#F2F2EE;padding:8%;" /></div>
+        <div class="rm-tile__body">
+          <p class="rm-eyebrow">Isostream</p>
+          <h3 class="rm-tile__title">
+            <span data-lang="es">Hardware con disciplina industrial.</span>
+            <span data-lang="en">Hardware with industrial discipline.</span>
+          </h3>
+          <p class="rm-tile__excerpt">
+            <span data-lang="es">Diseño de producto, electrónica integrada, fabricación con criterios de serie.</span>
+            <span data-lang="en">Product design, embedded electronics, production-grade manufacturing.</span>
+          </p>
+          <span class="rm-tile__more">
+            <span data-lang="es">Sobre REAMIMA</span><span data-lang="en">About REAMIMA</span>
+          </span>
+        </div>
+      </a>
+      <a class="rm-tile rm-tile--ink rm-fade rm-fade--d3" href="origenes.html">
+        <div class="rm-tile__media"><img src="img/1_reamima_Concepto_2.png" alt="Orígenes — respirador de emergencia COVID" loading="lazy" /></div>
+        <div class="rm-tile__body">
+          <p class="rm-eyebrow">OSHWA · Arduino · 2020</p>
+          <h3 class="rm-tile__title">
+            <span data-lang="es">Cuando el mundo se detuvo, nosotros no.</span>
+            <span data-lang="en">When the world stopped, we didn&rsquo;t.</span>
+          </h3>
+          <p class="rm-tile__excerpt">
+            <span data-lang="es">Respirador de emergencia con bombas de pecera, Arduino y sensores. Hardware abierto certificado.</span>
+            <span data-lang="en">Emergency ventilator with aquarium pumps, Arduino and sensors. Open hardware, certified.</span>
+          </p>
+          <span class="rm-tile__more">
+            <span data-lang="es">Leer la historia</span><span data-lang="en">Read the story</span>
+          </span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================== IMAGEN AMPLIA ========================== -->
+<section class="rm-section--tight" style="padding: clamp(32px,4vw,64px) 0;">
+  <div class="rm-container">
+    <figure class="rm-figure rm-fade" style="max-width: 450px; margin: 0 auto;">
+      <img src="img/2_Cinta_pos_derecha_gym.png" alt="REAMIMA — rendimiento físico" loading="lazy" style="max-width: 100%; height: auto;" />
+    </figure>
+  </div>
+</section>
+
+<!-- ========================== ORÍGENES (CALLOUT) ========================== -->
+<section class="rm-section rm-section--paper rm-section--tight">
+  <div class="rm-container">
+    <div class="origins-callout rm-fade">
+      <p class="rm-eyebrow" style="margin-bottom: 28px;">OSHWA · Arduino Global Conference · 2020</p>
+      <h2 class="rm-display">
+        <span data-lang="es">Cuando el mundo se detuvo,<br/>nosotros no.</span>
+        <span data-lang="en">When the world stopped,<br/>we didn&rsquo;t.</span>
+      </h2>
+      <p class="rm-lead" style="margin-top: 2rem; max-width: 60ch; color: #C0C5DC;">
+        <span data-lang="es">En las primeras semanas del confinamiento, REAMIMA diseñó un respirador de emergencia con bombas de pecera, Arduino y sensores. Hardware abierto, certificado por OSHWA, presentado en la conferencia global de Arduino.</span>
+        <span data-lang="en">In the first weeks of lockdown, REAMIMA designed an emergency ventilator with aquarium pumps, Arduino and sensors. Open hardware, OSHWA-certified, presented at the Arduino global conference.</span>
+      </p>
+      <p style="margin-top: 2.4rem;">
+        <a href="origenes.html" class="rm-btn rm-btn--ghost">
+          <span data-lang="es">Leer la historia completa</span>
+          <span data-lang="en">Read the full story</span>
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ========================== FOOTER ========================== -->
+<footer class="rm-foot">
+  <div class="rm-container">
+    <div class="rm-foot__grid">
+      <div>
+        <img class="rm-foot__logo" src="img/reamima-logo-blanco.png" alt="REAMIMA" />
+        <p class="rm-foot__brand">REAMIMA</p>
+        <p style="margin-top: 12px; max-width: 36ch;">
+          <span data-lang="es">Ingeniería, I+D+i. Pensamos lo que falta y lo construimos.</span>
+          <span data-lang="en">Engineering, R&amp;D. We design what&rsquo;s missing and build it.</span>
+        </p>
+      </div>
+      <div>
+        <p class="rm-eyebrow" style="margin-bottom: 14px;">
+          <span data-lang="es">Empresa</span><span data-lang="en">Company</span>
+        </p>
+        <p><a href="sobre.html"><span data-lang="es">Sobre REAMIMA</span><span data-lang="en">About</span></a></p>
+        <p><a href="origenes.html"><span data-lang="es">Orígenes</span><span data-lang="en">Origins</span></a></p>
+      </div>
+      <div>
+        <p class="rm-eyebrow" style="margin-bottom: 14px;">
+          <span data-lang="es">Contacto</span><span data-lang="en">Contact</span>
+        </p>
+        <p><a href="contacta.html">info@reamima.com</a></p>
+      </div>
+      <div>
+        <p class="rm-eyebrow" style="margin-bottom: 14px;">Legal</p>
+        <p><a href="legal.html"><span data-lang="es">Aviso legal</span><span data-lang="en">Legal notice</span></a></p>
+      </div>
+    </div>
+    <div class="rm-foot__legal">
+      <span>© 2026 Reamima Tech S.L.</span>
+      <span><span data-lang="es">Todos los derechos reservados.</span><span data-lang="en">All rights reserved.</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Conmutación bilingüe
+  (function(){
+    const buttons = document.querySelectorAll('[data-set-lang]');
+    buttons.forEach(b => b.addEventListener('click', () => {
+      const lang = b.getAttribute('data-set-lang');
+      document.body.setAttribute('data-active-lang', lang);
+      document.documentElement.setAttribute('lang', lang);
+      buttons.forEach(x => x.classList.toggle('is-active', x === b));
+    }));
+  })();
+
+  // Fade-up al hacer scroll (estilo Apple Education)
+  (function(){
+    const items = document.querySelectorAll('.rm-fade');
+    if (!('IntersectionObserver' in window) || !items.length) {
+      items.forEach(el => el.classList.add('is-visible'));
+      return;
+    }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.08 });
+    items.forEach(el => io.observe(el));
+  })();
+</script>
+
+</body>
+</html>
