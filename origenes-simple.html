@@ -39,3 +39,575 @@
 <nav class="rm-nav">
   <div class="rm-container rm-nav__inner">
     <a href="index.html" class="rm-nav__brand" aria-label="REAMIMA · Inicio"><img class="rm-nav__logo--dark" src="img/1_Reamima_transpa_Blanco.png" alt="REAMIMA" /><img class="rm-nav__logo--light" src="img/Reamima_Solido_oscuro.jpeg" alt="REAMIMA" /></a>
+    <div class="rm-nav__links">
+      <a href="sobre.html"><span data-lang="es">Sobre</span><span data-lang="en">About</span></a>
+      <a href="origenes.html" style="color: var(--rm-navy);"><span data-lang="es">Orígenes</span><span data-lang="en">Origins</span></a>
+      <a href="contacta.html"><span data-lang="es">Contacta</span><span data-lang="en">Contact</span></a>
+    </div>
+    <div class="rm-lang">
+      <button class="is-active" data-set-lang="es">ES</button>
+      <button data-set-lang="en">EN</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="rm-section rm-section--paper" style="padding-top: clamp(72px,8vw,120px); padding-bottom: clamp(40px,5vw,72px);">
+  <div class="rm-container">
+    <p class="crumb rm-fade"><a href="origenes.html"><span data-lang="es">Orígenes</span><span data-lang="en">Origins</span></a> · 02 · <span data-lang="es">Simple</span><span data-lang="en">Simple</span></p>
+    <h1 class="rm-display rm-fade" style="margin-top: 1.4rem; max-width: 16ch; color: var(--rm-navy);">
+      <span data-lang="es">Modelo Simple</span>
+      <span data-lang="en">Simple Model</span>
+    </h1>
+    <p class="rm-lead rm-muted rm-fade rm-fade--d1" style="margin-top: 1.8rem; max-width: 60ch;">
+      <span data-lang="es">Un recipiente grande que actúa como acumulador de agua y otro más pequeño llamado depósito de inspiración. La esencia del sistema, paso a paso, con cálculos.</span>
+      <span data-lang="en">A large container that acts as a water reservoir and a smaller one called the inspiration tank. The essence of the system, step by step, with calculations.</span>
+    </p>
+  </div>
+</section>
+
+<!-- DIAGRAMA MODELO SIMPLE -->
+<section class="rm-section--tight" style="padding: 0 0 clamp(40px,5vw,72px);">
+  <div class="rm-container">
+    <div class="rm-diagram rm-fade">
+      <svg viewBox="0 0 1280 1000" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title-simple">
+        <title id="title-simple">Esquema completo del Modelo Simple — botella a la izquierda, bombas a la derecha, tubos sin cruces</title>
+        <defs>
+          <pattern id="water2" x="0" y="0" width="14" height="14" patternUnits="userSpaceOnUse">
+            <path d="M0 7 Q3.5 3 7 7 T14 7" fill="none" stroke="#7C84B6" stroke-width=".9" opacity=".7"/>
+          </pattern>
+          <marker id="arrAir" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#0E2483"/>
+          </marker>
+          <marker id="arrFlowIn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#3F4FA8"/>
+          </marker>
+          <marker id="arrFlowOut" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#0E2483"/>
+          </marker>
+        </defs>
+
+        <!-- ============================================================== -->
+        <!-- DEPOSITO DE INSPIRACION (IZQUIERDA) - contiene la botella       -->
+        <!-- Caja: x=120-540, y=200-640 - Agua: y=440-640                    -->
+        <!-- ============================================================== -->
+        <g transform="translate(120,200)">
+          <!-- Paredes (caja abierta arriba en el centro) -->
+          <path d="M 0,0 L 0,440 L 420,440 L 420,0" fill="none" stroke="#0E2483" stroke-width="1.8"/>
+          <line x1="0" y1="0" x2="80" y2="0" stroke="#0E2483" stroke-width="1.8"/>
+          <line x1="340" y1="0" x2="420" y2="0" stroke="#0E2483" stroke-width="1.8"/>
+          <!-- Agua dentro del deposito -->
+          <rect x="2" y="240" width="416" height="198" fill="url(#water2)"/>
+          <line x1="2" y1="240" x2="418" y2="240" stroke="#7C84B6" stroke-width="1.2" stroke-dasharray="4 3"/>
+
+          <!-- BOTELLA INVERTIDA - solo paredes y aire (sin agua dentro) -->
+          <g transform="translate(170,-110)">
+            <!-- cuello (boca arriba) -->
+            <rect x="36" y="0" width="22" height="22" fill="#FAFBFE" stroke="#0E2483" stroke-width="1.6"/>
+            <line x1="36" y1="22" x2="14" y2="50" stroke="#0E2483" stroke-width="1.6"/>
+            <line x1="58" y1="22" x2="80" y2="50" stroke="#0E2483" stroke-width="1.6"/>
+            <!-- cuerpo (paredes laterales - ABIERTO POR ABAJO) -->
+            <line x1="14" y1="50" x2="14" y2="380" stroke="#0E2483" stroke-width="1.6"/>
+            <line x1="80" y1="50" x2="80" y2="380" stroke="#0E2483" stroke-width="1.6"/>
+            <line x1="14" y1="380" x2="80" y2="380" stroke="#0E2483" stroke-width="1.2" stroke-dasharray="3 4" opacity=".55"/>
+            <!-- AIRE dentro - todo el interior, sin agua superpuesta -->
+            <rect x="16" y="22" width="62" height="358" fill="#FAFBFE" opacity=".9"/>
+
+            <!-- Cotas 0, 1, 2 - etiquetas a la DERECHA, sin pisar la botella -->
+            <line x1="84" y1="380" x2="124" y2="380" stroke="#9C2B2B" stroke-width="2.4"/>
+            <text x="132" y="384" font-family="IBM Plex Mono, monospace" font-size="14" fill="#9C2B2B">cota 0</text>
+            <line x1="84" y1="270" x2="124" y2="270" stroke="#9C2B2B" stroke-width="2.4"/>
+            <text x="132" y="274" font-family="IBM Plex Mono, monospace" font-size="14" fill="#9C2B2B">cota 1</text>
+            <line x1="84" y1="170" x2="124" y2="170" stroke="#9C2B2B" stroke-width="2.4"/>
+            <text x="132" y="174" font-family="IBM Plex Mono, monospace" font-size="14" fill="#9C2B2B">cota 2</text>
+
+            <!-- Flecha de SALIDA del aire (boca - exterior) -->
+            <line x1="47" y1="0" x2="47" y2="-58" stroke="#0E2483" stroke-width="2.2" marker-end="url(#arrAir)"/>
+            <text data-lang="es" x="47" y="-72" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#0E2483" text-anchor="middle">salida aire al respirador</text>
+            <text data-lang="en" x="47" y="-72" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#0E2483" text-anchor="middle">air outlet to ventilator</text>
+          </g>
+
+          <!-- Etiqueta del deposito - debajo de la caja -->
+          <text data-lang="es" x="210" y="478" font-family="Inter, sans-serif" font-size="16" font-weight="500" fill="#0E2483" text-anchor="middle">Depósito de inspiración</text>
+          <text data-lang="en" x="210" y="478" font-family="Inter, sans-serif" font-size="16" font-weight="500" fill="#0E2483" text-anchor="middle">Inspiration tank</text>
+        </g>
+
+        <!-- ============================================================== -->
+        <!-- DEPOSITO DE AGUA DEL SISTEMA (DERECHA) - dos bombas sumergidas  -->
+        <!-- Caja: x=720-1200, y=200-640 - Agua: y=300-640                   -->
+        <!-- ============================================================== -->
+        <g transform="translate(720,200)">
+          <!-- Paredes (caja abierta arriba) -->
+          <path d="M 0,0 L 0,440 L 480,440 L 480,0" fill="none" stroke="#0E2483" stroke-width="1.8"/>
+          <line x1="0" y1="0" x2="80" y2="0" stroke="#0E2483" stroke-width="1.8"/>
+          <line x1="400" y1="0" x2="480" y2="0" stroke="#0E2483" stroke-width="1.8"/>
+          <!-- Agua casi llena -->
+          <rect x="2" y="100" width="476" height="338" fill="url(#water2)"/>
+          <line x1="2" y1="100" x2="478" y2="100" stroke="#7C84B6" stroke-width="1.2" stroke-dasharray="4 3"/>
+
+          <!-- BOMBA P2 - INSPIRACION - sumergida, lado izquierdo (centro x=810) -->
+          <g transform="translate(50,360)">
+            <rect width="80" height="50" rx="6" fill="#FAFBFE" stroke="#0E2483" stroke-width="1.6"/>
+            <circle cx="40" cy="25" r="13" fill="none" stroke="#3F4FA8" stroke-width="1.4"/>
+            <circle cx="40" cy="25" r="4" fill="#3F4FA8"/>
+            <text x="40" y="30" font-family="IBM Plex Mono, monospace" font-size="13" fill="#0E2483" text-anchor="middle" font-weight="700">P2</text>
+          </g>
+
+          <!-- BOMBA P1 - EXPIRACION - sumergida, lado derecho (centro x=1090) -->
+          <g transform="translate(330,360)">
+            <rect width="80" height="50" rx="6" fill="#FAFBFE" stroke="#0E2483" stroke-width="1.6"/>
+            <circle cx="40" cy="25" r="13" fill="none" stroke="#3F4FA8" stroke-width="1.4"/>
+            <circle cx="40" cy="25" r="4" fill="#3F4FA8"/>
+            <text x="40" y="30" font-family="IBM Plex Mono, monospace" font-size="13" fill="#0E2483" text-anchor="middle" font-weight="700">P1</text>
+          </g>
+
+          <!-- Etiqueta del deposito - ARRIBA del tanque, dentro del hueco entre tubo alto y tapa -->
+          <text data-lang="es" x="240" y="-22" font-family="Inter, sans-serif" font-size="16" font-weight="500" fill="#0E2483" text-anchor="middle">Depósito de agua del sistema</text>
+          <text data-lang="en" x="240" y="-22" font-family="Inter, sans-serif" font-size="16" font-weight="500" fill="#0E2483" text-anchor="middle">System water tank</text>
+        </g>
+
+        <!-- ============================================================== -->
+        <!-- TUBO ALTO - INSPIRACION (P2 -> deposito de inspiracion)         -->
+        <!-- Sube de P2 (x=810,y=560) -> y=140 -> izq a x=420 -> baja y=380 -->
+        <!-- No cruza la botella (bottella termina en x=370)                -->
+        <!-- ============================================================== -->
+        <path d="M 810,560 L 810,140 L 420,140 L 420,380" fill="none" stroke="#3F4FA8" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrFlowIn)"/>
+        <text data-lang="es" x="615" y="128" font-family="IBM Plex Mono, monospace" font-size="13" fill="#3F4FA8" text-anchor="middle">flujo inspiración · P2 → depósito de inspiración</text>
+        <text data-lang="en" x="615" y="128" font-family="IBM Plex Mono, monospace" font-size="13" fill="#3F4FA8" text-anchor="middle">inspiration flow · P2 → inspiration tank</text>
+
+        <!-- ============================================================== -->
+        <!-- TUBO BAJO - EXPIRACION (deposito inspiracion -> deposito sist.) -->
+        <!-- Sale del fondo izq (540,620) -> baja a 720 -> entra dep der    -->
+        <!-- por la pared izq a (720,620). No interfiere con cables.         -->
+        <!-- ============================================================== -->
+        <path d="M 540,620 L 580,620 L 580,720 L 720,720 L 720,620" fill="none" stroke="#0E2483" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrFlowOut)"/>
+        <text data-lang="es" x="650" y="708" font-family="IBM Plex Mono, monospace" font-size="13" fill="#0E2483" text-anchor="middle">flujo expiración · depósito de inspiración → depósito del sistema</text>
+        <text data-lang="en" x="650" y="708" font-family="IBM Plex Mono, monospace" font-size="13" fill="#0E2483" text-anchor="middle">expiration flow · inspiration tank → system water tank</text>
+
+        <!-- ============================================================== -->
+        <!-- ETIQUETAS DE LAS BOMBAS - externas, debajo del deposito derecho -->
+        <!-- ============================================================== -->
+        <line x1="810" y1="610" x2="810" y2="668" stroke="#7C84B6" stroke-width="1" stroke-dasharray="3 3"/>
+        <text data-lang="es" x="810" y="684" font-family="Inter, sans-serif" font-size="13" fill="#0E2483" text-anchor="middle" font-weight="600">Bomba 2 · inspiración</text>
+        <text data-lang="en" x="810" y="684" font-family="Inter, sans-serif" font-size="13" fill="#0E2483" text-anchor="middle" font-weight="600">Pump 2 · inspiration</text>
+        <text data-lang="es" x="810" y="700" font-family="IBM Plex Mono, monospace" font-size="11" fill="#0E2483" text-anchor="middle">rellena el depósito de inspiración</text>
+        <text data-lang="en" x="810" y="700" font-family="IBM Plex Mono, monospace" font-size="11" fill="#0E2483" text-anchor="middle">fills the inspiration tank</text>
+
+        <line x1="1090" y1="610" x2="1090" y2="668" stroke="#7C84B6" stroke-width="1" stroke-dasharray="3 3"/>
+        <text data-lang="es" x="1090" y="684" font-family="Inter, sans-serif" font-size="13" fill="#0E2483" text-anchor="middle" font-weight="600">Bomba 1 · expiración</text>
+        <text data-lang="en" x="1090" y="684" font-family="Inter, sans-serif" font-size="13" fill="#0E2483" text-anchor="middle" font-weight="600">Pump 1 · expiration</text>
+        <text data-lang="es" x="1090" y="700" font-family="IBM Plex Mono, monospace" font-size="11" fill="#0E2483" text-anchor="middle">drena el depósito de inspiración</text>
+        <text data-lang="en" x="1090" y="700" font-family="IBM Plex Mono, monospace" font-size="11" fill="#0E2483" text-anchor="middle">drains the inspiration tank</text>
+
+        <!-- ============================================================== -->
+        <!-- CABLES R2 -> P2 / R1 -> P1 (verticales, sin cruzar el tubo bajo) -->
+        <!-- ============================================================== -->
+        <line x1="810" y1="640" x2="810" y2="800" stroke="#9C2B2B" stroke-width="1.6" stroke-dasharray="6 4"/>
+        <line x1="1090" y1="640" x2="1090" y2="800" stroke="#9C2B2B" stroke-width="1.6" stroke-dasharray="6 4"/>
+        <text data-lang="es" x="822" y="754" font-family="IBM Plex Mono, monospace" font-size="11" fill="#9C2B2B">R2 → P2</text>
+        <text data-lang="en" x="822" y="754" font-family="IBM Plex Mono, monospace" font-size="11" fill="#9C2B2B">R2 → P2</text>
+        <text data-lang="es" x="1102" y="754" font-family="IBM Plex Mono, monospace" font-size="11" fill="#9C2B2B">R1 → P1</text>
+        <text data-lang="en" x="1102" y="754" font-family="IBM Plex Mono, monospace" font-size="11" fill="#9C2B2B">R1 → P1</text>
+
+        <!-- ============================================================== -->
+        <!-- PANEL DE CONTROL - 220 V + Mandos + Reles                      -->
+        <!-- R2 alineado bajo P2 (x=810), R1 alineado bajo P1 (x=1090)     -->
+        <!-- ============================================================== -->
+        <g transform="translate(0,800)">
+          <rect x="120" y="0" width="1080" height="160" rx="8" fill="#FAFBFE" stroke="#0E2483" stroke-width="1.6"/>
+          <text data-lang="es" x="140" y="-10" font-family="IBM Plex Mono, monospace" font-size="12" fill="#0E2483" letter-spacing="1.6">PANEL DE CONTROL · 4 SOLID STATE RELAY</text>
+          <text data-lang="en" x="140" y="-10" font-family="IBM Plex Mono, monospace" font-size="12" fill="#0E2483" letter-spacing="1.6">CONTROL PANEL · 4 SOLID STATE RELAY</text>
+
+          <!-- Enchufe 220V (extremo izquierdo del panel) -->
+          <g transform="translate(160,30)">
+            <rect width="120" height="100" rx="6" fill="#fff" stroke="#0E2483" stroke-width="1.6"/>
+            <circle cx="60" cy="48" r="22" fill="none" stroke="#0E2483" stroke-width="1.4"/>
+            <circle cx="50" cy="44" r="3" fill="#0E2483"/>
+            <circle cx="70" cy="44" r="3" fill="#0E2483"/>
+            <text data-lang="es" x="60" y="92" font-family="IBM Plex Mono, monospace" font-size="13" fill="#0E2483" text-anchor="middle">Enchufe 220 V</text>
+            <text data-lang="en" x="60" y="92" font-family="IBM Plex Mono, monospace" font-size="13" fill="#0E2483" text-anchor="middle">220 V plug</text>
+          </g>
+
+          <!-- Mando 2 (bornes externos, izquierda de R2) -->
+          <g transform="translate(640,30)">
+            <text data-lang="es" x="0" y="42" font-family="IBM Plex Mono, monospace" font-size="13" fill="#9C2B2B">Mando 2+</text>
+            <text data-lang="en" x="0" y="42" font-family="IBM Plex Mono, monospace" font-size="13" fill="#9C2B2B">Cmd 2+</text>
+            <line x1="80" y1="38" x2="110" y2="38" stroke="#9C2B2B" stroke-width="1.6"/>
+            <text data-lang="es" x="0" y="82" font-family="IBM Plex Mono, monospace" font-size="13" fill="#9C2B2B">Mando 2−</text>
+            <text data-lang="en" x="0" y="82" font-family="IBM Plex Mono, monospace" font-size="13" fill="#9C2B2B">Cmd 2−</text>
+            <line x1="80" y1="78" x2="110" y2="78" stroke="#9C2B2B" stroke-width="1.6"/>
+          </g>
+
+          <!-- Rele R2 (alineado bajo P2: centro panel-x=810) -->
+          <g transform="translate(750,30)">
+            <rect width="120" height="100" rx="6" fill="#fff" stroke="#0E2483" stroke-width="1.6"/>
+            <text x="60" y="58" font-family="IBM Plex Mono, monospace" font-size="22" fill="#0E2483" text-anchor="middle" font-weight="600">R2</text>
+            <text x="60" y="80" font-family="IBM Plex Mono, monospace" font-size="11" fill="#0E2483" text-anchor="middle">Solid State Relay</text>
+          </g>
+
+          <!-- Mando 1 (bornes externos, izquierda de R1) -->
+          <g transform="translate(920,30)">
+            <text data-lang="es" x="0" y="42" font-family="IBM Plex Mono, monospace" font-size="13" fill="#9C2B2B">Mando 1+</text>
+            <text data-lang="en" x="0" y="42" font-family="IBM Plex Mono, monospace" font-size="13" fill="#9C2B2B">Cmd 1+</text>
+            <line x1="80" y1="38" x2="110" y2="38" stroke="#9C2B2B" stroke-width="1.6"/>
+            <text data-lang="es" x="0" y="82" font-family="IBM Plex Mono, monospace" font-size="13" fill="#9C2B2B">Mando 1−</text>
+            <text data-lang="en" x="0" y="82" font-family="IBM Plex Mono, monospace" font-size="13" fill="#9C2B2B">Cmd 1−</text>
+            <line x1="80" y1="78" x2="110" y2="78" stroke="#9C2B2B" stroke-width="1.6"/>
+          </g>
+
+          <!-- Rele R1 (alineado bajo P1: centro panel-x=1090) -->
+          <g transform="translate(1030,30)">
+            <rect width="120" height="100" rx="6" fill="#fff" stroke="#0E2483" stroke-width="1.6"/>
+            <text x="60" y="58" font-family="IBM Plex Mono, monospace" font-size="22" fill="#0E2483" text-anchor="middle" font-weight="600">R1</text>
+            <text x="60" y="80" font-family="IBM Plex Mono, monospace" font-size="11" fill="#0E2483" text-anchor="middle">Solid State Relay</text>
+          </g>
+
+          <!-- BUS 220V - debajo de los reles, dentro del panel -->
+          <line x1="220" y1="142" x2="1150" y2="142" stroke="#0E2483" stroke-width="2"/>
+          <line x1="220" y1="130" x2="220" y2="142" stroke="#0E2483" stroke-width="2"/>
+          <line x1="810" y1="130" x2="810" y2="142" stroke="#0E2483" stroke-width="2"/>
+          <line x1="1090" y1="130" x2="1090" y2="142" stroke="#0E2483" stroke-width="2"/>
+          <text data-lang="es" x="660" y="156" font-family="IBM Plex Mono, monospace" font-size="11" fill="#0E2483" text-anchor="middle">bus 220 V (alimentación común)</text>
+          <text data-lang="en" x="660" y="156" font-family="IBM Plex Mono, monospace" font-size="11" fill="#0E2483" text-anchor="middle">220 V bus (shared supply)</text>
+
+          <!-- Salidas verticales de los reles (a las bombas) -->
+          <line x1="810" y1="30" x2="810" y2="0" stroke="#9C2B2B" stroke-width="1.6" stroke-dasharray="6 4"/>
+          <line x1="1090" y1="30" x2="1090" y2="0" stroke="#9C2B2B" stroke-width="1.6" stroke-dasharray="6 4"/>
+        </g>
+
+        <!-- Pie de figura -->
+        <text data-lang="es" x="640" y="985" font-family="IBM Plex Mono, monospace" font-size="13" fill="#0E2483" text-anchor="middle" letter-spacing="1.4">FIG. 02 · MODELO SIMPLE · BOTELLA A LA IZQUIERDA · DOS BOMBAS SUMERGIDAS A LA DERECHA</text>
+        <text data-lang="en" x="640" y="985" font-family="IBM Plex Mono, monospace" font-size="13" fill="#0E2483" text-anchor="middle" letter-spacing="1.4">FIG. 02 · SIMPLE MODEL · BOTTLE ON THE LEFT · TWO SUBMERGED PUMPS ON THE RIGHT</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- COMPONENTES REALES · MODELO SIMPLE -->
+<section class="rm-section rm-section--stone">
+  <div class="rm-container">
+    <p class="rm-eyebrow rm-fade" style="margin-bottom: 1.6rem;">
+      <span data-lang="es">Componentes principales</span><span data-lang="en">Main components</span>
+    </p>
+    <h2 class="rm-h2 rm-fade rm-fade--d1" style="font-weight: 300; color: var(--rm-navy); max-width: 24ch; margin-bottom: 2.4rem;">
+      <span data-lang="es">Bombas, relés y temporizador. Nada más.</span>
+      <span data-lang="en">Pumps, relays and a timer. Nothing else.</span>
+    </h2>
+    <div class="rm-tile-grid rm-tile-grid--3">
+      <article class="rm-tile rm-fade">
+        <div class="rm-tile__media" style="background:#FAFBFE;"><img src="img/old-bomba-waldbeck.jpg" alt="Bomba de agua sumergible" loading="lazy" style="object-fit:contain;padding:8%;"/></div>
+        <div class="rm-tile__body">
+          <p class="rm-tile__title"><span data-lang="es">Bomba de agua sumergible</span><span data-lang="en">Submersible water pump</span></p>
+          <p class="rm-tile__excerpt"><span data-lang="es">Dos unidades. Una mueve agua hacia el depósito de inspiración; la otra la devuelve.</span><span data-lang="en">Two units. One moves water to the inspiration tank; the other returns it.</span></p>
+        </div>
+      </article>
+      <article class="rm-tile rm-fade rm-fade--d1">
+        <div class="rm-tile__media" style="background:#FAFBFE;"><img src="img/old-reles-omron.jpg" alt="Relés Omron de potencia" loading="lazy" style="object-fit:contain;padding:8%;"/></div>
+        <div class="rm-tile__body">
+          <p class="rm-tile__title"><span data-lang="es">Relés de potencia</span><span data-lang="en">Power relays</span></p>
+          <p class="rm-tile__excerpt"><span data-lang="es">Conmutan los 220 V de cada bomba según las órdenes del temporizador.</span><span data-lang="en">Switch each pump&rsquo;s 220 V supply based on timer commands.</span></p>
+        </div>
+      </article>
+      <article class="rm-tile rm-fade rm-fade--d2">
+        <div class="rm-tile__media" style="background:#FAFBFE;"><img src="img/old-calentador.png" alt="Calentador de acuario" loading="lazy" style="object-fit:contain;padding:8%;"/></div>
+        <div class="rm-tile__body">
+          <p class="rm-tile__title"><span data-lang="es">Calentador de acuario</span><span data-lang="en">Aquarium heater</span></p>
+          <p class="rm-tile__excerpt"><span data-lang="es">El mismo del subsistema de aire: mantiene el agua a temperatura.</span><span data-lang="en">Same as in the air subsystem: keeps the water at temperature.</span></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- INTRO -->
+<section class="rm-section rm-section--paper">
+  <div class="rm-container rm-narrow rm-stack-lg">
+    <p class="rm-lead">
+      <span data-lang="es">El modelo más simple que se puede usar para hacer un respirador es un recipiente grande que actúa como acumulador o depósito de agua, y uno más pequeño que llamamos depósito de inspiración. A la salida del bote que comprime el aire (en el vídeo, donde está montado el guante) se conecta el tubo del respirador a la mascarilla, que ha de tener una válvula para que la expiración salga de forma natural.</span>
+      <span data-lang="en">The simplest model to build a ventilator is a large container that acts as a water reservoir and a smaller one we call the inspiration tank. At the output of the bottle that compresses the air (in the video, where the glove is mounted), the ventilator tube connects to a mask with a valve, so that exhalation occurs naturally.</span>
+    </p>
+    <p>
+      <span data-lang="es">En el vídeo se ven los materiales utilizados: una botella de leche vacía como depósito de inspiración, una botella de gel vacía como recipiente de inspiración y una caja de plástico transparente como depósito de agua del sistema. Dentro de la botella de leche tenemos una bomba de agua de acuario; dentro del depósito de agua del sistema, otra bomba. Las dos bombas están conectadas a dos relés controlados por un temporizador.</span>
+      <span data-lang="en">In the video, the materials used are visible: an empty milk bottle as inspiration tank, an empty soap bottle as inspiration container, and a transparent plastic box as system water tank. Inside the milk bottle there is an aquarium water pump; inside the system water tank, another pump. Both pumps are connected to two relays controlled by a timer.</span>
+    </p>
+
+    <div class="video-frame rm-fade">
+      <iframe src="https://www.youtube.com/embed/ch7qb6_tSzE" title="Modelo Simple — REAMIMA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- DOCUMENTACIÓN POR PARTES -->
+<section class="rm-section rm-section--paper" style="padding-top: 0;">
+  <div class="rm-container rm-narrow">
+
+    <div class="num-section rm-fade">
+      <div><p class="num-section__num">01 · Botella</p></div>
+      <div class="num-section__body">
+        <h2 class="num-section__title">
+          <span data-lang="es">La botella que comprime el aire</span>
+          <span data-lang="en">The air-compressing bottle</span>
+        </h2>
+        <p>
+          <span data-lang="es">Volumen superior a 700–1.000 ml; 1.200 ml es lo recomendable. Puede ser una botella, un tubo de metacrilato, PVC, metal — rígido, fácil de conseguir y con una boca arriba para conectar el tubo del respirador.</span>
+          <span data-lang="en">Volume above 700–1,000 ml; 1,200 ml is recommended. It can be a bottle, a tube of methacrylate, PVC or metal — rigid, easy to obtain and with a mouth on top to connect the ventilator tube.</span>
+        </p>
+        <p>
+          <span data-lang="es">La botella invertida debe estar muy bien sujeta al depósito, sin moverse, y no perder aire al atornillarla a la pared del depósito de inspiración. Si la atraviesas para fijarla, sella con un material inerte (silicona) o con celo transparente no poroso. La presión no es muy alta y el celo aguanta.</span>
+          <span data-lang="en">The inverted bottle must be firmly attached to the tank, not moving, and must not leak air when screwed to the wall of the inspiration tank. If you pierce it for fixing, seal with an inert material (silicone) or with non-porous clear tape. The pressure is not high and tape holds.</span>
+        </p>
+        <p>
+          <span data-lang="es">Posición: en el recipiente de inspiración, con la bomba en la parte inferior, deben quedar dos o tres dedos de agua sobre la bomba y un par hasta la base de la botella. Ese espacio se llena de aire al expirar y se cubre con la inspiración.</span>
+          <span data-lang="en">Position: in the inspiration vessel, with the pump at the bottom, leave two or three fingers of water above the pump and a couple up to the base of the bottle. That space fills with air during expiration and is covered during inspiration.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="num-section rm-fade rm-fade--d1">
+      <div><p class="num-section__num">02 · Cotas</p></div>
+      <div class="num-section__body">
+        <h2 class="num-section__title">
+          <span data-lang="es">Marcas 0, 1 y 2</span>
+          <span data-lang="en">Levels 0, 1 and 2</span>
+        </h2>
+        <p>
+          <span data-lang="es"><strong>Cota 0</strong> — nivel mínimo de agua del depósito (puedes marcarlo).<br/>
+          <strong>Cota 1</strong> — el agua empieza a cubrir la base de la botella que comprime el aire. A partir de aquí, el volumen de aire empieza a salir por el tubo.<br/>
+          <strong>Cota 2</strong> — marca dentro de la botella, aproximadamente a 500 ml de la base. Es el nivel al que debe subir el agua dentro de la botella para garantizar que se envían 500 ml de aire al exterior.</span>
+          <span data-lang="en"><strong>Level 0</strong> — minimum water level of the tank (you can mark it).<br/>
+          <strong>Level 1</strong> — water starts to cover the base of the air-compressing bottle. From here on, the air volume starts to flow through the tube.<br/>
+          <strong>Level 2</strong> — mark inside the bottle, roughly 500 ml from its base. This is the level the water must reach inside the bottle to guarantee that 500 ml of air is delivered to the outside.</span>
+        </p>
+        <p>
+          <span data-lang="es">En el ejemplo del vídeo, con una botella de unos 800 ml, se le quitó la base, se puso boca abajo con el tapón, se llenó de agua y se fue trasvasando a un recipiente marcado en 500 ml. Puedes añadir más graduaciones (600 ml, 400 ml, etc.) por si es necesario insuflar más o menos aire.</span>
+          <span data-lang="en">In the video example, with a 800 ml bottle, the base was removed, the bottle placed upside down with the cap on, filled with water and decanted into a 500-ml-marked container. You can add more graduations (600 ml, 400 ml, etc.) in case more or less air needs to be insufflated.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="num-section rm-fade rm-fade--d2">
+      <div><p class="num-section__num">03 · Bombas</p></div>
+      <div class="num-section__body">
+        <h2 class="num-section__title">
+          <span data-lang="es">Cálculo del caudal</span>
+          <span data-lang="en">Flow calculation</span>
+        </h2>
+        <p>
+          <span data-lang="es">Las dos bombas son bombas de agua de pecera. El caudal debe bastar para llenar 1 litro dentro de la botella de compresión, y depende del volumen del depósito de inspiración.</span>
+          <span data-lang="en">Both pumps are aquarium water pumps. The flow must be enough to fill 1 litre inside the compression bottle, and it depends on the inspiration tank volume.</span>
+        </p>
+        <p>
+          <span data-lang="es">Mide o calcula la altura entre la cota 0 y la cota 2 dentro de la botella de inspiración. Multiplicada por el área del depósito de inspiración, obtienes los cm³ que la bomba debe mover.</span>
+          <span data-lang="en">Measure or calculate the height between level 0 and level 2 inside the inspiration bottle. Multiplied by the area of the inspiration tank, you get the cm³ the pump must move.</span>
+        </p>
+        <div class="formula">
+          <span data-lang="es">Si la altura entre cotas es 20 cm y el depósito es cuadrado de 15 cm de lado:<br/>
+          15 × 15 × 20 = 4.500 cm³  =  4,5 dm³  =  4,5 L</span>
+          <span data-lang="en">If the height between levels is 20 cm and the tank is square 15 cm wide:<br/>
+          15 × 15 × 20 = 4,500 cm³  =  4.5 dm³  =  4.5 L</span>
+        </div>
+        <p>
+          <span data-lang="es">Los respiradores trabajan entre 10 y 30 respiraciones por minuto. Hay que llenar esos 4,5 L 30 veces en un minuto. Como en cada ciclo se inspira y se expira, la frecuencia se duplica: 30 × 2 = 60.</span>
+          <span data-lang="en">Ventilators work between 10 and 30 breaths per minute. We must fill those 4.5 L 30 times per minute. Since each cycle inhales and exhales, the rate doubles: 30 × 2 = 60.</span>
+        </p>
+        <div class="formula">
+          4,5 × 60 / 60 = 4,5 L/s  →  4,5 × 3.600 = 16.200 L/h
+        </div>
+        <p>
+          <span data-lang="es">Una bomba de este caudal es cara y poco común; conviene buscar la de mayor caudal disponible (casi todas tienen regulador para bajarlo). Una opción real es la <em>Waldbeck Nemesis T90</em>: 90 W, hasta 4 m de altura, IPX8, 6.200 L/h.</span>
+          <span data-lang="en">A single pump for this flow is expensive and uncommon; look for the highest available flow (most have a regulator to lower it). A real option is the <em>Waldbeck Nemesis T90</em>: 90 W, up to 4 m head, IPX8, 6,200 L/h.</span>
+        </p>
+        <div class="formula">
+          6.200 / 60 = 103,3 L/min  →  103,3 / 4,5 = 22 ciclos/min
+        </div>
+        <p>
+          <span data-lang="es">Con esa bomba se pueden alcanzar 10–12 respiraciones por minuto cómodamente, o emplear varias bombas para subir la frecuencia. Hay que comprobar siempre que la bomba elegida cabe físicamente en el depósito de inspiración.</span>
+          <span data-lang="en">With that pump 10–12 breaths per minute are reached comfortably, or several pumps can be used to raise frequency. Always check that the chosen pump physically fits inside the inspiration tank.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="num-section rm-fade rm-fade--d3">
+      <div><p class="num-section__num">04 · Relés</p></div>
+      <div class="num-section__body">
+        <h2 class="num-section__title">
+          <span data-lang="es">Conmutación segura</span>
+          <span data-lang="en">Safe switching</span>
+        </h2>
+        <p>
+          <span data-lang="es">Las bombas de este caso funcionan a 220 V. De los dos hilos del enchufe, uno va al relé y el otro a uno de los polos. El otro borne del relé (parte de corriente alterna) se conecta al otro polo, cerrando el circuito. Atención: corriente alterna — manejar con precaución.</span>
+          <span data-lang="en">In this case the pumps run at 220 V. Of the two plug wires, one goes to the relay and the other to one of the poles. The other relay terminal (AC side) connects to the other pole, closing the circuit. Caution: this is AC — handle with care.</span>
+        </p>
+        <p>
+          <span data-lang="es">Para soportar cortes y encendidos frecuentes con durabilidad, se recomienda un relé de estado sólido — por ejemplo, módulos DC-AC 5 V/2 A de 4 canales con fusible. Aguantan sin problema una carga de 440 W por bomba.</span>
+          <span data-lang="en">To withstand frequent on/off cycles, a solid-state relay is recommended — for instance, DC-AC 5 V/2 A 4-channel modules with fuse. They handle a 440 W load per pump without issue.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="num-section rm-fade rm-fade--d3">
+      <div><p class="num-section__num">05 · Control</p></div>
+      <div class="num-section__body">
+        <h2 class="num-section__title">
+          <span data-lang="es">Lo que tengas a mano</span>
+          <span data-lang="en">Whatever you have at hand</span>
+        </h2>
+        <p>
+          <span data-lang="es">Puedes usar el dispositivo que prefieras: si eres maker, una placa Arduino, un ESP32 o un M5Stack; si conoces PLCs, un Simatic, un Logo, un IOT2020; si programas y te gusta la Raspberry, también vale. Lo que importa es que el operador del respirador hablará en términos clínicos, ajenos a tu programación: piensa una interfaz humano-máquina que permita ajustar fácilmente el tiempo de respiración y/o el volumen de aire.</span>
+          <span data-lang="en">Use the device you prefer: a maker can use Arduino, ESP32, M5Stack; with PLC experience, a Simatic, Logo or IOT2020; if you program and you like Raspberry, that works too. What matters is that the operator of the ventilator will speak in clinical terms, foreign to your programming: design a human-machine interface that lets them easily set breath time and/or air volume.</span>
+        </p>
+        <p>
+          <span data-lang="es">Una nota personal: pido disculpas a David Cuartielles y Massimo Banzi por usar en el vídeo un M5Stack en lugar de un Portenta H7 u otra placa Arduino original. Lo necesitaba rápido, con pantalla, y conocía bien sus dos núcleos para programación simultánea. Sin su trabajo en Arduino esto no habría sido posible. Gracias a ellos y a su equipo.</span>
+          <span data-lang="en">A personal note: my apologies to David Cuartielles and Massimo Banzi for using an M5Stack in the video instead of a Portenta H7 or another original Arduino board. I needed it fast, with a screen, and I knew its dual core well enough for simultaneous programming. Without their work on Arduino this would not have been possible. Thanks to them and their team.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="num-section rm-fade rm-fade--d3">
+      <div><p class="num-section__num">06 · Tiempos</p></div>
+      <div class="num-section__body">
+        <h2 class="num-section__title">
+          <span data-lang="es">Programa: tres temporizadores, dos salidas</span>
+          <span data-lang="en">Program: three timers, two outputs</span>
+        </h2>
+        <p>
+          <span data-lang="es">El programa es muy simple: tres temporizadores activan dos salidas digitales.</span>
+          <span data-lang="en">The program is very simple: three timers activate two digital outputs.</span>
+        </p>
+
+        <!-- Diagrama de tiempos A B C D -->
+        <div class="rm-diagram" style="padding: 24px;">
+          <svg viewBox="0 0 980 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title-time">
+            <title id="title-time">Diagrama de tiempos del ciclo de respiración</title>
+            <!-- ejes -->
+            <line x1="80" y1="40" x2="80" y2="280" stroke="#7C84B6" stroke-width="1"/>
+            <line x1="80" y1="280" x2="940" y2="280" stroke="#7C84B6" stroke-width="1"/>
+
+            <!-- ciclo D -->
+            <line x1="80" y1="20" x2="940" y2="20" stroke="#0E2483" stroke-width="1" stroke-dasharray="4 4"/>
+            <text data-lang="es" x="510" y="14" font-family="IBM Plex Mono, monospace" font-size="11" fill="#0E2483" text-anchor="middle">D · ciclo completo (60/D = respiraciones por minuto)</text>
+            <text data-lang="en" x="510" y="14" font-family="IBM Plex Mono, monospace" font-size="11" fill="#0E2483" text-anchor="middle">D · full cycle (60/D = breaths per minute)</text>
+
+            <!-- ===== Bomba 1 (inspiración) ===== -->
+            <text data-lang="es" x="20" y="105" font-family="IBM Plex Mono, monospace" font-size="11" fill="#5A6080">BOMBA 1</text>
+            <text data-lang="en" x="20" y="105" font-family="IBM Plex Mono, monospace" font-size="11" fill="#5A6080">PUMP 1</text>
+            <line x1="80" y1="120" x2="940" y2="120" stroke="#D9DBE6"/>
+            <!-- pulso A -->
+            <rect x="100" y="80" width="220" height="40" fill="#0E2483" opacity=".88"/>
+            <text data-lang="es" x="210" y="105" font-family="IBM Plex Mono, monospace" font-size="11" fill="#fff" text-anchor="middle">A · inspiración</text>
+            <text data-lang="en" x="210" y="105" font-family="IBM Plex Mono, monospace" font-size="11" fill="#fff" text-anchor="middle">A · inspiration</text>
+
+            <!-- ===== Bomba 2 (retorno/expiración) ===== -->
+            <text data-lang="es" x="20" y="225" font-family="IBM Plex Mono, monospace" font-size="11" fill="#5A6080">BOMBA 2</text>
+            <text data-lang="en" x="20" y="225" font-family="IBM Plex Mono, monospace" font-size="11" fill="#5A6080">PUMP 2</text>
+            <line x1="80" y1="240" x2="940" y2="240" stroke="#D9DBE6"/>
+            <!-- pulso C -->
+            <rect x="500" y="200" width="280" height="40" fill="#C9A97A" opacity=".95"/>
+            <text data-lang="es" x="640" y="225" font-family="IBM Plex Mono, monospace" font-size="11" fill="#0A0A0C" text-anchor="middle">C · expiración</text>
+            <text data-lang="en" x="640" y="225" font-family="IBM Plex Mono, monospace" font-size="11" fill="#0A0A0C" text-anchor="middle">C · expiration</text>
+
+            <!-- pausa B -->
+            <rect x="320" y="80" width="180" height="160" fill="none" stroke="#7C84B6" stroke-dasharray="3 3"/>
+            <text data-lang="es" x="410" y="160" font-family="IBM Plex Mono, monospace" font-size="11" fill="#0E2483" text-anchor="middle">B · pausa</text>
+            <text data-lang="en" x="410" y="160" font-family="IBM Plex Mono, monospace" font-size="11" fill="#0E2483" text-anchor="middle">B · pause</text>
+
+            <!-- marcas tiempo -->
+            <line x1="100" y1="280" x2="100" y2="290" stroke="#7C84B6"/>
+            <line x1="320" y1="280" x2="320" y2="290" stroke="#7C84B6"/>
+            <line x1="500" y1="280" x2="500" y2="290" stroke="#7C84B6"/>
+            <line x1="780" y1="280" x2="780" y2="290" stroke="#7C84B6"/>
+            <line x1="940" y1="280" x2="940" y2="290" stroke="#7C84B6"/>
+            <text x="100" y="305" font-family="IBM Plex Mono, monospace" font-size="10" fill="#0E2483" text-anchor="middle">t0</text>
+            <text x="320" y="305" font-family="IBM Plex Mono, monospace" font-size="10" fill="#0E2483" text-anchor="middle">t0+A</text>
+            <text x="500" y="305" font-family="IBM Plex Mono, monospace" font-size="10" fill="#0E2483" text-anchor="middle">t0+A+B</text>
+            <text x="780" y="305" font-family="IBM Plex Mono, monospace" font-size="10" fill="#0E2483" text-anchor="middle">t0+A+B+C</text>
+            <text x="940" y="305" font-family="IBM Plex Mono, monospace" font-size="10" fill="#0E2483" text-anchor="middle">t0+D</text>
+          </svg>
+        </div>
+
+        <p style="margin-top: 1.4em;">
+          <span data-lang="es"><strong>D</strong> es el tiempo total del ciclo en segundos (60/D = respiraciones por minuto). <strong>A</strong> es el tiempo en segundos en el que se insufla el volumen elegido. <strong>B</strong> es la pausa (opcional, lo decide el experto en ventilación) y <strong>C</strong> es el tiempo de expiración, durante el cual se activa la segunda bomba para devolver el agua al depósito.</span>
+          <span data-lang="en"><strong>D</strong> is the total cycle time in seconds (60/D = breaths per minute). <strong>A</strong> is the time in seconds during which the chosen volume is insufflated. <strong>B</strong> is the pause (optional, decided by the ventilation expert) and <strong>C</strong> is the expiration time, during which the second pump is activated to return water to the tank.</span>
+        </p>
+        <p>
+          <span data-lang="es">Para llenar de la cota 0 a la cota 2 en el tiempo indicado conviene generar un tren de pulsos PWM en el tiempo A. Harán falta un par de pruebas para encontrar el ajuste adecuado.</span>
+          <span data-lang="en">To fill from level 0 to level 2 in the given time, generate a PWM pulse train during time A. A couple of tests will be needed to find the right setting.</span>
+        </p>
+        <p class="rm-muted" style="font-size: var(--rm-fs-small);">
+          <span data-lang="es">Recomendación práctica: una regleta con interruptor para parar de golpe y una fregona — si pasa lo que me pasó a mí, algo acabará en el suelo.</span>
+          <span data-lang="en">A practical hint: a power strip with switch to stop everything at once, and a mop — if you have my luck, something will end up on the floor.</span>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- NAV ENTRE MODELOS -->
+<section class="rm-section--tight" style="padding: 0;">
+  <div class="rm-container rm-narrow">
+    <div class="nav-modelos">
+      <a href="origenes-tratamiento-aire.html">
+        ← <span data-lang="es">Tratamiento del aire</span><span data-lang="en">Air treatment</span>
+      </a>
+      <a href="origenes-avanzado.html">
+        <span data-lang="es">Modelo Avanzado</span><span data-lang="en">Advanced Model</span> →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="rm-foot" style="margin-top: clamp(40px,5vw,80px);">
+  <div class="rm-container">
+    <div class="rm-foot__grid">
+      <div>
+      <div>
+        <p class="rm-eyebrow" style="margin-bottom: 14px;"><span data-lang="es">Empresa</span><span data-lang="en">Company</span></p>
+        <p><a href="sobre.html"><span data-lang="es">Sobre REAMIMA</span><span data-lang="en">About</span></a></p>
+        <p><a href="origenes.html"><span data-lang="es">Orígenes</span><span data-lang="en">Origins</span></a></p>
+      </div>
+      <div>
+        <p class="rm-eyebrow" style="margin-bottom: 14px;"><span data-lang="es">Contacto</span><span data-lang="en">Contact</span></p>
+        <p><a href="contacta.html">info@reamima.com</a></p>
+      </div>
+      <div>
+        <p class="rm-eyebrow" style="margin-bottom: 14px;">Legal</p>
+        <p><a href="legal.html"><span data-lang="es">Aviso legal</span><span data-lang="en">Legal notice</span></a></p>
+      </div>
+    </div>
+    <div class="rm-foot__legal">
+      <span>© 2026 Reamima Tech S.L.</span>
+      <span><span data-lang="es">Todos los derechos reservados.</span><span data-lang="en">All rights reserved.</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    const buttons = document.querySelectorAll('[data-set-lang]');
+    buttons.forEach(b => b.addEventListener('click', () => {
+      const lang = b.getAttribute('data-set-lang');
+      document.body.setAttribute('data-active-lang', lang);
+      document.documentElement.setAttribute('lang', lang);
+      buttons.forEach(x => x.classList.toggle('is-active', x === b));
+    }));
+  })();
+  (function(){
+    const els = document.querySelectorAll('.rm-fade');
+    if (!('IntersectionObserver' in window) || !els.length) {
+      els.forEach(e => e.classList.add('is-visible'));
+      return;
+    }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    els.forEach(e => io.observe(e));
+  })();
+</script>
+
+</body>
+</html>

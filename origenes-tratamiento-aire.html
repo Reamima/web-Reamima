@@ -34,3 +34,369 @@
 <nav class="rm-nav">
   <div class="rm-container rm-nav__inner">
     <a href="index.html" class="rm-nav__brand" aria-label="REAMIMA · Inicio"><img class="rm-nav__logo--dark" src="img/1_Reamima_transpa_Blanco.png" alt="REAMIMA" /><img class="rm-nav__logo--light" src="img/Reamima_Solido_oscuro.jpeg" alt="REAMIMA" /></a>
+    <div class="rm-nav__links">
+      <a href="sobre.html"><span data-lang="es">Sobre</span><span data-lang="en">About</span></a>
+      <a href="origenes.html" style="color: var(--rm-navy);"><span data-lang="es">Orígenes</span><span data-lang="en">Origins</span></a>
+      <a href="contacta.html"><span data-lang="es">Contacta</span><span data-lang="en">Contact</span></a>
+    </div>
+    <div class="rm-lang">
+      <button class="is-active" data-set-lang="es">ES</button>
+      <button data-set-lang="en">EN</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="rm-section rm-section--paper" style="padding-top: clamp(72px,8vw,120px); padding-bottom: clamp(40px,5vw,72px);">
+  <div class="rm-container">
+    <p class="crumb rm-fade"><a href="origenes.html"><span data-lang="es">Orígenes</span><span data-lang="en">Origins</span></a> · 01 · <span data-lang="es">Aire</span><span data-lang="en">Air</span></p>
+    <h1 class="rm-display rm-fade" style="margin-top: 1.4rem; max-width: 16ch; color: var(--rm-navy);">
+      <span data-lang="es">Tratamiento del aire</span>
+      <span data-lang="en">Air treatment</span>
+    </h1>
+    <p class="rm-lead rm-muted rm-fade rm-fade--d1" style="margin-top: 1.8rem; max-width: 60ch;">
+      <span data-lang="es">El aire que respira un paciente, en una emergencia, puede entrar sin tratar — como en los ventiladores manuales que aparecen en las películas. Pero con muy poco más se puede preparar bien: humectado, a la temperatura adecuada y libre de patógenos.</span>
+      <span data-lang="en">The air a patient breathes, in an emergency, may enter untreated — as in the manual ventilators we see in films. But with very little more it can be properly prepared: humidified, at the right temperature and free of pathogens.</span>
+    </p>
+  </div>
+</section>
+
+<!-- DIAGRAMA TRATAMIENTO AIRE -->
+<section class="rm-section--tight" style="padding: 0 0 clamp(40px,5vw,72px);">
+  <div class="rm-container">
+    <div class="rm-diagram rm-fade">
+      <svg viewBox="0 0 1100 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title-aire">
+        <title id="title-aire">Diagrama del subsistema de tratamiento del aire</title>
+        <defs>
+          <pattern id="water" x="0" y="0" width="14" height="14" patternUnits="userSpaceOnUse">
+            <path d="M0 7 Q3.5 3 7 7 T14 7" fill="none" stroke="#7C84B6" stroke-width=".8" opacity=".5"/>
+          </pattern>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#0E2483"/>
+          </marker>
+        </defs>
+
+        <!-- ============== Bomba de AIRE (pecera) ============== -->
+        <g transform="translate(60,280)">
+          <rect width="130" height="90" rx="6" fill="#FAFBFE" stroke="#0E2483" stroke-width="1.6"/>
+          <rect x="18" y="22" width="48" height="46" rx="4" fill="none" stroke="#7C84B6"/>
+          <circle cx="42" cy="45" r="10" fill="none" stroke="#7C84B6"/>
+          <text data-lang="es" x="65" y="115" font-family="Inter, sans-serif" font-size="15" fill="#0E2483" font-weight="500" text-anchor="middle">Bomba de aire</text>
+          <text data-lang="en" x="65" y="115" font-family="Inter, sans-serif" font-size="15" fill="#0E2483" font-weight="500" text-anchor="middle">Air pump</text>
+          <text data-lang="es" x="65" y="135" font-family="IBM Plex Mono, monospace" font-size="12" fill="#0E2483" text-anchor="middle">de pecera</text>
+          <text data-lang="en" x="65" y="135" font-family="IBM Plex Mono, monospace" font-size="12" fill="#0E2483" text-anchor="middle">aquarium</text>
+        </g>
+
+        <!-- Tubería de aire: bomba → entra al depósito → baja sumergida hasta el difusor -->
+        <path d="M 190 325 L 350 325 L 350 460" fill="none" stroke="#0E2483" stroke-width="1.8" stroke-linejoin="round"/>
+
+        <!-- ============== Depósito principal ============== -->
+        <g transform="translate(300,90)">
+          <!-- contenedor -->
+          <rect width="520" height="400" rx="10" fill="#FAFBFE" stroke="#0E2483" stroke-width="1.6"/>
+          <!-- nivel agua: agua de la mitad para abajo -->
+          <rect x="2" y="220" width="516" height="178" fill="url(#water)" opacity=".9"/>
+          <line x1="0" y1="220" x2="520" y2="220" stroke="#7C84B6" stroke-width="1.2" stroke-dasharray="4 3"/>
+
+          <!-- Etiquetas zona AIRE / AGUA — ambas a la IZQUIERDA, dentro de cada zona -->
+          <text data-lang="es" x="20" y="40" font-family="IBM Plex Mono, monospace" font-size="14" fill="#0E2483" text-anchor="start" letter-spacing="1.2">CÁMARA DE AIRE</text>
+          <text data-lang="en" x="20" y="40" font-family="IBM Plex Mono, monospace" font-size="14" fill="#0E2483" text-anchor="start" letter-spacing="1.2">AIR CHAMBER</text>
+          <text data-lang="es" x="20" y="245" font-family="IBM Plex Mono, monospace" font-size="14" fill="#3F4FA8" text-anchor="start" letter-spacing="1.2">AGUA</text>
+          <text data-lang="en" x="20" y="245" font-family="IBM Plex Mono, monospace" font-size="14" fill="#3F4FA8" text-anchor="start" letter-spacing="1.2">WATER</text>
+
+          <!-- Difusor de burbujas: el extremo de la tubería (a x=50 en local = 350 abs) suelta burbujas -->
+          <g stroke="#0E2483" stroke-width="1" fill="none">
+            <circle cx="55" cy="355" r="3"/>
+            <circle cx="68" cy="345" r="2.5"/>
+            <circle cx="78" cy="332" r="3"/>
+            <circle cx="55" cy="318" r="2.5"/>
+            <circle cx="72" cy="298" r="3"/>
+            <circle cx="62" cy="270" r="2.5"/>
+            <circle cx="80" cy="248" r="2.5"/>
+            <circle cx="55" cy="225" r="2.5"/>
+          </g>
+
+          <!-- Calentador de acuario (sumergido) -->
+          <g transform="translate(200,240)">
+            <rect width="16" height="150" rx="4" fill="#fff" stroke="#0E2483" stroke-width="1.4"/>
+            <line x1="8" y1="6" x2="8" y2="144" stroke="#C9A97A" stroke-width="2.4"/>
+            <line x1="6" y1="0" x2="6" y2="-25" stroke="#0E2483" stroke-width="1"/>
+            <line x1="11" y1="0" x2="11" y2="-25" stroke="#0E2483" stroke-width="1"/>
+          </g>
+
+          <!-- Lámpara UV — en la cámara de aire (parte alta) -->
+          <g transform="translate(330,120)">
+            <rect width="80" height="26" rx="3" fill="#FAFBFE" stroke="#0E2483" stroke-width="1.6"/>
+            <rect x="8" y="8" width="64" height="10" fill="#E0BD8C" stroke="#7C84B6" stroke-dasharray="2 2"/>
+            <line x1="20" y1="26" x2="14" y2="56" stroke="#C9A97A" stroke-width="1.2" stroke-dasharray="2 3" opacity=".7"/>
+            <line x1="40" y1="26" x2="40" y2="56" stroke="#C9A97A" stroke-width="1.2" stroke-dasharray="2 3" opacity=".7"/>
+            <line x1="60" y1="26" x2="66" y2="56" stroke="#C9A97A" stroke-width="1.2" stroke-dasharray="2 3" opacity=".7"/>
+            <line x1="80" y1="13" x2="105" y2="13" stroke="#0E2483" stroke-width="1"/>
+          </g>
+        </g>
+
+        <!-- ====================================================================== -->
+        <!-- SALIDA AIRE TRATADO · UNA sola tubería: dentro del depósito → arriba   -->
+        <!-- → derecha → flecha al ventilador. Válvula de seguridad sobre la tubería -->
+        <!-- ====================================================================== -->
+        <path d="M 700 280 L 700 60 L 1010 60" fill="none" stroke="#0E2483" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+
+        <!-- Válvula de seguridad ON la tubería vertical (parte alta) -->
+        <g transform="translate(700,130)">
+          <circle cx="0" cy="0" r="16" fill="#FAFBFE" stroke="#0E2483" stroke-width="1.6"/>
+          <line x1="-10" y1="-10" x2="10" y2="10" stroke="#0E2483" stroke-width="1.4"/>
+          <line x1="10" y1="-10" x2="-10" y2="10" stroke="#0E2483" stroke-width="1.4"/>
+        </g>
+
+        <!-- Etiquetas externas (sin pisar nada) -->
+        <text data-lang="es" x="676" y="135" font-family="Inter, sans-serif" font-size="14" fill="#0E2483" font-weight="500" text-anchor="end">Válvula de seguridad</text>
+        <text data-lang="en" x="676" y="135" font-family="Inter, sans-serif" font-size="14" fill="#0E2483" font-weight="500" text-anchor="end">Safety valve</text>
+
+        <text data-lang="es" x="855" y="46" font-family="Inter, sans-serif" font-size="14" fill="#0E2483" font-weight="500" text-anchor="middle">aire al ventilador</text>
+        <text data-lang="en" x="855" y="46" font-family="Inter, sans-serif" font-size="14" fill="#0E2483" font-weight="500" text-anchor="middle">air to ventilator</text>
+
+        <!-- Etiquetas externas: Difusor, Calentador, Lámpara UV (debajo o al lado del depósito) -->
+        <line x1="350" y1="475" x2="350" y2="535" stroke="#7C84B6" stroke-width="1" stroke-dasharray="3 3"/>
+        <text data-lang="es" x="350" y="552" font-family="Inter, sans-serif" font-size="14" fill="#0E2483" font-weight="500" text-anchor="middle">Difusor</text>
+        <text data-lang="en" x="350" y="552" font-family="Inter, sans-serif" font-size="14" fill="#0E2483" font-weight="500" text-anchor="middle">Diffuser</text>
+
+        <line x1="508" y1="475" x2="508" y2="535" stroke="#7C84B6" stroke-width="1" stroke-dasharray="3 3"/>
+        <text data-lang="es" x="508" y="552" font-family="Inter, sans-serif" font-size="14" fill="#0E2483" font-weight="500" text-anchor="middle">Calentador</text>
+        <text data-lang="en" x="508" y="552" font-family="Inter, sans-serif" font-size="14" fill="#0E2483" font-weight="500" text-anchor="middle">Heater</text>
+
+        <line x1="670" y1="240" x2="670" y2="268" stroke="#0E2483" stroke-width="1" stroke-dasharray="3 3"/>
+        <text data-lang="es" x="670" y="284" font-family="Inter, sans-serif" font-size="14" fill="#0E2483" font-weight="500" text-anchor="middle">Lámpara UV</text>
+        <text data-lang="en" x="670" y="284" font-family="Inter, sans-serif" font-size="14" fill="#0E2483" font-weight="500" text-anchor="middle">UV lamp</text>
+
+        <!-- Salida lateral inferior · agua al resto de sistemas -->
+        <path d="M 300 470 L 220 470 L 220 530" stroke="#3F4FA8" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+        <text data-lang="es" x="220" y="552" font-family="Inter, sans-serif" font-size="13" fill="#3F4FA8" text-anchor="middle">Agua a otros sistemas</text>
+        <text data-lang="en" x="220" y="552" font-family="Inter, sans-serif" font-size="13" fill="#3F4FA8" text-anchor="middle">Water to other systems</text>
+
+        <!-- Pie de figura -->
+        <text data-lang="es" x="550" y="606" font-family="IBM Plex Mono, monospace" font-size="13" fill="#0E2483" text-anchor="middle" letter-spacing="1.4">SUBSISTEMA · PREPARACIÓN DEL AIRE — bomba · calentador · difusor · lámpara UV · válvula</text>
+        <text data-lang="en" x="550" y="606" font-family="IBM Plex Mono, monospace" font-size="13" fill="#0E2483" text-anchor="middle" letter-spacing="1.4">SUBSYSTEM · AIR PREPARATION — pump · heater · diffuser · UV lamp · valve</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- COMPONENTES REALES -->
+<section class="rm-section rm-section--stone">
+  <div class="rm-container">
+    <p class="rm-eyebrow rm-fade" style="margin-bottom: 1.6rem;">
+      <span data-lang="es">Componentes</span><span data-lang="en">Components</span>
+    </p>
+    <h2 class="rm-h2 rm-fade rm-fade--d1" style="font-weight: 300; color: var(--rm-navy); max-width: 22ch; margin-bottom: 2.4rem;">
+      <span data-lang="es">Tres piezas que se compran en una tienda de acuarios.</span>
+      <span data-lang="en">Three parts you can buy at an aquarium shop.</span>
+    </h2>
+    <div class="rm-tile-grid rm-tile-grid--3">
+      <article class="rm-tile rm-fade">
+        <div class="rm-tile__media" style="background:#FAFBFE;"><img src="img/old-bomba-pecera.jpg" alt="Bomba de aire de pecera" loading="lazy" style="object-fit:contain;padding:8%;"/></div>
+        <div class="rm-tile__body">
+          <p class="rm-tile__title"><span data-lang="es">Bomba de aire de pecera</span><span data-lang="en">Aquarium air pump</span></p>
+          <p class="rm-tile__excerpt"><span data-lang="es">+20.000 horas de servicio. Soltará el aire dentro del agua caliente.</span><span data-lang="en">+20,000 hours of service. Releases air inside the warm water.</span></p>
+        </div>
+      </article>
+      <article class="rm-tile rm-fade rm-fade--d1">
+        <div class="rm-tile__media" style="background:#FAFBFE;"><img src="img/old-calentador.png" alt="Calentador de acuario" loading="lazy" style="object-fit:contain;padding:8%;"/></div>
+        <div class="rm-tile__body">
+          <p class="rm-tile__title"><span data-lang="es">Calentador de acuario</span><span data-lang="en">Aquarium heater</span></p>
+          <p class="rm-tile__excerpt"><span data-lang="es">Bajo índice de fallo, rango de temperatura adecuado al subsistema.</span><span data-lang="en">Low failure rate, temperature range suited to the subsystem.</span></p>
+        </div>
+      </article>
+      <article class="rm-tile rm-fade rm-fade--d2">
+        <div class="rm-tile__media" style="background:#FAFBFE;"><img src="img/old-lampara-uv.png" alt="Lámpara UV de acuario" loading="lazy" style="object-fit:contain;padding:8%;"/></div>
+        <div class="rm-tile__body">
+          <p class="rm-tile__title"><span data-lang="es">Lámpara UV</span><span data-lang="en">UV lamp</span></p>
+          <p class="rm-tile__excerpt"><span data-lang="es">Esteriliza la cámara de aire. Protegida, nunca visible directamente.</span><span data-lang="en">Sterilises the air chamber. Shielded, never visible directly.</span></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTENIDO TÉCNICO -->
+<section class="rm-section rm-section--paper">
+  <div class="rm-container rm-narrow">
+
+    <div class="num-section rm-fade">
+      <div>
+        <p class="num-section__num">01 · Humectación</p>
+      </div>
+      <div class="num-section__body">
+        <h2 class="num-section__title">
+          <span data-lang="es">Calentar y humedecer</span>
+          <span data-lang="en">Heat and humidify</span>
+        </h2>
+        <p>
+          <span data-lang="es">El aire hay que llevarlo a la temperatura adecuada y darle el grado de humedad que necesita. Una bomba de aire de pecera — probadas a más de 20.000 horas de funcionamiento (consulta las indicaciones del fabricante) — suelta el aire dentro de un depósito de agua a temperatura controlada.</span>
+          <span data-lang="en">The air must be heated to the right temperature and given the humidity it needs. An aquarium air pump — tested at over 20,000 hours of operation (check the manufacturer&rsquo;s data sheet) — releases the air into a water tank at controlled temperature.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="num-section rm-fade rm-fade--d1">
+      <div>
+        <p class="num-section__num">02 · Calentamiento</p>
+      </div>
+      <div class="num-section__body">
+        <h2 class="num-section__title">
+          <span data-lang="es">Resistencia de acuario</span>
+          <span data-lang="en">Aquarium heater</span>
+        </h2>
+        <p>
+          <span data-lang="es">Para calentar el aire volvemos a la tienda de animales. Los calentadores de acuario tienen muchos años de experiencia, un índice de fallo bajo, fácil adquisición y un rango de temperatura similar al que necesita el subsistema.</span>
+          <span data-lang="en">To heat the air, we go back to the pet shop. Aquarium heaters have many years of field experience, a low failure rate, easy availability and a temperature range similar to what the subsystem needs.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="num-section rm-fade rm-fade--d2">
+      <div>
+        <p class="num-section__num">03 · Construcción</p>
+      </div>
+      <div class="num-section__body">
+        <h2 class="num-section__title">
+          <span data-lang="es">Depósito y dimensionado</span>
+          <span data-lang="en">Tank and sizing</span>
+        </h2>
+        <p>
+          <span data-lang="es">La forma más sencilla es usar un contenedor plástico o metálico que actúe como depósito de agua para todo el circuito. El tamaño debe alojar el aire de varias respiraciones.</span>
+          <span data-lang="en">The simplest approach is to use a plastic or metal container as the water tank for the whole circuit. The size must accommodate the air of several breaths.</span>
+        </p>
+
+        <h3 class="rm-h3" style="color: var(--rm-navy); margin-top: 1.6em;">
+          <span data-lang="es">Volumen necesario de aire</span>
+          <span data-lang="en">Required air volume</span>
+        </h3>
+        <p>
+          <span data-lang="es">Si tomamos como máximo 10 ml/kg de aire y el ventilador está diseñado para 100 kg, son 1.000 ml de aire por inspiración. El depósito de aire debe ser superior a este volumen multiplicado por 2 (respiraciones) y por 3 (aire + agua + otros), por lo que conviene partir de un depósito de 6 litros como mínimo.</span>
+          <span data-lang="en">If we take a maximum of 10 ml/kg of air and the ventilator is designed for 100 kg, that is 1,000 ml of air per inspiration. The air tank must exceed this volume multiplied by 2 (breaths) and by 3 (air + water + others), so a 6-litre tank is the recommended starting point.</span>
+        </p>
+        <div class="formula">V<sub>tank</sub> ≥ 1000 ml × 2 × 3 = 6.000 ml = 6 L</div>
+
+        <h3 class="rm-h3" style="color: var(--rm-navy); margin-top: 1.6em;">
+          <span data-lang="es">Caudal de aire necesario</span>
+          <span data-lang="en">Required airflow</span>
+        </h3>
+        <p>
+          <span data-lang="es">Hay que prever entre 15 y 25 respiraciones por minuto. En el peor caso (1.000 ml × 25 r/min) tenemos 25.000 litros/hora. Con este valor se busca una bomba de aire dimensionada para tratar el aire que se va a respirar.</span>
+          <span data-lang="en">We must plan for 15 to 25 breaths per minute. In the worst case (1,000 ml × 25 br/min) we obtain 25,000 litres/hour. With this figure we size the air pump that will treat the air to be breathed.</span>
+        </p>
+        <div class="formula">Q<sub>air</sub> = 1.000 ml × 25 r/min × 60 = 25.000 L/h</div>
+        <p>
+          <span data-lang="es">La bomba debe soltar el aire dentro del agua caliente, como muestra el diagrama, generando un flujo de burbujas que se humectan y calientan antes de salir al circuito de inspiración.</span>
+          <span data-lang="en">The pump must release the air into the hot water, as shown in the diagram, producing a bubble flow that is humidified and heated before reaching the inspiration circuit.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="num-section rm-fade rm-fade--d3">
+      <div>
+        <p class="num-section__num">04 · Limpieza</p>
+      </div>
+      <div class="num-section__body">
+        <h2 class="num-section__title">
+          <span data-lang="es">Esterilización con UV</span>
+          <span data-lang="en">UV sterilisation</span>
+        </h2>
+        <p>
+          <span data-lang="es">El agua debe cambiarse y el sistema limpiarse con regularidad para evitar la proliferación de bacterias, hongos y otros elementos dañinos. Una buena solución es introducir en el depósito una lámpara UV — también de tienda de acuarios — diseñada para eliminar bacterias y mantener el agua limpia.</span>
+          <span data-lang="en">The water must be replaced and the system cleaned regularly to prevent the proliferation of bacteria, fungi and other harmful elements. A good solution is to place a UV lamp in the tank — also from an aquarium shop — designed to eliminate bacteria and keep the water clean.</span>
+        </p>
+        <p>
+          <span data-lang="es"><strong>Importante:</strong> la lámpara debe estar protegida y no ser visible directamente. La luz ultravioleta puede causar daños graves — quemaduras, ceguera. Sigue siempre las instrucciones del fabricante.</span>
+          <span data-lang="en"><strong>Important:</strong> the lamp must be protected and not directly visible. Ultraviolet light can cause serious damage — burns, blindness. Always follow the manufacturer&rsquo;s instructions.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="num-section rm-fade rm-fade--d3">
+      <div>
+        <p class="num-section__num">05 · Seguridad</p>
+      </div>
+      <div class="num-section__body">
+        <h2 class="num-section__title">
+          <span data-lang="es">Válvula y niveles</span>
+          <span data-lang="en">Valve and levels</span>
+        </h2>
+        <p>
+          <span data-lang="es">La válvula de seguridad es necesaria para evitar sobrepresiones o depresiones que impidan el funcionamiento del sistema. En el depósito conviene marcar el nivel máximo y mínimo de agua, de modo que se mantenga siempre dentro del rango de trabajo.</span>
+          <span data-lang="en">The safety valve is necessary to prevent overpressure or depression conditions that would stop the system from working. The tank should be marked with maximum and minimum water levels, so the volume is always kept within the working range.</span>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- NAV ENTRE MODELOS -->
+<section class="rm-section--tight" style="padding: 0;">
+  <div class="rm-container rm-narrow">
+    <div class="nav-modelos">
+      <a href="origenes.html">
+        ← <span data-lang="es">Volver a Orígenes</span><span data-lang="en">Back to Origins</span>
+      </a>
+      <a href="origenes-simple.html">
+        <span data-lang="es">Modelo Simple</span><span data-lang="en">Simple Model</span> →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="rm-foot" style="margin-top: clamp(40px,5vw,80px);">
+  <div class="rm-container">
+    <div class="rm-foot__grid">
+      <div>
+      <div>
+        <p class="rm-eyebrow" style="margin-bottom: 14px;"><span data-lang="es">Empresa</span><span data-lang="en">Company</span></p>
+        <p><a href="sobre.html"><span data-lang="es">Sobre REAMIMA</span><span data-lang="en">About</span></a></p>
+        <p><a href="origenes.html"><span data-lang="es">Orígenes</span><span data-lang="en">Origins</span></a></p>
+      </div>
+      <div>
+        <p class="rm-eyebrow" style="margin-bottom: 14px;"><span data-lang="es">Contacto</span><span data-lang="en">Contact</span></p>
+        <p><a href="contacta.html">info@reamima.com</a></p>
+      </div>
+      <div>
+        <p class="rm-eyebrow" style="margin-bottom: 14px;">Legal</p>
+        <p><a href="legal.html"><span data-lang="es">Aviso legal</span><span data-lang="en">Legal notice</span></a></p>
+      </div>
+    </div>
+    <div class="rm-foot__legal">
+      <span>© 2026 Reamima Tech S.L.</span>
+      <span><span data-lang="es">Todos los derechos reservados.</span><span data-lang="en">All rights reserved.</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    const buttons = document.querySelectorAll('[data-set-lang]');
+    buttons.forEach(b => b.addEventListener('click', () => {
+      const lang = b.getAttribute('data-set-lang');
+      document.body.setAttribute('data-active-lang', lang);
+      document.documentElement.setAttribute('lang', lang);
+      buttons.forEach(x => x.classList.toggle('is-active', x === b));
+    }));
+  })();
+  (function(){
+    const els = document.querySelectorAll('.rm-fade');
+    if (!('IntersectionObserver' in window) || !els.length) {
+      els.forEach(e => e.classList.add('is-visible'));
+      return;
+    }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    els.forEach(e => io.observe(e));
+  })();
+</script>
+
+</body>
+</html>
