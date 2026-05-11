@@ -11,7 +11,7 @@
   --rm-ink:        #050B2C;   /* fondo profundo de hero */
   --rm-navy:       #0E2483;   /* Zafiro Oscuro · primario */
   --rm-navy-2:     #1A2E6B;   /* navy intermedio para fondos */
-  --rm-blue-grey:  #7C84B6;   /* Sub-primario · bajo contraste */
+  --rm-blue-grey:  #5E678A;   /* Sub-primario · WCAG AA en blanco */
   --rm-line:       #D9DBE6;   /* línea técnica · diagramas */
   --rm-stone:      #F5F5F2;   /* off-white · secciones suaves */
   --rm-paper:      #FFFFFF;   /* lienzo principal */
@@ -109,7 +109,7 @@ p a:hover { border-bottom-color: #F08468; }
 .rm-section { padding-top: var(--rm-section-y); padding-bottom: var(--rm-section-y); }
 .rm-section--tight { padding-top: var(--rm-block-y); padding-bottom: var(--rm-block-y); }
 .rm-section--ink { background: var(--rm-ink); color: #EAEBF0; }
-.rm-section--ink .rm-eyebrow { color: var(--rm-blue-grey); }
+.rm-section--ink .rm-eyebrow { color: #7C84B6; } /* fondo oscuro: valor original mantiene contraste */
 .rm-section--stone { background: var(--rm-stone); }
 .rm-section--paper { background: var(--rm-paper); }
 
