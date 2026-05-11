@@ -30,6 +30,15 @@
   .channel:hover { border-color: var(--rm-navy); }
   .channel__title { font-weight: 500; color: var(--rm-navy); }
   .channel__sub { font-family: var(--rm-font-mono); font-size: var(--rm-fs-micro); letter-spacing: .12em; color: var(--rm-blue-grey); text-transform: uppercase; margin-top: 4px; }
+  .ct-form { display: flex; flex-direction: column; gap: 16px; margin-top: 1.8em; }
+  .ct-form__field { display: flex; flex-direction: column; gap: 6px; }
+  .ct-form__label { font-family: var(--rm-font-mono); font-size: var(--rm-fs-micro); letter-spacing: .14em; text-transform: uppercase; color: var(--rm-blue-grey); }
+  .ct-form__input, .ct-form__textarea { font-family: var(--rm-font-body); font-size: 1rem; color: var(--rm-text); background: var(--rm-paper); border: 1px solid var(--rm-line); border-radius: var(--rm-radius-sm); padding: 12px 14px; width: 100%; box-sizing: border-box; transition: border-color .2s var(--rm-ease); outline: none; }
+  .ct-form__input:focus, .ct-form__textarea:focus { border-color: var(--rm-navy); }
+  .ct-form__textarea { resize: vertical; min-height: 120px; }
+  .ct-form__msg { font-family: var(--rm-font-mono); font-size: var(--rm-fs-micro); margin-top: 8px; display: none; }
+  .ct-form__msg--ok { color: #2a7a4f; }
+  .ct-form__msg--err { color: #b93a3a; }
 </style>
 </head>
 <body data-active-lang="es">
@@ -148,12 +157,47 @@
           <span data-lang="es">Respondemos a todos los mensajes que entran por <a href="mailto:info@reamima.com">info@reamima.com</a>. Si el encaje no es claro lo decimos pronto, sin ceremonia.</span>
           <span data-lang="en">We answer every message that comes in through <a href="mailto:info@reamima.com">info@reamima.com</a>. If there is no fit, we say so early, without ceremony.</span>
         </p>
-        <p style="margin-top: 1.4em;">
-          <a class="rm-btn" href="mailto:info@reamima.com">
-            <span data-lang="es">Escribir a REAMIMA →</span>
-            <span data-lang="en">Write to REAMIMA →</span>
-          </a>
-        </p>
+        <form class="ct-form" id="ct-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="643dd053-8d56-45a2-b90f-094a4922b130" />
+          <input type="hidden" name="subject" value="Nuevo mensaje desde reamima.com" />
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
+
+          <div class="ct-form__field">
+            <label class="ct-form__label" for="ct-name">
+              <span data-lang="es">Nombre</span><span data-lang="en">Name</span>
+            </label>
+            <input class="ct-form__input" id="ct-name" type="text" name="name" required />
+          </div>
+
+          <div class="ct-form__field">
+            <label class="ct-form__label" for="ct-email">
+              <span data-lang="es">Correo electrónico</span><span data-lang="en">Email</span>
+            </label>
+            <input class="ct-form__input" id="ct-email" type="email" name="email" required />
+          </div>
+
+          <div class="ct-form__field">
+            <label class="ct-form__label" for="ct-msg">
+              <span data-lang="es">Mensaje</span><span data-lang="en">Message</span>
+            </label>
+            <textarea class="ct-form__textarea" id="ct-msg" name="message" required></textarea>
+          </div>
+
+          <div>
+            <button class="rm-btn" type="submit">
+              <span data-lang="es">Enviar mensaje →</span>
+              <span data-lang="en">Send message →</span>
+            </button>
+            <p class="ct-form__msg ct-form__msg--ok" id="ct-ok">
+              <span data-lang="es">Mensaje enviado. Te respondemos pronto.</span>
+              <span data-lang="en">Message sent. We'll get back to you soon.</span>
+            </p>
+            <p class="ct-form__msg ct-form__msg--err" id="ct-err">
+              <span data-lang="es">Algo ha fallado. Escríbenos a info@reamima.com</span>
+              <span data-lang="en">Something went wrong. Email us at info@reamima.com</span>
+            </p>
+          </div>
+        </form>
       </div>
 
     </div>
@@ -226,6 +270,35 @@
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
     els.forEach(e => io.observe(e));
+  })();
+  (function(){
+    const form = document.getElementById('ct-form');
+    if (!form) return;
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = form.querySelector('button[type=submit]');
+      const ok = document.getElementById('ct-ok');
+      const err = document.getElementById('ct-err');
+      btn.disabled = true;
+      ok.style.display = 'none';
+      err.style.display = 'none';
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: new FormData(form)
+        });
+        const data = await res.json();
+        if (data.success) {
+          ok.style.display = 'block';
+          form.reset();
+        } else {
+          err.style.display = 'block';
+        }
+      } catch(_) {
+        err.style.display = 'block';
+      }
+      btn.disabled = false;
+    });
   })();
 </script>
 
