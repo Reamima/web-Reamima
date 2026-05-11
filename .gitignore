@@ -1,0 +1,11 @@
+# Claude Code — no subir a GitHub
+CLAUDE.md
+.claude/
+
+# Archivos de trabajo
+*.backup
+navbar_template.txt
+ultimasOrdenes.md
+
+# macOS
+.DS_Store

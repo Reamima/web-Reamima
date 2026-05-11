@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Accesibilidad · REAMIMA</title>
+<meta name="description" content="Compromiso de REAMIMA con la accesibilidad web y canal para notificar barreras de acceso." />
+<link rel="stylesheet" href="_design-system.css">
+<style>
+  .ac-hero { padding-top: clamp(120px, 14vw, 200px); padding-bottom: clamp(48px, 6vw, 80px); }
+  .ac-section {
+    padding: 36px 0;
+    border-top: 1px solid var(--rm-line);
+  }
+  .ac-section h2 {
+    font-family: var(--rm-font-display);
+    font-size: clamp(1.4rem, 2vw, 1.8rem);
+    font-weight: 300;
+    color: var(--rm-navy);
+    letter-spacing: -.012em;
+    margin: 0 0 .6em 0;
+  }
+  .ac-section p + p { margin-top: 1em; }
+  .ac-section ul { padding-left: 1.4em; margin-top: .8em; }
+  .ac-section li { padding: 4px 0; }
+  .ac-badge {
+    display: inline-block;
+    font-family: var(--rm-font-mono);
+    font-size: var(--rm-fs-micro);
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    background: var(--rm-stone);
+    border: 1px solid var(--rm-line);
+    border-radius: var(--rm-radius-sm);
+    padding: 4px 10px;
+    color: var(--rm-text-muted);
+    margin-right: 6px;
+    margin-bottom: 6px;
+  }
+  /* Reutilizamos estilos del formulario de contacta.html */
+  .ct-form { display: flex; flex-direction: column; gap: 16px; margin-top: 1.8em; }
+  .ct-form__field { display: flex; flex-direction: column; gap: 6px; }
+  .ct-form__label { font-family: var(--rm-font-mono); font-size: var(--rm-fs-micro); letter-spacing: .14em; text-transform: uppercase; color: var(--rm-blue-grey); }
+  .ct-form__input, .ct-form__textarea { font-family: var(--rm-font-body); font-size: 1rem; color: var(--rm-text); background: var(--rm-paper); border: 1px solid var(--rm-line); border-radius: var(--rm-radius-sm); padding: 12px 14px; width: 100%; box-sizing: border-box; transition: border-color .2s var(--rm-ease); outline: none; }
+  .ct-form__input:focus, .ct-form__textarea:focus { border-color: var(--rm-navy); }
+  .ct-form__textarea { resize: vertical; min-height: 140px; }
+  .ct-form__msg { font-family: var(--rm-font-mono); font-size: var(--rm-fs-micro); margin-top: 8px; display: none; }
+  .ct-form__msg--ok { color: #2a7a4f; }
+  .ct-form__msg--err { color: #b93a3a; }
+</style>
+</head>
+<body data-active-lang="es">
+<a class="rm-skip" href="#main-content"><span data-lang="es">Saltar al contenido</span><span data-lang="en">Skip to content</span></a>
+
+<nav class="rm-nav">
+  <div class="rm-container rm-nav__inner">
+    <a href="index.html" class="rm-nav__brand" aria-label="REAMIMA · Inicio"><img class="rm-nav__logo--dark" src="img/1_Reamima_transpa_Blanco.png" alt="" /><img class="rm-nav__logo--light" src="img/Reamima_Solido_oscuro.jpeg" alt="" /></a>
+    <div class="rm-nav__links">
+      <a href="sobre.html"><span data-lang="es">Sobre</span><span data-lang="en">About</span></a>
+      <a href="origenes.html"><span data-lang="es">Orígenes</span><span data-lang="en">Origins</span></a>
+      <a href="contacta.html"><span data-lang="es">Contacta</span><span data-lang="en">Contact</span></a>
+    </div>
+    <div class="rm-lang">
+      <button class="is-active" data-set-lang="es">ES</button>
+      <button data-set-lang="en">EN</button>
+    </div>
+    <button class="rm-nav__toggle" aria-label="Menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<main id="main-content">
+
+<!-- HERO -->
+<section class="rm-section rm-section--paper ac-hero">
+  <div class="rm-container rm-narrow">
+    <p class="rm-eyebrow rm-fade">
+      <span data-lang="es">Accesibilidad</span>
+      <span data-lang="en">Accessibility</span>
+    </p>
+    <h1 class="rm-display rm-fade rm-fade--d1" style="margin-top: 1.2rem; max-width: 22ch; color: var(--rm-navy);">
+      <span data-lang="es">Queremos que nadie se quede fuera</span>
+      <span data-lang="en">We want no one left out</span>
+    </h1>
+    <p class="rm-lead rm-muted rm-fade rm-fade--d2" style="margin-top: 1.6rem; max-width: 60ch;">
+      <span data-lang="es">Trabajamos para que este sitio sea usable por cualquier persona, con cualquier dispositivo o tecnología de apoyo. Si encuentras algo que no funciona bien para ti, nos interesa saberlo.</span>
+      <span data-lang="en">We work to make this site usable by anyone, with any device or assistive technology. If you find something that does not work well for you, we want to know.</span>
+    </p>
+  </div>
+</section>
+
+<!-- SECCIONES -->
+<section class="rm-section rm-section--stone">
+  <div class="rm-container rm-narrow">
+
+    <!-- Nuestro enfoque -->
+    <article class="ac-section" style="border-top: none; padding-top: 0;">
+      <h2>
+        <span data-lang="es">Nuestro enfoque</span>
+        <span data-lang="en">Our approach</span>
+      </h2>
+      <p>
+        <span data-lang="es">Tomamos como referencia las <strong>Pautas de Accesibilidad para el Contenido Web (WCAG) 2.1, nivel AA</strong>. No somos un organismo público ni estamos obligados legalmente a cumplirlas, pero creemos que es lo correcto.</span>
+        <span data-lang="en">We use the <strong>Web Content Accessibility Guidelines (WCAG) 2.1, level AA</strong> as our reference. We are not a public body and are not legally required to comply, but we believe it is the right thing to do.</span>
+      </p>
+      <p>
+        <span data-lang="es">Este sitio es estático, mantenido por un equipo pequeño. Hacemos lo que está en nuestra mano dentro de esos límites. Cuando alguien nos señala una barrera, lo valoramos y lo tenemos en cuenta en las siguientes revisiones.</span>
+        <span data-lang="en">This site is static, maintained by a small team. We do what is within our reach within those constraints. When someone points out a barrier, we take note and consider it in subsequent reviews.</span>
+      </p>
+    </article>
+
+    <!-- Qué hemos hecho -->
+    <article class="ac-section">
+      <h2>
+        <span data-lang="es">Medidas adoptadas</span>
+        <span data-lang="en">Measures taken</span>
+      </h2>
+      <p>
+        <span data-lang="es">Entre las cosas que hemos incorporado o revisado:</span>
+        <span data-lang="en">Among the things we have incorporated or reviewed:</span>
+      </p>
+      <ul>
+        <li>
+          <span data-lang="es">Enlace «Saltar al contenido» visible al usar el teclado, en todas las páginas.</span>
+          <span data-lang="en">«Skip to content» link visible when using the keyboard, on all pages.</span>
+        </li>
+        <li>
+          <span data-lang="es">Estructura semántica con <code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;footer&gt;</code> y jerarquía de encabezados.</span>
+          <span data-lang="en">Semantic structure with <code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;footer&gt;</code> and heading hierarchy.</span>
+        </li>
+        <li>
+          <span data-lang="es">Contraste de color revisado: texto sobre fondos claros ≥ 4.5:1 (WCAG AA).</span>
+          <span data-lang="en">Colour contrast reviewed: text on light backgrounds ≥ 4.5:1 (WCAG AA).</span>
+        </li>
+        <li>
+          <span data-lang="es">Atributos <code>alt</code> en todas las imágenes — descriptivos en imágenes informativas, vacíos en las decorativas.</span>
+          <span data-lang="en"><code>alt</code> attributes on all images — descriptive on informational images, empty on decorative ones.</span>
+        </li>
+        <li>
+          <span data-lang="es">Menú de navegación operable con teclado; el foco se mueve al primer enlace al abrir el menú móvil.</span>
+          <span data-lang="en">Navigation menu operable with keyboard; focus moves to the first link when opening the mobile menu.</span>
+        </li>
+        <li>
+          <span data-lang="es">Indicador de idioma activo en el selector ES/EN.</span>
+          <span data-lang="en">Active language indicator in the ES/EN selector.</span>
+        </li>
+      </ul>
+      <p style="margin-top: 1.4em;">
+        <span class="ac-badge">WCAG 2.1</span>
+        <span class="ac-badge">Nivel AA</span>
+        <span class="ac-badge">
+          <span data-lang="es">Revisado mayo 2026</span>
+          <span data-lang="en">Reviewed May 2026</span>
+        </span>
+      </p>
+    </article>
+
+    <!-- Notificar -->
+    <article class="ac-section">
+      <h2>
+        <span data-lang="es">Notificarnos una barrera</span>
+        <span data-lang="en">Report a barrier</span>
+      </h2>
+      <p>
+        <span data-lang="es">Si has encontrado algo que te impide o dificulta usar este sitio, cuéntanoslo. No prometemos resolver cada caso ni en qué plazo, pero sí que lo leemos, lo valoramos y lo tenemos en cuenta cuando revisamos el sitio.</span>
+        <span data-lang="en">If you have found something that prevents or hinders you from using this site, tell us. We do not promise to resolve every case or by when, but we do read it, consider it, and take it into account when we review the site.</span>
+      </p>
+
+      <form class="ct-form rm-fade" id="ac-form" action="https://api.web3forms.com/submit" method="POST" style="margin-top: 2em;">
+        <input type="hidden" name="access_key" value="643dd053-8d56-45a2-b90f-094a4922b130" />
+        <input type="hidden" name="subject" value="Notificación de accesibilidad · reamima.com" />
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
+
+        <div class="ct-form__field">
+          <label class="ct-form__label" for="ac-page">
+            <span data-lang="es">Página o sección</span>
+            <span data-lang="en">Page or section</span>
+          </label>
+          <input class="ct-form__input" id="ac-page" type="text" name="page"
+            placeholder="p.ej. Orígenes · sección de sensores" />
+        </div>
+
+        <div class="ct-form__field">
+          <label class="ct-form__label" for="ac-issue">
+            <span data-lang="es">¿Qué encontraste?</span>
+            <span data-lang="en">What did you find?</span>
+          </label>
+          <textarea class="ct-form__textarea" id="ac-issue" name="message" required
+            placeholder="Describe la barrera o la dificultad que encontraste."></textarea>
+        </div>
+
+        <div class="ct-form__field">
+          <label class="ct-form__label" for="ac-tech">
+            <span data-lang="es">Tecnología de apoyo (opcional)</span>
+            <span data-lang="en">Assistive technology (optional)</span>
+          </label>
+          <input class="ct-form__input" id="ac-tech" type="text" name="assistive_tech"
+            placeholder="p.ej. VoiceOver, NVDA, teclado sin ratón…" />
+        </div>
+
+        <div class="ct-form__field">
+          <label class="ct-form__label" for="ac-email">
+            <span data-lang="es">Correo (opcional, si quieres que te respondamos)</span>
+            <span data-lang="en">Email (optional, if you'd like a reply)</span>
+          </label>
+          <input class="ct-form__input" id="ac-email" type="email" name="email" />
+        </div>
+
+        <div>
+          <button class="rm-btn" type="submit">
+            <span data-lang="es">Enviar notificación →</span>
+            <span data-lang="en">Send report →</span>
+          </button>
+          <p class="ct-form__msg ct-form__msg--ok" id="ac-ok">
+            <span data-lang="es">Recibido. Lo tenemos en cuenta. Gracias.</span>
+            <span data-lang="en">Received. We'll take it into account. Thank you.</span>
+          </p>
+          <p class="ct-form__msg ct-form__msg--err" id="ac-err">
+            <span data-lang="es">Algo ha fallado. Escríbenos a info@reamima.com</span>
+            <span data-lang="en">Something went wrong. Email us at info@reamima.com</span>
+          </p>
+        </div>
+      </form>
+    </article>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="rm-foot">
+  <div class="rm-container">
+    <div class="rm-foot__grid">
+      <div>
+        <a href="index.html" aria-label="REAMIMA · Inicio"><img class="rm-foot__logo" src="img/reamima-logo-blanco.png" alt="" /></a>
+        <p class="rm-foot__brand">REAMIMA</p>
+        <p style="margin-top: 12px; max-width: 36ch;">
+          <span data-lang="es">Ingeniería, I+D+i. Pensamos lo que falta y lo construimos.</span>
+          <span data-lang="en">Engineering, R&amp;D. We design what&rsquo;s missing and build it.</span>
+        </p>
+      </div>
+      <div>
+        <p class="rm-eyebrow" style="margin-bottom: 14px;"><span data-lang="es">Empresa</span><span data-lang="en">Company</span></p>
+        <p><a href="sobre.html"><span data-lang="es">Sobre REAMIMA</span><span data-lang="en">About</span></a></p>
+        <p><a href="origenes.html"><span data-lang="es">Orígenes</span><span data-lang="en">Origins</span></a></p>
+      </div>
+      <div>
+        <p class="rm-eyebrow" style="margin-bottom: 14px;"><span data-lang="es">Contacto</span><span data-lang="en">Contact</span></p>
+        <p><a href="contacta.html">info@reamima.com</a></p>
+      </div>
+      <div>
+        <p class="rm-eyebrow" style="margin-bottom: 14px;">Legal</p>
+        <p><a href="legal.html"><span data-lang="es">Aviso legal</span><span data-lang="en">Legal notice</span></a></p>
+        <p><a href="accesibilidad.html" aria-current="page"><span data-lang="es">Accesibilidad</span><span data-lang="en">Accessibility</span></a></p>
+      </div>
+    </div>
+    <div class="rm-foot__legal">
+      <span>© 2026 Reamima Tech S.L.</span>
+      <span><span data-lang="es">Todos los derechos reservados.</span><span data-lang="en">All rights reserved.</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    const buttons = document.querySelectorAll('[data-set-lang]');
+    buttons.forEach(b => b.addEventListener('click', () => {
+      const lang = b.getAttribute('data-set-lang');
+      document.body.setAttribute('data-active-lang', lang);
+      document.documentElement.setAttribute('lang', lang);
+      buttons.forEach(x => x.classList.toggle('is-active', x === b));
+    }));
+  })();
+  (function(){
+    const els = document.querySelectorAll('.rm-fade');
+    if (!('IntersectionObserver' in window) || !els.length) {
+      els.forEach(e => e.classList.add('is-visible'));
+      return;
+    }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    els.forEach(e => io.observe(e));
+  })();
+  (function(){
+    var toggle = document.querySelector('.rm-nav__toggle');
+    var links = document.querySelector('.rm-nav__links');
+    if (!toggle || !links) return;
+    toggle.addEventListener('click', function() {
+      var open = links.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+      if (open) { var fl = links.querySelector('a'); if (fl) fl.focus(); }
+    });
+    document.addEventListener('click', function(e) {
+      if (!toggle.contains(e.target) && !links.contains(e.target)) {
+        links.classList.remove('is-open');
+        toggle.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  })();
+  (function(){
+    var form = document.getElementById('ac-form');
+    if (!form) return;
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var ok = document.getElementById('ac-ok');
+      var err = document.getElementById('ac-err');
+      fetch(form.action, { method: 'POST', body: new FormData(form) })
+        .then(function(r) {
+          if (r.ok) {
+            form.reset();
+            ok.style.display = 'block';
+            err.style.display = 'none';
+          } else { throw new Error(); }
+        })
+        .catch(function() {
+          err.style.display = 'block';
+          ok.style.display = 'none';
+        });
+    });
+  })();
+</script>
+
+</body>
+</html>
