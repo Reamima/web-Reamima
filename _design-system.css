@@ -180,7 +180,7 @@ a { color: inherit; text-decoration: none; }
 .rm-nav { padding: 12px var(--rm-gutter); border-bottom: 1px solid var(--rm-line); background: var(--rm-paper); }
 .rm-nav__inner { display: flex; align-items: center; justify-content: space-between; }
 .rm-nav__brand { font-family: var(--rm-font-display); font-weight: 500; letter-spacing: 0.01em; color: var(--rm-navy); display: inline-flex; align-items: center; gap: 10px; }
-.rm-nav__brand img { display: block; height: clamp(32px, 5vw, 72px); width: auto; }
+.rm-nav__brand img { display: block; height: clamp(32px, 8vw, 120px); width: auto; }
 .rm-nav__brand .rm-nav__logo--light { display: none; }
 .rm-nav--ink { background: var(--rm-ink); border-bottom-color: rgba(255,255,255,.08); }
 .rm-nav--ink .rm-nav__brand { color: #fff; }
