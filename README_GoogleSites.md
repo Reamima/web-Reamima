@@ -1,6 +1,6 @@
 # REAMIMA · Traslado de la web a Google Sites
 
-Esta carpeta (`web_claude/`) contiene la nueva web de **REAMIMA ** lista para
+Esta carpeta (`web_claude/`) contiene la nueva web de **REAMIMA TECH, S.L.** lista para
 publicarse. Está diseñada con el objetivo doble de:
 
 1. Funcionar como sitio HTML autónomo si en el futuro se publica en un dominio propio.
@@ -127,7 +127,7 @@ Si en el futuro se quieren añadir fotografías:
 Antes de publicar, revisar y completar **legal.html** sustituyendo los marcadores
 `[pendiente de cumplimentar]` con:
 
-- CIF / NIF de REAMIMA
+- CIF / NIF de REAMIMA TECH, S.L.
 - Domicilio social registral.
 - Datos de inscripción en el Registro Mercantil (provincia, tomo, folio, hoja,
   inscripción).
