@@ -41,6 +41,7 @@
   }
   .roadmap-status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--rm-accent); }
 </style>
+<script src="i18n.js"></script>
 </head>
 <body data-active-lang="es">
 <a class="rm-skip" href="#main-content"><span data-lang="es">Saltar al contenido</span><span data-lang="en">Skip to content</span></a>
@@ -53,10 +54,7 @@
       <a href="origenes.html" aria-current="page" style="color: var(--rm-navy);"><span data-lang="es">Orígenes</span><span data-lang="en">Origins</span></a>
       <a href="contacta.html"><span data-lang="es">Contacta</span><span data-lang="en">Contact</span></a>
     </div>
-    <div class="rm-lang">
-      <button class="is-active" data-set-lang="es">ES</button>
-      <button data-set-lang="en">EN</button>
-    </div>
+    <div class="rm-lang"></div>
     <button class="rm-nav__toggle" aria-label="Menú" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -354,15 +352,6 @@
 </footer>
 
 <script>
-  (function(){
-    const buttons = document.querySelectorAll('[data-set-lang]');
-    buttons.forEach(b => b.addEventListener('click', () => {
-      const lang = b.getAttribute('data-set-lang');
-      document.body.setAttribute('data-active-lang', lang);
-      document.documentElement.setAttribute('lang', lang);
-      buttons.forEach(x => x.classList.toggle('is-active', x === b));
-    }));
-  })();
   (function(){
     const els = document.querySelectorAll('.rm-fade');
     if (!('IntersectionObserver' in window) || !els.length) {

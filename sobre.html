@@ -25,6 +25,7 @@
   .stat__num { font-family: var(--rm-font-display); font-weight: 200; font-size: clamp(2.4rem, 5vw, 4rem); color: var(--rm-navy); letter-spacing: -0.02em; line-height: 1; }
   .stat__label { font-family: var(--rm-font-mono); font-size: var(--rm-fs-micro); letter-spacing: .14em; text-transform: uppercase; color: var(--rm-text-muted); margin-top: 12px; }
 </style>
+<script src="i18n.js"></script>
 </head>
 <body data-active-lang="es">
 <a class="rm-skip" href="#main-content"><span data-lang="es">Saltar al contenido</span><span data-lang="en">Skip to content</span></a>
@@ -38,10 +39,7 @@
       <a href="origenes.html"><span data-lang="es">Orígenes</span><span data-lang="en">Origins</span></a>
       <a href="contacta.html"><span data-lang="es">Contacta</span><span data-lang="en">Contact</span></a>
     </div>
-    <div class="rm-lang">
-      <button class="is-active" data-set-lang="es">ES</button>
-      <button data-set-lang="en">EN</button>
-    </div>
+    <div class="rm-lang"></div>
     <button class="rm-nav__toggle" aria-label="Menú" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -307,15 +305,6 @@
 </footer>
 
 <script>
-  (function(){
-    const buttons = document.querySelectorAll('[data-set-lang]');
-    buttons.forEach(b => b.addEventListener('click', () => {
-      const lang = b.getAttribute('data-set-lang');
-      document.body.setAttribute('data-active-lang', lang);
-      document.documentElement.setAttribute('lang', lang);
-      buttons.forEach(x => x.classList.toggle('is-active', x === b));
-    }));
-  })();
   // Fade-up al entrar en viewport (estilo Apple Education)
   (function(){
     const els = document.querySelectorAll('.rm-fade');

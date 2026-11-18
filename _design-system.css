@@ -233,35 +233,45 @@ p a:hover { border-bottom-color: #F08468; }
 .rm-foot a:hover { color: #fff; }
 .rm-foot__legal { margin-top: 36px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.08); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: var(--rm-fs-micro); color: #6E7494; }
 
-/* Selector de idioma */
+/* Selector de idioma (desplegable nativo, 11 idiomas) */
 .rm-lang {
-  display: inline-flex; gap: 2px;
+  display: inline-flex;
   background: rgba(124,132,182,.12);
-  padding: 3px;
   border-radius: 999px;
   font-family: var(--rm-font-mono);
   font-size: var(--rm-fs-micro);
 }
-.rm-lang button {
+.rm-lang select {
+  appearance: none; -webkit-appearance: none;
   border: 0; background: transparent; cursor: pointer;
-  padding: 6px 14px; border-radius: 999px;
+  padding: 8px 18px; border-radius: 999px;
   color: var(--rm-text-muted);
-  letter-spacing: 0.08em; text-transform: uppercase;
-  font-family: inherit; font-size: inherit;
-  transition: background .25s var(--rm-ease), color .25s var(--rm-ease);
+  font-family: inherit; font-size: inherit; letter-spacing: 0.04em;
 }
-.rm-lang button.is-active { background: var(--rm-paper); color: var(--rm-navy); box-shadow: var(--rm-shadow-1); }
-.rm-section--ink .rm-lang { background: rgba(255,255,255,.08); }
-.rm-section--ink .rm-lang button.is-active { background: rgba(255,255,255,.95); color: var(--rm-navy); }
+.rm-lang select:focus-visible { outline: 2px solid var(--rm-navy); outline-offset: 2px; }
+.rm-lang option { color: #1A1A1A; background: #fff; }
+.rm-nav--ink .rm-lang, .rm-section--ink .rm-lang { background: rgba(255,255,255,.08); }
+.rm-nav--ink .rm-lang select, .rm-section--ink .rm-lang select { color: #EAEBF0; }
 
-/* Mostrar/Ocultar idioma · HTML + SVG */
+/* Página oculta mientras se carga un idioma distinto de es/en (máx. 2 s, ver i18n.js) */
+html.i18n-pending body { visibility: hidden; }
+
+/* Mostrar/Ocultar idioma · HTML + SVG
+   es y en están en el HTML; el resto los genera i18n.js como [data-lang="tr"] */
 [data-lang] { display: none; }
 body[data-active-lang="es"] [data-lang="es"] { display: revert; }
 body[data-active-lang="en"] [data-lang="en"] { display: revert; }
+body:not([data-active-lang="es"]):not([data-active-lang="en"]) [data-lang="tr"] { display: revert; }
+/* Contenido sin traducir (data-i18n-skip): se ve el inglés */
+body:not([data-active-lang="es"]):not([data-active-lang="en"]) [data-i18n-skip] [data-lang="en"] { display: revert; }
 /* SVG: revert puede no aplicar en algunos motores; reforzamos */
 svg [data-lang] { display: none; }
 body[data-active-lang="es"] svg [data-lang="es"],
-body[data-active-lang="en"] svg [data-lang="en"] { display: inline; }
+body[data-active-lang="en"] svg [data-lang="en"],
+body:not([data-active-lang="es"]):not([data-active-lang="en"]) svg [data-lang="tr"] { display: inline; }
+/* Aviso de «solo español e inglés» (aviso legal) */
+.i18n-note { display: none; }
+body:not([data-active-lang="es"]):not([data-active-lang="en"]) .i18n-note { display: block; }
 
 /* Animaciones de entrada (CSS-only) */
 @keyframes rmFadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }

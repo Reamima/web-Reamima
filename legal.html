@@ -67,6 +67,7 @@
     color: #5A4A1F;
   }
 </style>
+<script src="i18n.js"></script>
 </head>
 <body data-active-lang="es">
 <a class="rm-skip" href="#main-content"><span data-lang="es">Saltar al contenido</span><span data-lang="en">Skip to content</span></a>
@@ -79,16 +80,14 @@
       <a href="origenes.html"><span data-lang="es">Orígenes</span><span data-lang="en">Origins</span></a>
       <a href="contacta.html"><span data-lang="es">Contacta</span><span data-lang="en">Contact</span></a>
     </div>
-    <div class="rm-lang">
-      <button class="is-active" data-set-lang="es">ES</button>
-      <button data-set-lang="en">EN</button>
-    </div>
+    <div class="rm-lang"></div>
     <button class="rm-nav__toggle" aria-label="Menú" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
 </nav>
-<main id="main-content">
+<main id="main-content" data-i18n-skip>
+<p class="i18n-note" style="margin:0;padding:14px 24px;background:#F2F2EE;color:#1A1A1A;text-align:center;font-size:.9rem;">Este documento solo está disponible en español e inglés; en caso de discrepancia prevalece la versión en español.<br>This document is only available in Spanish and English; in case of discrepancy, the Spanish version prevails.</p>
 
 <!-- HERO -->
 <section class="rm-section rm-section--paper lg-hero">
@@ -321,15 +320,6 @@
 </footer>
 
 <script>
-  (function(){
-    const buttons = document.querySelectorAll('[data-set-lang]');
-    buttons.forEach(b => b.addEventListener('click', () => {
-      const lang = b.getAttribute('data-set-lang');
-      document.body.setAttribute('data-active-lang', lang);
-      document.documentElement.setAttribute('lang', lang);
-      buttons.forEach(x => x.classList.toggle('is-active', x === b));
-    }));
-  })();
   (function(){
     const els = document.querySelectorAll('.rm-fade');
     if (!('IntersectionObserver' in window) || !els.length) {

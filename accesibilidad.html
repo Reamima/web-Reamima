@@ -53,6 +53,7 @@
   .ct-form__msg--ok { color: #2a7a4f; }
   .ct-form__msg--err { color: #b93a3a; }
 </style>
+<script src="i18n.js"></script>
 </head>
 <body data-active-lang="es">
 <a class="rm-skip" href="#main-content"><span data-lang="es">Saltar al contenido</span><span data-lang="en">Skip to content</span></a>
@@ -65,10 +66,7 @@
       <a href="origenes.html"><span data-lang="es">Orígenes</span><span data-lang="en">Origins</span></a>
       <a href="contacta.html"><span data-lang="es">Contacta</span><span data-lang="en">Contact</span></a>
     </div>
-    <div class="rm-lang">
-      <button class="is-active" data-set-lang="es">ES</button>
-      <button data-set-lang="en">EN</button>
-    </div>
+    <div class="rm-lang"></div>
     <button class="rm-nav__toggle" aria-label="Menú" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -146,8 +144,8 @@
           <span data-lang="en">Navigation menu operable with keyboard; focus moves to the first link when opening the mobile menu.</span>
         </li>
         <li>
-          <span data-lang="es">Indicador de idioma activo en el selector ES/EN.</span>
-          <span data-lang="en">Active language indicator in the ES/EN selector.</span>
+          <span data-lang="es">Selector de idioma desplegable con 11 idiomas, operable con teclado.</span>
+          <span data-lang="en">Drop-down language selector with 11 languages, operable with keyboard.</span>
         </li>
       </ul>
       <p style="margin-top: 1.4em;">
@@ -267,15 +265,6 @@
 </footer>
 
 <script>
-  (function(){
-    const buttons = document.querySelectorAll('[data-set-lang]');
-    buttons.forEach(b => b.addEventListener('click', () => {
-      const lang = b.getAttribute('data-set-lang');
-      document.body.setAttribute('data-active-lang', lang);
-      document.documentElement.setAttribute('lang', lang);
-      buttons.forEach(x => x.classList.toggle('is-active', x === b));
-    }));
-  })();
   (function(){
     const els = document.querySelectorAll('.rm-fade');
     if (!('IntersectionObserver' in window) || !els.length) {
