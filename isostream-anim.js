@@ -1,7 +1,9 @@
 /* REAMIMA · nube de puntos del IsoStream animada (la de AnimaIsoStream, en la app).
    Se aplica a cada <canvas class="rm-isostream">: la corona se rellena desde las 12 en sentido
    horario, se queda llena unos segundos, se apaga a puntos tenues y vuelve a empezar.
-   Los puntos respiran siempre. Con «reducir movimiento» queda quieta y llena. */
+   Los puntos son burbujas de cristal (cuerpo translúcido, aro fino, media luna de luz abajo y brillo
+   arriba a la izquierda), como la gota del arco IsoStream de la app. Respiran siempre.
+   Con «reducir movimiento» queda quieta y llena. */
 (function () {
   'use strict';
 
@@ -17,15 +19,48 @@
   var GROSOR_CIRCULO = 0.012, GROSOR_TRAZO = 0.022;
   var PUNTO_MIN = 0.006, PUNTO_MAX = 0.013, RESPIRA_MAX = 0.02;
   var FANTASMA = 0.15, VENTANA = 0.06, NUMERO_PUNTOS = 578;
+  // Burbujas: tamaño respecto al punto plano y transparencia del cuerpo (0 = macizo, 1 = solo aro y brillo)
+  var TAMANO_BURBUJA = 1.6, TRANSPARENCIA = 0.10;
   var TRAZO = [[-1, 0], [-0.529, 0], [-0.407, -0.193], [-0.25, 0.175],
                [-0.075, -0.818], [0.168, 0.75], [0.307, 0], [1, 0]];
-  var AZUL = '#6B99E6', AMBAR = '#F28E39', MARINO = '#0E2483';
-  // Tamaño del dibujo respecto al lado menor de la tarjeta: 1 = la nube casi ocupa el alto (diámetro 0,94)
-  var ESCALA = 1.0;
+  var MARINO = '#0E2483';
+  // Tamaño del dibujo respecto al lado menor de la tarjeta: con las burbujas, 0,94 deja la nube casi
+  // a todo el alto sin recortar las del borde
+  var ESCALA = 0.94;
 
   var reducirMovimiento = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   function fraccion(x) { return x - Math.floor(x); }
+
+  function mezcla(a, b, k) { return [a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k, a[2] + (b[2] - a[2]) * k]; }
+  function rgba(c, a) { return 'rgba(' + Math.round(c[0]) + ',' + Math.round(c[1]) + ',' + Math.round(c[2]) + ',' + Math.min(1, a) + ')'; }
+
+  /** Burbuja precalculada en un lienzo pequeño: se pinta con drawImage, que cuesta mucho menos que
+      crear degradados por punto y fotograma. `bajo` = luz de abajo (celeste en el azul, amarillenta en el ámbar). */
+  function crearBurbuja(rgb, bajo) {
+    var S = 96, m = S / 2, grosor = S * 0.07, r = S / 2 - 3, oscuro = mezcla(rgb, [0, 0, 0], 0.14);
+    var k = (1 - TRANSPARENCIA) / 0.5;
+    var lienzo = document.createElement('canvas'); lienzo.width = lienzo.height = S;
+    var g = lienzo.getContext('2d');
+    var cuerpo = g.createLinearGradient(0, 3, 0, S - 3);
+    cuerpo.addColorStop(0, rgba(oscuro, 0.6 * k));
+    cuerpo.addColorStop(0.5, rgba(rgb, 0.26 * k));
+    cuerpo.addColorStop(1, rgba(mezcla(rgb, bajo, 0.7), 0.85 * k));
+    g.fillStyle = cuerpo; g.beginPath(); g.arc(m, m, r, 0, Math.PI * 2); g.fill();
+    var aro = g.createLinearGradient(0, 0, 0, S);
+    aro.addColorStop(0, rgba(oscuro, 0.95));
+    aro.addColorStop(0.55, rgba(rgb, 0.4 + 0.2 * Math.min(k, 1)));
+    aro.addColorStop(1, rgba(mezcla(rgb, bajo, 0.5), 0.7));
+    g.lineWidth = grosor; g.strokeStyle = aro;
+    g.beginPath(); g.arc(m, m, r - grosor / 2, 0, Math.PI * 2); g.stroke();
+    var hx = S * 0.38, hy = S * 0.33, hr = S * 0.22;
+    var brillo = g.createRadialGradient(hx, hy, 0, hx, hy, hr);
+    brillo.addColorStop(0, 'rgba(255,255,255,0.9)'); brillo.addColorStop(1, 'rgba(255,255,255,0)');
+    g.fillStyle = brillo; g.beginPath(); g.arc(hx, hy, hr, 0, Math.PI * 2); g.fill();
+    return lienzo;
+  }
+  var burbujaAzul = crearBurbuja([107, 153, 230], [227, 240, 255]);
+  var burbujaAmbar = crearBurbuja([242, 142, 57], [255, 247, 158]);
 
   // Nube fija, sin generador aleatorio: secuencia R2 (la misma que la app)
   var nube = [];
@@ -59,10 +94,9 @@
       var respira = RESPIRA_MAX * (0.4 + 0.6 * p.variacion) * lado;
       var x = cx + radio * Math.cos(angulo) + respira * Math.cos(giro);
       var y = cy + radio * Math.sin(angulo) + respira * Math.sin(giro);
-      var r = (PUNTO_MIN + p.variacion * (PUNTO_MAX - PUNTO_MIN)) * lado * (0.4 + 0.6 * presencia);
-      ctx.globalAlpha = (0.55 + 0.45 * p.variacion) * presencia;
-      ctx.fillStyle = p.azul ? AZUL : AMBAR;
-      ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fill();
+      var r = (PUNTO_MIN + p.variacion * (PUNTO_MAX - PUNTO_MIN)) * lado * (0.4 + 0.6 * presencia) * TAMANO_BURBUJA;
+      ctx.globalAlpha = (0.7 + 0.3 * p.variacion) * presencia;
+      ctx.drawImage(p.azul ? burbujaAzul : burbujaAmbar, x - r, y - r, r * 2, r * 2);
     }
     ctx.globalAlpha = 1;
     ctx.strokeStyle = MARINO;
