@@ -20,12 +20,13 @@
 <meta name="twitter:title" content="REAMIMA · Ingeniería imposible por dentro, magia por fuera">
 <meta name="twitter:description" content="REAMIMA. Ingeniería, I+D+i, software de alto rendimiento. Resolvemos lo que la ingeniería convencional descartó como inviable.">
 <meta name="twitter:image" content="https://www.reamima.com/img/og-reamima.jpg">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://www.reamima.com/#organizacion", "name": "REAMIMA", "legalName": "REAMIMA TECH, S.L.U.", "url": "https://www.reamima.com/", "logo": "https://www.reamima.com/img/reamima-logo-blanco.png", "email": "info@reamima.com", "taxID": "B05931258", "description": "Empresa de ingeniería e I+D+i con sede en España: hardware, electrónica, automatización industrial, control en tiempo real y software de alto rendimiento.", "sameAs": ["https://cardistream.com"]}, {"@type": "WebSite", "@id": "https://www.reamima.com/#web", "url": "https://www.reamima.com/", "name": "REAMIMA", "inLanguage": ["es", "en", "de", "fr", "it", "pt", "es-419", "ja", "ko", "zh-Hans", "zh-Hant"], "publisher": {"@id": "https://www.reamima.com/#organizacion"}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://www.reamima.com/#organizacion", "name": "REAMIMA", "legalName": "REAMIMA TECH, S.L.U.", "url": "https://www.reamima.com/", "logo": "https://www.reamima.com/img/reamima-logo-blanco.webp", "email": "info@reamima.com", "taxID": "B05931258", "description": "Empresa de ingeniería e I+D+i con sede en España: hardware, electrónica, automatización industrial, control en tiempo real y software de alto rendimiento.", "sameAs": ["https://cardistream.com"]}, {"@type": "WebSite", "@id": "https://www.reamima.com/#web", "url": "https://www.reamima.com/", "name": "REAMIMA", "inLanguage": ["es", "en", "de", "fr", "it", "pt", "es-419", "ja", "ko", "zh-Hans", "zh-Hant"], "publisher": {"@id": "https://www.reamima.com/#organizacion"}}]}</script>
 <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
 <meta name="theme-color" content="#050B2C">
+<link rel="preload" href="fonts/inter-200-800-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="_design-system.css">
 <style>
   /* Estilos específicos de la página Inicio */
@@ -38,7 +39,7 @@
   .hero-inicio::after {
     content: "";
     position: absolute; inset: 0;
-    background-image: url('img/textura-puntitos.jpg');
+    background-image: url('img/textura-puntitos.webp');
     background-size: cover; background-position: center;
     opacity: .08; mix-blend-mode: screen;
     pointer-events: none;
@@ -80,7 +81,7 @@
   .origins-callout {
     background:
       linear-gradient(135deg, rgba(5,11,44,.86) 0%, rgba(14,36,131,.78) 100%),
-      url('img/1_reamima_Concepto_2.png') center/cover no-repeat;
+      url('img/1_reamima_Concepto_2.webp') center/cover no-repeat;
     color: #fff;
     border-radius: var(--rm-radius-lg);
     padding: clamp(40px, 6vw, 88px);
@@ -100,8 +101,8 @@
 <nav class="rm-nav rm-nav--ink">
   <div class="rm-container rm-nav__inner">
     <a href="/" class="rm-nav__brand" aria-label="REAMIMA · Inicio">
-      <img class="rm-nav__logo--dark" src="img/1_Reamima_transpa_Blanco.png" alt="" />
-      <img class="rm-nav__logo--light" src="img/Reamima_Solido_oscuro.jpeg" alt="" />
+      <img decoding="async" width="681" height="240" class="rm-nav__logo--dark" src="img/1_Reamima_transpa_Blanco.webp" alt="" />
+      <img decoding="async" width="682" height="240" class="rm-nav__logo--light" src="img/Reamima_Solido_oscuro.webp" alt="" />
     </a>
     <div class="rm-nav__links">
       <a href="/sobre"><span data-lang="es">Sobre</span><span data-lang="en">About</span></a>
@@ -132,7 +133,7 @@
         </p>
       </div>
       <figure class="rm-hero__media rm-reveal rm-reveal--d3" style="margin:0;">
-        <img src="img/1_descanso.jpg" alt="" loading="eager" style="object-fit:cover; object-position: center;" />
+        <img decoding="async" width="1024" height="1024" src="img/1_descanso.webp" alt="" loading="eager" fetchpriority="high" style="object-fit:cover; object-position: center;" />
       </figure>
     </div>
   </div>
@@ -210,7 +211,7 @@
     </p>
     <div class="rm-tile-grid rm-tile-grid--3">
       <a class="rm-tile rm-fade rm-fade--d1" href="https://cardistream.com" target="_blank" rel="noopener">
-        <div class="rm-tile__media"><img src="img/1_bici_Chico en tamaño mediano.jpeg" alt="Cardistream — rendimiento físico" loading="lazy" /></div>
+        <div class="rm-tile__media"><img decoding="async" width="640" height="640" src="img/1_bici_chico_mediano.webp" alt="Cardistream — rendimiento físico" loading="lazy" /></div>
         <div class="rm-tile__body">
           <p class="rm-eyebrow">Cardistream</p>
           <h3 class="rm-tile__title">
@@ -225,7 +226,7 @@
         </div>
       </a>
       <a class="rm-tile rm-fade rm-fade--d2" href="/contacta">
-        <div class="rm-tile__media" style="background:#F2F2EE;"><img src="img/isostream-solido.png" alt="Hardware REAMIMA — render de producto" loading="lazy" style="object-fit:contain;background:#F2F2EE;padding:8%;" /><canvas class="rm-isostream" role="img" aria-label="Hardware REAMIMA — render de producto" hidden></canvas></div>
+        <div class="rm-tile__media" style="background:#F2F2EE;"><img decoding="async" width="1024" height="1024" src="img/isostream-solido.webp" alt="Hardware REAMIMA — render de producto" loading="lazy" style="object-fit:contain;background:#F2F2EE;padding:8%;" /><canvas class="rm-isostream" role="img" aria-label="Hardware REAMIMA — render de producto" hidden></canvas></div>
         <div class="rm-tile__body">
           <p class="rm-eyebrow"><span data-lang="es">Tu proyecto</span><span data-lang="en">Your project</span></p>
           <h3 class="rm-tile__title">
@@ -242,7 +243,7 @@
         </div>
       </a>
       <a class="rm-tile rm-fade rm-fade--d3" href="/origenes">
-        <div class="rm-tile__media"><img src="img/1_reamima_Concepto_2.png" alt="Orígenes — respirador de emergencia COVID" loading="lazy" /></div>
+        <div class="rm-tile__media"><img decoding="async" width="1280" height="853" src="img/1_reamima_Concepto_2.webp" alt="Orígenes — respirador de emergencia COVID" loading="lazy" /></div>
         <div class="rm-tile__body">
           <p class="rm-eyebrow">OSHWA · 2020</p>
           <h3 class="rm-tile__title">
@@ -266,7 +267,7 @@
 <section class="rm-section--tight" style="padding: clamp(32px,4vw,64px) 0;">
   <div class="rm-container">
     <figure class="rm-figure rm-fade" style="max-width: 450px; margin: 0 auto;">
-      <img src="img/2_Cinta_pos_derecha_gym.png" alt="" loading="lazy" style="max-width: 100%; height: auto;" />
+      <img decoding="async" width="626" height="608" src="img/2_Cinta_pos_derecha_gym.webp" alt="" loading="lazy" style="max-width: 100%; height: auto;" />
     </figure>
   </div>
 </section>
@@ -301,7 +302,7 @@
   <div class="rm-container">
     <div class="rm-foot__grid">
       <div>
-        <a href="/" aria-label="REAMIMA · Inicio"><img class="rm-foot__logo" src="img/reamima-logo-blanco.png" alt="" /></a>
+        <a href="/" aria-label="REAMIMA · Inicio"><img decoding="async" width="256" height="256" class="rm-foot__logo" src="img/reamima-logo-blanco.webp" alt="" /></a>
         <p class="rm-foot__brand">REAMIMA</p>
         <p style="margin-top: 12px; max-width: 36ch;">
           <span data-lang="es">Ingeniería, I+D+i. Pensamos lo que falta y lo construimos.</span>
