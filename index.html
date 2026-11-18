@@ -27,6 +27,7 @@
 <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
 <meta name="theme-color" content="#050B2C">
 <link rel="preload" href="fonts/inter-200-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/1_descanso.webp" as="image" fetchpriority="high">
 <link rel="stylesheet" href="_design-system.css">
 <style>
   /* Estilos específicos de la página Inicio */
@@ -70,7 +71,7 @@
   .pillars { display: grid; gap: 28px; grid-template-columns: 1fr; }
   @media (min-width: 760px) { .pillars { grid-template-columns: repeat(3, 1fr); } }
   .pillar { padding: 32px 0; border-top: 1px solid var(--rm-line); }
-  .pillar h3 { margin-bottom: .5em; }
+  .pillar h2 { margin-bottom: .5em; }
 
   .quiet-cta {
     display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 24px;
@@ -132,7 +133,7 @@
           <span data-lang="en">Others see what exists. We see what&rsquo;s missing. And then we design it.</span>
         </p>
       </div>
-      <figure class="rm-hero__media rm-reveal rm-reveal--d3" style="margin:0;">
+      <figure class="rm-hero__media" style="margin:0;">
         <img decoding="async" width="1024" height="1024" src="img/1_descanso.webp" alt="" loading="eager" fetchpriority="high" style="object-fit:cover; object-position: center;" />
       </figure>
     </div>
@@ -167,10 +168,10 @@
     <div class="pillars">
       <div class="pillar rm-fade rm-fade--d1">
         <p class="rm-mono rm-muted" style="font-size: var(--rm-fs-micro); letter-spacing:.16em; text-transform:uppercase;">01</p>
-        <h3 class="rm-h3" style="margin-top: 12px;">
+        <h2 class="rm-h3" style="margin-top: 12px;">
           <span data-lang="es">Ingeniería e I+D+i</span>
           <span data-lang="en">Engineering &amp; R&amp;D</span>
-        </h3>
+        </h2>
         <p class="rm-muted" style="margin-top: 8px;">
           <span data-lang="es">Diseñamos sistemas que otros consideran fuera del alcance. Hardware, electrónica, automatización industrial completa: sensor, red, control, SCADA y MES.</span>
           <span data-lang="en">We design systems others consider out of reach. Hardware, electronics, full industrial automation: sensor, network, control, SCADA and MES.</span>
@@ -178,10 +179,10 @@
       </div>
       <div class="pillar rm-fade rm-fade--d2">
         <p class="rm-mono rm-muted" style="font-size: var(--rm-fs-micro); letter-spacing:.16em; text-transform:uppercase;">02</p>
-        <h3 class="rm-h3" style="margin-top: 12px;">
+        <h2 class="rm-h3" style="margin-top: 12px;">
           <span data-lang="es">Software de alto rendimiento</span>
           <span data-lang="en">High-performance software</span>
-        </h3>
+        </h2>
         <p class="rm-muted" style="margin-top: 8px;">
           <span data-lang="es">Procesamiento en el dispositivo. Sin servidores, sin nubes, sin compromisos. La privacidad como arquitectura, no como cláusula.</span>
           <span data-lang="en">On-device processing. No servers, no clouds, no compromises. Privacy as architecture, not as a clause.</span>
@@ -189,10 +190,10 @@
       </div>
       <div class="pillar rm-fade rm-fade--d3">
         <p class="rm-mono rm-muted" style="font-size: var(--rm-fs-micro); letter-spacing:.16em; text-transform:uppercase;">03</p>
-        <h3 class="rm-h3" style="margin-top: 12px;">
+        <h2 class="rm-h3" style="margin-top: 12px;">
           <span data-lang="es">Diseño y experiencia</span>
           <span data-lang="en">Design &amp; experience</span>
-        </h3>
+        </h2>
         <p class="rm-muted" style="margin-top: 8px;">
           <span data-lang="es">La complejidad técnica vive dentro. Lo que el usuario ve es claro, sereno y útil. Magia, sin complicación.</span>
           <span data-lang="en">Technical complexity lives inside. What the user sees is clear, calm and useful. Magic, without complication.</span>
