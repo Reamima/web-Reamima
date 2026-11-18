@@ -167,7 +167,7 @@ In 2020, REAMIMA designed an emergency ventilator from off-the-shelf materials. 
 
 # Open-hardware emergency ventilator (2020) · REAMIMA  —  https://www.reamima.com/origenes
 
-2020: REAMIMA emergency ventilator from off-the-shelf materials. Hardware certified by OSHWA
+2020: REAMIMA designs an emergency ventilator from off-the-shelf materials. Hardware certified by OSHWA
 
 Marzo · 2020
 
