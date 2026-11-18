@@ -1,6 +1,6 @@
 # REAMIMA
 
-> Engineering and R&D company (Ingeniería, I+D+i) based in Spain. One that treats complexity as an advantage, not an obstacle. One of the few that chooses the hard way when the easy way exists.
+> Engineering and R&D company (Ingeniería, I+D+i) based in Spain. One that treats complexity as an advantage, not an obstacle. One of the few that know when the hard way is better even when the easy way exists.
 
 REAMIMA TECH, S.L.U. designs and builds what conventional engineering considers out of reach. Capabilities span the full stack: hardware, electronics, full industrial automation (sensor, network, PLC/Simatic, SCADA, MES), real-time control, high-performance software and product design. On-device processing — no servers, no cloud, privacy as system architecture. Open hardware when it matters (OSHWA certified). What seems impossible to run — simply works.
 
