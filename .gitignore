@@ -3,6 +3,7 @@ CLAUDE.md
 .claude/
 
 # Archivos de trabajo
+Documentacion/
 *.backup
 navbar_template.txt
 ultimasOrdenes.md
