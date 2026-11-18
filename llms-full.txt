@@ -37,19 +37,19 @@ Capabilities
 
 01
 
-#### Engineering & R&D
+### Engineering & R&D
 
 We design systems others consider out of reach. Hardware, electronics, full industrial automation: sensor, network, control, SCADA and MES.
 
 02
 
-#### High-performance software
+### High-performance software
 
 On-device processing. No servers, no clouds, no compromises. Privacy as architecture, not as a clause.
 
 03
 
-#### Design & experience
+### Design & experience
 
 Technical complexity lives inside. What the user sees is clear, calm and useful. Magic, without complication.
 
@@ -73,7 +73,7 @@ OSHWA · 2020
 
 Emergency ventilator with off-the-shelf materials. Open hardware, certified.
 
-OSHWA · 2020
+[OSHWA · ES000009 · 2020](https://certification.oshwa.org/es000009.html)
 
 ### When the world stopped, we didn’t.
 
@@ -103,43 +103,43 @@ Engineering principles
 
 01 / Rigor
 
-#### The hard part, first
+### The hard part, first
 
 We start with the toughest technical constraint. If it doesn’t hold there, it doesn’t hold anywhere.
 
 02 / Soberanía
 
-#### Edge processing
+### Edge processing
 
 Data is processed where it is generated. No intermediate servers. Privacy is a system property, not a promise.
 
 03 / Apertura
 
-#### Open hardware when it matters
+### Open hardware when it matters
 
 When a system can save lives, its design is published. OSHWA certification is the documentary proof, not a decorative badge.
 
 04 / Síntesis
 
-#### Complexity lives inside
+### Complexity lives inside
 
 The user never sees the difficulty. What reaches their hand is clear, calm and useful.
 
 Technical capabilities
 
-#### Hardware and electronics
+### Hardware and electronics
 
 Rapid prototype design on Arduino, ESP32, M5Stack, Portenta, Raspberry and industrial PLCs (Simatic, Logo, IOT2020). Sensor integration, relay control, low-cost electronics with industrial tolerance.
 
-#### Embedded and mobile software
+### Embedded and mobile software
 
 Real-time signal processing, on-device algorithms, server-less architectures. Mobile applications that live on the phone and respect privacy by construction.
 
-#### Systems design
+### Systems design
 
 Most people design parts. We design systems. A holistic vision isn't improvised — it's built through years of real projects.
 
-#### For top-tier projects
+### For top-tier projects
 
 Some projects require more than engineering — they require an ecosystem. We work with top-tier industrial partners to scale when the project demands it, so the client doesn't have to look for them.
 

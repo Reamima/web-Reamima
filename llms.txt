@@ -29,6 +29,7 @@ Sitemap: https://www.reamima.com/sitemap.xml
 During the first weeks of the COVID-19 lockdown, REAMIMA designed an open-hardware emergency ventilator using off-the-shelf materials — no compressed-air line required. OSHWA certified. Engineering without manufacturing or ordering parts: with what was on the shelf. A crisis does not create capabilities. It reveals them. The R&D line has been paused since 2021 and the documentation is kept as technical and historical reference.
 
 - [Origins](https://www.reamima.com/origenes): The full project story, recognitions and the three ventilator models.
+- [OSHWA certification ES000009](https://certification.oshwa.org/es000009.html): Official OSHWA record of the REAMIMA ventilator (certified 7 April 2020; hardware CERN, software LGPL, documentation CC BY-SA).
 - [Simple Model](https://www.reamima.com/origenes-simple): Base ventilator — aquarium pumps, water columns, timers and relays.
 - [Advanced Model](https://www.reamima.com/origenes-avanzado): Pressure control, assisted expiration, inline sensors (Bosch BME family), clinical monitoring. Siemens Simatic S7-1500 H redundancy reference for critical environments.
 - [Air Treatment](https://www.reamima.com/origenes-tratamiento-aire): UV sterilisation, heating and humidity conditioning of the air supply.
