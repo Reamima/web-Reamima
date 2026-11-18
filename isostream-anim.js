@@ -20,8 +20,8 @@
   var TRAZO = [[-1, 0], [-0.529, 0], [-0.407, -0.193], [-0.25, 0.175],
                [-0.075, -0.818], [0.168, 0.75], [0.307, 0], [1, 0]];
   var AZUL = '#6B99E6', AMBAR = '#F28E39', MARINO = '#0E2483';
-  // Margen del dibujo dentro de la tarjeta (el padding del 8 % de la imagen estática)
-  var ESCALA = 0.84;
+  // Tamaño del dibujo respecto al lado menor de la tarjeta: 1 = la nube casi ocupa el alto (diámetro 0,94)
+  var ESCALA = 1.0;
 
   var reducirMovimiento = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
