@@ -360,7 +360,10 @@ body:not([data-active-lang="es"]):not([data-active-lang="en"]) .i18n-note { disp
   background: var(--rm-stone);
 }
 .rm-tile__media img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--rm-ease); }
-.rm-tile:hover .rm-tile__media img { transform: scale(1.04); }
+.rm-figure canvas[hidden], .rm-tile__media canvas[hidden] { display: none; }
+.rm-figure canvas { display: block; width: 100%; aspect-ratio: 4/3; }
+.rm-tile__media canvas { display: block; width: 100%; height: 100%; transition: transform .8s var(--rm-ease); }
+.rm-tile:hover .rm-tile__media img, .rm-tile:hover .rm-tile__media canvas { transform: scale(1.04); }
 .rm-tile__body { padding: clamp(24px, 3vw, 36px); display: flex; flex-direction: column; gap: 12px; flex: 1; }
 .rm-tile__title { font-family: var(--rm-font-display); font-size: clamp(1.6rem, 2.4vw, 2.2rem); font-weight: 300; line-height: 1.15; letter-spacing: -.012em; color: var(--rm-navy); margin: 0; }
 .rm-tile__excerpt { color: var(--rm-text-muted); font-size: var(--rm-fs-small); line-height: 1.55; margin: 0; max-width: 44ch; }
