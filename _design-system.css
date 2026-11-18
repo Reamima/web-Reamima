@@ -244,14 +244,20 @@ p a:hover { border-bottom-color: #F08468; }
 .rm-lang select {
   appearance: none; -webkit-appearance: none;
   border: 0; background: transparent; cursor: pointer;
-  padding: 8px 18px; border-radius: 999px;
+  width: 11.5rem; padding: 8px 30px 8px 16px; border-radius: 999px;
+  text-overflow: ellipsis; overflow: hidden; white-space: nowrap;
   color: var(--rm-text-muted);
   font-family: inherit; font-size: inherit; letter-spacing: 0.04em;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' fill='none' stroke='%235E678A' stroke-width='1.5'%3E%3Cpath d='M1 1l4 4 4-4'/%3E%3C/svg%3E") no-repeat right 12px center;
 }
+@media (max-width: 640px) { .rm-lang select { width: 8.5rem; padding-left: 12px; } }
 .rm-lang select:focus-visible { outline: 2px solid var(--rm-navy); outline-offset: 2px; }
 .rm-lang option { color: #1A1A1A; background: #fff; }
 .rm-nav--ink .rm-lang, .rm-section--ink .rm-lang { background: rgba(255,255,255,.08); }
-.rm-nav--ink .rm-lang select, .rm-section--ink .rm-lang select { color: #EAEBF0; }
+.rm-nav--ink .rm-lang select, .rm-section--ink .rm-lang select {
+  color: #EAEBF0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' fill='none' stroke='%23EAEBF0' stroke-width='1.5'%3E%3Cpath d='M1 1l4 4 4-4'/%3E%3C/svg%3E");
+}
 
 /* Página oculta mientras se carga un idioma distinto de es/en (máx. 2 s, ver i18n.js) */
 html.i18n-pending body { visibility: hidden; }

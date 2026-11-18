@@ -7,7 +7,7 @@
 
   var LANGS = [
     ['es', 'Español'], ['en', 'English'], ['de', 'Deutsch'], ['fr', 'Français'],
-    ['it', 'Italiano'], ['pt', 'Português'], ['es-419', 'Español (Latinoamérica)'],
+    ['it', 'Italiano'], ['pt', 'Português'], ['es-419', 'Español (LatAm)'],
     ['ja', '日本語'], ['ko', '한국어'], ['zh-Hans', '简体中文'], ['zh-Hant', '繁體中文']
   ];
   var CODES = LANGS.map(function (l) { return l[0]; });
@@ -72,13 +72,14 @@
     document.querySelectorAll('[data-i18n-gen]').forEach(function (n) { n.remove(); });
   }
 
-  function translateText(dict) {
+  function translateText(dict, code) {
     document.querySelectorAll('[data-lang="es"]').forEach(function (el) {
       if (el.closest('[data-i18n-skip]')) return;
       var en = el.nextElementSibling;
       if (en && en.getAttribute('data-lang') !== 'en') en = null;
       var val = dict[norm(el.textContent)];
-      if (val === undefined) val = en ? en.innerHTML : el.innerHTML; // sin traducción: inglés
+      // Sin traducción: es-419 cae al español; el resto, al inglés
+      if (val === undefined) val = (en && code !== 'es-419') ? en.innerHTML : el.innerHTML;
       var clone = el.cloneNode(false);
       clone.setAttribute('data-lang', 'tr');
       clone.setAttribute('data-i18n-gen', '');
@@ -134,7 +135,7 @@
       if (current !== code) return; // el usuario cambió de idioma mientras cargaba
       var en = res[0], dict = res[1];
       if (code === 'en') { applyAttrs(en, null); }
-      else { translateText(dict); applyAttrs(dict, en); }
+      else { translateText(dict, code); applyAttrs(dict, code === 'es-419' ? null : en); }
       root.classList.remove('i18n-pending');
     }).catch(function (err) {
       console.error('❌ i18n: no se pudo cargar el idioma «' + code + '»; se muestra el inglés.', err);
