@@ -83,7 +83,7 @@ In the first weeks of lockdown, REAMIMA designed an emergency ventilator with of
 
 ---
 
-# About REAMIMA · Engineering, R&D  —  https://www.reamima.com/sobre
+# About REAMIMA · Engineering and R&D. Automation experts.  —  https://www.reamima.com/sobre
 
 REAMIMA: engineering and R&D team. Technical capabilities, principles and projects.
 
@@ -165,9 +165,9 @@ In 2020, REAMIMA designed an emergency ventilator from off-the-shelf materials. 
 
 ---
 
-# Origins · REAMIMA  —  https://www.reamima.com/origenes
+# Open-hardware emergency ventilator (2020) · REAMIMA  —  https://www.reamima.com/origenes
 
-2020. Lockdown. REAMIMA designs an emergency ventilator from off-the-shelf materials. Open hardware, OSHWA-certified, presented at the global Arduino conference.
+2020: REAMIMA emergency ventilator from off-the-shelf materials. Hardware certified by OSHWA
 
 Marzo · 2020
 
@@ -467,7 +467,7 @@ This scheme can be programmed so that the switchover is automatic and impercepti
 
 ---
 
-# Contact · REAMIMA  —  https://www.reamima.com/contacta
+# Contact · Engineering and R&D · REAMIMA  —  https://www.reamima.com/contacta
 
 Contact REAMIMA TECH, S.L.U. — engineering, R&D, high-performance software and design.
 
