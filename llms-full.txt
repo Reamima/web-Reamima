@@ -1,0 +1,662 @@
+# REAMIMA
+
+> Engineering and R&D company (Ingeniería, I+D+i) based in Spain. One that treats complexity as an advantage, not an obstacle. One of the few that know when the hard way is better even when the easy way exists.
+
+REAMIMA TECH, S.L.U. designs and builds what conventional engineering considers out of reach. Capabilities span the full stack: hardware, electronics, full industrial automation (sensor, network, PLC/Simatic, SCADA, MES), real-time control, high-performance software and product design. On-device processing — no servers, no cloud, privacy as system architecture. Open hardware when it matters (OSHWA certified). What seems impossible to run — simply works.
+
+Company: REAMIMA TECH, S.L.U. (Spanish single-member limited liability company, CIF B05931258)
+General contact: info@reamima.com
+Web contact form: https://www.reamima.com/contacta
+
+Languages: the site is available in 11 languages — Spanish (es), English (en), German (de), French (fr), Italian (it), Portuguese (pt), Latin-American Spanish (es-419), Japanese (ja), Korean (ko), Simplified Chinese (zh-Hans) and Traditional Chinese (zh-Hant). Spanish and English are in the page source; the rest load on demand and can be forced with `?lang=<code>`, e.g. https://www.reamima.com/?lang=de. The legal notice is only available in Spanish and English (the Spanish version prevails).
+
+Full text of every page, in English: https://www.reamima.com/llms-full.txt
+Sitemap: https://www.reamima.com/sitemap.xml
+
+This file contains the full text of every page of www.reamima.com, in English, in site order. Source of truth for each page: the URL in its heading. Index of pages: https://www.reamima.com/llms.txt
+
+---
+
+# REAMIMA · Impossible engineering inside, pure magic outside  —  https://www.reamima.com/
+
+REAMIMA. Engineering, R&D, high-performance software. We solve what conventional engineering dismissed as unviable.
+
+REAMIMA
+
+## Impossible engineering inside, pure magic outside.
+
+Others see what exists. We see what’s missing. And then we design it.
+
+REAMIMA is an engineering company. One that treats complexity as an advantage, not an obstacle. One of the few that know when the hard way is better even when the easy way exists.
+
+Nobody solves it because nobody questions the standard. We don’t settle for what exists — because what exists is not the future.
+
+What we build can fit in a hand or fill an industrial plant. The scale is different. The standard, the same. What seems impossible to run — simply works.
+
+Capabilities
+
+01
+
+#### Engineering & R&D
+
+We design systems others consider out of reach. Hardware, electronics, full industrial automation: sensor, network, control, SCADA and MES.
+
+02
+
+#### High-performance software
+
+On-device processing. No servers, no clouds, no compromises. Privacy as architecture, not as a clause.
+
+03
+
+#### Design & experience
+
+Technical complexity lives inside. What the user sees is clear, calm and useful. Magic, without complication.
+
+Projects
+
+Cardistream
+
+#### An entire trajectory. Only yours.
+
+Physical performance optimization software. Day after day, month after month, year after year.
+
+Your project
+
+#### Our obsession.
+
+Hardware, software, electronics, control. If there's a solution, we find it. If there isn't, we invent it.
+
+OSHWA · 2020
+
+#### Locked down. Engineering at the limit.
+
+Emergency ventilator with off-the-shelf materials. Open hardware, certified.
+
+OSHWA · 2020
+
+### When the world stopped, we didn’t.
+
+In the first weeks of lockdown, REAMIMA designed an emergency ventilator with off-the-shelf materials. Open hardware, OSHWA-certified.
+
+[ Read the full story ](https://www.reamima.com/origenes)
+
+---
+
+# About REAMIMA · Engineering, R&D  —  https://www.reamima.com/sobre
+
+REAMIMA: engineering and R&D team. Technical capabilities, principles and projects.
+
+About REAMIMA
+
+## An engineering company that designs what does not yet exist.
+
+REAMIMA is an engineering and R&D team focused on solving problems the industry considers out of reach. Hardware, electronics, real-time control and high-performance software.
+
+Mission
+
+To build what conventional engineering discarded as unviable. To make the complex simple. To return technical control to the user.
+
+We operate at the frontier where low-cost electronics, embedded processing and rigorous design converge into systems that seem impossible — and simply work.
+
+Engineering principles
+
+01 / Rigor
+
+#### The hard part, first
+
+We start with the toughest technical constraint. If it doesn’t hold there, it doesn’t hold anywhere.
+
+02 / Soberanía
+
+#### Edge processing
+
+Data is processed where it is generated. No intermediate servers. Privacy is a system property, not a promise.
+
+03 / Apertura
+
+#### Open hardware when it matters
+
+When a system can save lives, its design is published. OSHWA certification is the documentary proof, not a decorative badge.
+
+04 / Síntesis
+
+#### Complexity lives inside
+
+The user never sees the difficulty. What reaches their hand is clear, calm and useful.
+
+Technical capabilities
+
+#### Hardware and electronics
+
+Rapid prototype design on Arduino, ESP32, M5Stack, Portenta, Raspberry and industrial PLCs (Simatic, Logo, IOT2020). Sensor integration, relay control, low-cost electronics with industrial tolerance.
+
+#### Embedded and mobile software
+
+Real-time signal processing, on-device algorithms, server-less architectures. Mobile applications that live on the phone and respect privacy by construction.
+
+#### Systems design
+
+Most people design parts. We design systems. A holistic vision isn't improvised — it's built through years of real projects.
+
+#### For top-tier projects
+
+Some projects require more than engineering — they require an ecosystem. We work with top-tier industrial partners to scale when the project demands it, so the client doesn't have to look for them.
+
+Current projects
+
+### Cardistream
+
+Physical performance optimization software that builds each person’s unique training pattern over time. On-device processing. Zero servers.
+
+[cardistream.com](https://cardistream.com)
+
+### iSoStream
+
+A new training metric inside Cardistream. The number that synthesises your training digital twin — what no coach can calculate by eye.
+
+OSHWA · Arduino Global Conference · 2020
+
+### The track record that justifies the method.
+
+In 2020, REAMIMA designed an emergency ventilator from off-the-shelf materials. Open hardware, OSHWA-certified, presented at the Arduino global conference. The story explains the method.
+
+[ Read Origins ](https://www.reamima.com/origenes)
+
+---
+
+# Origins · REAMIMA  —  https://www.reamima.com/origenes
+
+2020. Lockdown. REAMIMA designs an emergency ventilator from off-the-shelf materials. Open hardware, OSHWA-certified, presented at the global Arduino conference.
+
+Marzo · 2020
+
+## When the world stopped, we didn’t.
+
+REAMIMA was born in the first weeks of lockdown, designing an emergency ventilator from materials anyone could order from home: aquarium pumps, an Arduino board and a few sensors. Open, free, replicable hardware.
+
+March 2020 · engineer in laboratory developing the first prototype
+
+The project
+
+Building a ventilator from off-the-shelf materials.
+
+REAMIMA is the open and free hardware design so that anyone can help by building ventilators with easily available materials, without needing a compressed-air line.
+
+The first prototype was assembled with empty bottles, a plastic container, two aquarium water pumps and electronics that anyone could buy on Amazon or at electronics stores. The idea was to walk into a hardware store and find everything needed to build a ventilator. In simple words: the ventilator McGyver would build.
+
+The design is based on the use of water columns to produce gas exchange in the lung in a simple way. In an emergency, as we faced with the Coronavirus, it was necessary to build reliable-enough equipment quickly, without developing new material that would need many hours of validation.
+
+Most importantly: with very little knowledge anyone could assemble a small ventilator. That was — and remains — REAMIMA’s wager: serious engineering that reaches the hands of whoever needs it.
+
+The principle
+
+### A water pump between two tanks.
+
+The whole system fits in one idea: a pump moves water between a compression tank and a main tank. The water column rising in the first compresses the air inside an inverted bottle and sends it to the patient. When the water falls, the bottle refills with air.
+
+International recognition
+
+### Verified, published and shared with the global community.
+
+Technical demonstration
+
+### The system, in operation.
+
+Technical documentation
+
+### Three models. From air to control.
+
+#### Air treatment
+
+Humidification, heating and cleaning. Preparing the air the patient breathes.
+
+Read documentation
+
+#### Simple Model
+
+Two containers, two pumps, timer control. The essence of the system, step by step, with calculations.
+
+Read documentation
+
+#### Advanced Model
+
+Pressure control, assisted expiration, safety valves and monitoring. The evolution of the simple model.
+
+Read documentation
+
+The natural way
+
+A crisis does not create capabilities. It reveals them. The cool head under pressure. The collaboration nobody called for. Do engineering without manufacturing or ordering parts — with what you have on the shelf.
+
+That is what we do: engineering that does not wait for perfect conditions, but makes real conditions exactly enough.
+
+---
+
+# Simple Model · Origins · REAMIMA  —  https://www.reamima.com/origenes-simple
+
+Simple Model of the REAMIMA ventilator: tanks, pumps and timers. Technical documentation with calculations and diagrams.
+
+[Origins](https://www.reamima.com/origenes) · 02 · Simple
+
+## Simple Model
+
+A large container that acts as a water reservoir and a smaller one called the inspiration tank. The essence of the system, step by step, with calculations.
+
+Main components
+
+### Pumps, relays and a timer. Nothing else.
+
+Submersible water pump
+
+Two units. One moves water to the inspiration tank; the other returns it.
+
+Power relays
+
+Switch each pump’s 220 V supply based on timer commands.
+
+Aquarium heater
+
+Same as in the air subsystem: keeps the water at temperature.
+
+The simplest model to build a ventilator is a large container that acts as a water reservoir and a smaller one we call the inspiration tank. At the output of the bottle that compresses the air (in the video, where the glove is mounted), the ventilator tube connects to a mask with a valve, so that exhalation occurs naturally.
+
+In the video, the materials used are visible: an empty milk bottle as inspiration tank, an empty soap bottle as inspiration container, and a transparent plastic box as system water tank. Inside the milk bottle there is an aquarium water pump; inside the system water tank, another pump. Both pumps are connected to two relays controlled by a timer.
+
+01 · Botella
+
+### The air-compressing bottle
+
+Volume above 700–1,000 ml; 1,200 ml is recommended. It can be a bottle, a tube of methacrylate, PVC or metal — rigid, easy to obtain and with a mouth on top to connect the ventilator tube.
+
+The inverted bottle must be firmly attached to the tank, not moving, and must not leak air when screwed to the wall of the inspiration tank. If you pierce it for fixing, seal with an inert material (silicone) or with non-porous clear tape. The pressure is not high and tape holds.
+
+Position: in the inspiration vessel, with the pump at the bottom, leave two or three fingers of water above the pump and a couple up to the base of the bottle. That space fills with air during expiration and is covered during inspiration.
+
+02 · Cotas
+
+### Levels 0, 1 and 2
+
+**Level 0** — minimum water level of the tank (you can mark it). **Level 1** — water starts to cover the base of the air-compressing bottle. From here on, the air volume starts to flow through the tube. **Level 2** — mark inside the bottle, roughly 500 ml from its base. This is the level the water must reach inside the bottle to guarantee that 500 ml of air is delivered to the outside.
+
+In the video example, with a 800 ml bottle, the base was removed, the bottle placed upside down with the cap on, filled with water and decanted into a 500-ml-marked container. You can add more graduations (600 ml, 400 ml, etc.) in case more or less air needs to be insufflated.
+
+03 · Bombas
+
+### Flow calculation
+
+Both pumps are aquarium water pumps. The flow must be enough to fill 1 litre inside the compression bottle, and it depends on the inspiration tank volume.
+
+Measure or calculate the height between level 0 and level 2 inside the inspiration bottle. Multiplied by the area of the inspiration tank, you get the cm³ the pump must move.
+
+Ventilators work between 10 and 30 breaths per minute. We must fill those 4.5 L 30 times per minute. Since each cycle inhales and exhales, the rate doubles: 30 × 2 = 60.
+
+A single pump for this flow is expensive and uncommon; look for the highest available flow (most have a regulator to lower it). A real option is the Waldbeck Nemesis T90: 90 W, up to 4 m head, IPX8, 6,200 L/h.
+
+With that pump 10–12 breaths per minute are reached comfortably, or several pumps can be used to raise frequency. Always check that the chosen pump physically fits inside the inspiration tank.
+
+04 · Relés
+
+### Safe switching
+
+In this case the pumps run at 220 V. Of the two plug wires, one goes to the relay and the other to one of the poles. The other relay terminal (AC side) connects to the other pole, closing the circuit. **⚠ Caution: this is AC — handle with care.**
+
+To withstand frequent on/off cycles, a solid-state relay is recommended — for instance, DC-AC 5 V/2 A 4-channel modules with fuse. They handle a 440 W load per pump without issue.
+
+05 · Control
+
+### Whatever you have at hand
+
+Use the device you prefer: a maker can use Arduino, ESP32, M5Stack; with PLC experience, a Simatic, Logo or IOT2020; if you program and you like Raspberry, that works too. What matters is that the operator of the ventilator will speak in clinical terms, foreign to your programming: design a human-machine interface that lets them easily set breath time and/or air volume.
+
+A personal note: my apologies to David Cuartielles and Massimo Banzi for using an M5Stack in the video instead of a Portenta H7 or another original Arduino board. I needed it fast, with a screen, and I knew its dual core well enough for simultaneous programming. Without their work on Arduino this would not have been possible. What David and Massimo set in motion two decades ago was a bet that anyone with an idea and a real problem could build the solution. In the spring of 2020, millions of makers proved them right. Thanks to them, their team and that whole community.
+
+06 · Tiempos
+
+### Program: three timers, two outputs
+
+The program is very simple: three timers activate two digital outputs.
+
+**D** is the total cycle time in seconds (60/D = breaths per minute). **A** is the time in seconds during which the chosen volume is insufflated. **B** is the pause (optional, decided by the ventilation expert) and **C** is the expiration time, during which the second pump is activated to return water to the tank.
+
+To fill from level 0 to level 2 in the given time, generate a PWM pulse train during time A. A couple of tests will be needed to find the right setting.
+
+One more thing: keep a power strip with a switch and a mop nearby. The first is to stop everything at once. The second, for when you don't get there in time. We know this from experience.
+
+---
+
+# Advanced Model · Origins · REAMIMA  —  https://www.reamima.com/origenes-avanzado
+
+Evolution of the Simple Model: pressure control, assisted expiration, sensors and clinical monitoring of the REAMIMA ventilator.
+
+[Origins](https://www.reamima.com/origenes) · 03 · Advanced
+
+## Advanced Model
+
+The evolution of the Simple Model. Pressure control, assisted expiration, in-line sensors and clinical monitoring. The same idea, taken to the next level of safety.
+
+The Advanced Model keeps the water column and the inverted bottle of the Simple Model — that idea remains the heart of the system — and adds what separates emergency equipment from clinically safe equipment: pressure control, in-line sensors, assisted expiration, redundant safety valves and real-time monitoring.
+
+We built the prototypes needed to prove it worked. When the pandemic stabilised, there was no reason to continue — and that is exactly what we wanted: for it not to be needed. This page documents the complete design.
+
+01 · Pressure
+
+### Inspiratory pressure control
+
+A differential sensor measures inspiratory line pressure in real time. The controller modulates pump flow via PWM to keep pressure within the clinical window set by the operator. If the threshold is exceeded, the safety valve relieves immediately.
+
+For measurement we evaluated Bosch Sensortec's environmental sensor family: [BME280](https://www.bosch-sensortec.com/products/environmental-sensors/humidity-sensors-bme280/), [BME680](https://www.bosch-sensortec.com/products/environmental-sensors/gas-sensors/bme680/), [BME690](https://www.bosch-sensortec.com/products/environmental-sensors/gas-sensors/bme690/) and [BME688](https://www.bosch-sensortec.com/products/environmental-sensors/gas-sensors/bme688/). They combine barometric pressure, temperature and humidity in a compact package, with sufficient accuracy for emergency ventilation and reasonable availability during the 2020 supply crisis.
+
+PIP
+
+Peak inspiratory pressure
+
+Adjustable limit, audible and visual alarm.
+
+PEEP
+
+Positive end-expiratory pressure
+
+Maintained by the return water column and a calibrated valve.
+
+02 · Flow
+
+### Measured flow and tidal volume
+
+A flow sensor on the inspiratory branch — Venturi-effect or thermal anemometer, depending on availability — allows the flow to be integrated over time and yields the actual tidal volume delivered per cycle. That closes the volume loop and frees the operator from estimating it from the levels.
+
+03 · Expiration
+
+### Assisted expiration and PEEP valve
+
+In the Simple Model, expiration is passive. In the Advanced Model, the expiratory branch passes through a calibrated valve that maintains PEEP and through a second water column that acts as a one-way seal. An auxiliary pump assists expiration when clinically required.
+
+04 · Monitor
+
+### Clinical interface and telemetry
+
+A screen with real-time pressure, flow and volume waveforms, editable parameters (rate, tidal volume, PEEP, PIP, FiO₂) and alarms. Data is logged locally and, optionally, sent to a hospital monitoring system.
+
+05 · Safety
+
+### Redundancy and safe modes
+
+Dual relief valve, redundant pressure sensor, firmware watchdog, integrated UPS power and a manual mode independent of the controller. If the digital system fails, the water column keeps running: that was, from the beginning, one of the design principles.
+
+For more demanding environments — intensive care units with zero tolerance for interruption — the natural step up is controller-level redundancy. The [Siemens Simatic S7-1500 H](https://www.siemens.com/es-es/products/simatic/s7-1500-rh-cpus/) is the industrial reference: two hot-synchronised CPUs that switch without state loss if one fails. An architecture designed exactly for this.
+
+R&D line paused in 2021. The documentation is kept here as technical and historical reference.
+
+---
+
+# Air treatment · Origins · REAMIMA  —  https://www.reamima.com/origenes-tratamiento-aire
+
+Humidification, heating and cleaning of the air. Technical documentation of the air-preparation subsystem of the REAMIMA ventilator.
+
+[Origins](https://www.reamima.com/origenes) · 01 · Air
+
+## Air treatment
+
+The air a patient breathes, in an emergency, may enter untreated — as in the manual ventilators we see in films. But with very little more it can be properly prepared: humidified, at the right temperature and free of pathogens.
+
+Components
+
+### Three parts you can buy at an aquarium shop.
+
+Aquarium air pump
+
++20,000 hours of service. Releases air inside the warm water.
+
+Aquarium heater
+
+Low failure rate, temperature range suited to the subsystem.
+
+UV lamp
+
+Sterilises the air chamber. Shielded, never visible directly.
+
+01 · Humectación
+
+### Heat and humidify
+
+The air must be heated to the right temperature and given the humidity it needs. An aquarium air pump — tested at over 20,000 hours of operation (check the manufacturer’s data sheet) — releases the air into a water tank at controlled temperature.
+
+02 · Calentamiento
+
+### Aquarium heater
+
+To heat the air, we go back to the pet shop. Aquarium heaters have many years of field experience, a low failure rate, easy availability and a temperature range similar to what the subsystem needs.
+
+03 · Construcción
+
+### Tank and sizing
+
+The simplest approach is to use a plastic or metal container as the water tank for the whole circuit. The size must accommodate the air of several breaths.
+
+#### Required air volume
+
+If we take a maximum of 10 ml/kg of air and the ventilator is designed for 100 kg, that is 1,000 ml of air per inspiration. The air tank must exceed this volume multiplied by 2 (breaths) and by 3 (air + water + others), so a 6-litre tank is the recommended starting point.
+
+#### Required airflow
+
+We must plan for 15 to 25 breaths per minute. In the worst case (1,000 ml × 25 br/min) we obtain 25,000 litres/hour. With this figure we size the air pump that will treat the air to be breathed.
+
+The pump must release the air into the hot water, as shown in the diagram, producing a bubble flow that is humidified and heated before reaching the inspiration circuit.
+
+04 · Limpieza
+
+### UV sterilisation
+
+The water must be replaced and the system cleaned regularly to prevent the proliferation of bacteria, fungi and other harmful elements. A good solution is to place a UV lamp in the tank — also from an aquarium shop — designed to eliminate bacteria and keep the water clean.
+
+**Important:** the lamp must be protected and not directly visible. Ultraviolet light can cause serious damage — burns, blindness. Always follow the manufacturer’s instructions.
+
+05 · Seguridad
+
+### Valve and levels
+
+The safety valve is necessary to prevent overpressure or depression conditions that would stop the system from working. The tank should be marked with maximum and minimum water levels, so the volume is always kept within the working range.
+
+06 · Redundancia
+
+### Standby duplicate elements
+
+During the pandemic, the scarcity of materials prevented duplicating the system's elements. Under normal conditions, the right approach is to install each critical component twice: one active and one in standby, ready to take over if the first one fails.
+
+This scheme can be programmed so that the switchover is automatic and imperceptible, similar to the high-availability architecture of Siemens [Simatic H](https://www.siemens.com/es-es/products/simatic/s7-1500-rh-cpus/) PLCs: if one module fails, the system continues operating without interruption while the faulty element is replaced.
+
+---
+
+# Contact · REAMIMA  —  https://www.reamima.com/contacta
+
+Contact REAMIMA TECH, S.L.U. — engineering, R&D, high-performance software and design.
+
+For what has no standard solution
+
+## A serious conversation starts with a clear message.
+
+If your organisation needs to solve a real technical problem — software, instrumentation, control, open hardware or a project that doesn’t yet know how to be built — REAMIMA is available to listen.
+
+What we like to receive
+
+### What helps in a first message.
+
+- **The problem** — in one sentence, what doesn’t work or what is missing.
+- **Who is asking** — your organisation, your role, and why this landed on your desk.
+- **When** — if there is a deadline, a phase or a decision waiting on the answer.
+
+Engineering · R&D · Open hardware
+
+Contact details
+
+Main e-mail
+
+[info@reamima.com](mailto:info@reamima.com)
+
+Projects & collaboration
+
+[proyectos@reamima.com](mailto:proyectos@reamima.com)
+
+Press & academia
+
+[info@reamima.com](mailto:info@reamima.com)
+
+Web
+
+[www.reamima.com](https://www.reamima.com)
+
+Open hardware
+
+[OSHWA · ES000009](https://certification.oshwa.org/es000009.html)
+
+Public documentation
+
+Technical documentation
+
+reamima.com
+
+Technical videos
+
+YouTube
+
+Company information
+
+**REAMIMA TECH, S.L.U.** — Spanish single-member limited liability company, CIF B05931258. Full registration details (registered office and commercial registry) on the [legal notice](https://www.reamima.com/legal) page.
+
+---
+
+# Accessibility · REAMIMA  —  https://www.reamima.com/accesibilidad
+
+REAMIMA's commitment to web accessibility and a channel for reporting access barriers.
+
+Accessibility
+
+## We want no one left out
+
+We work to make this site usable by anyone, with any device or assistive technology. If you find something that does not work well for you, we want to know.
+
+### Our approach
+
+We use the **Web Content Accessibility Guidelines (WCAG) 2.1, level AA** as our reference. We are not a public body and are not legally required to comply, but we believe it is the right thing to do.
+
+This site is static, maintained by a small team. We do what is within our reach within those constraints. When someone points out a barrier, we take note and consider it in subsequent reviews.
+
+### Measures taken
+
+Among the things we have incorporated or reviewed:
+
+- «Skip to content» link visible when using the keyboard, on all pages.
+- Semantic structure with `<main>`, `<nav>`, `<footer>` and heading hierarchy.
+- Colour contrast reviewed: text on light backgrounds ≥ 4.5:1 (WCAG AA).
+- `alt` attributes on all images — descriptive on informational images, empty on decorative ones.
+- Navigation menu operable with keyboard; focus moves to the first link when opening the mobile menu.
+- Drop-down language selector with 11 languages, operable with keyboard.
+
+WCAG 2.1 Nivel AA Reviewed May 2026
+
+### Report a barrier
+
+If you have found something that prevents or hinders you from using this site, tell us. We do not promise to resolve every case or by when, but we do read it, consider it, and take it into account when we review the site.
+
+---
+
+# Legal notice · REAMIMA  —  https://www.reamima.com/legal
+
+Legal notice, privacy policy and cookies policy of REAMIMA TECH, S.L.U.
+
+Este documento solo está disponible en español e inglés; en caso de discrepancia prevalece la versión en español. This document is only available in Spanish and English; in case of discrepancy, the Spanish version prevails.
+
+Legal
+
+## Legal notice, privacy and cookies
+
+Mandatory legal information under the Spanish Information-Society Services Act (LSSI-CE 34/2002), the General Data Protection Regulation (GDPR EU 2016/679) and Spanish Organic Law 3/2018 on Data Protection.
+
+Last updated: April 2026.
+
+Contents
+
+- [Site owner](#datos-titular)
+- [Purpose and acceptance](#objeto)
+- [Intellectual and industrial property](#propiedad)
+- [Liability disclaimer](#responsabilidad)
+- [Third-party links](#enlaces)
+- [Privacy policy](#privacidad)
+- [Cookies policy](#cookies)
+- [Open hardware and the REAMIMA project](#hardware)
+- [Applicable law and jurisdiction](#legislacion)
+
+### 1. Site owner
+
+In accordance with article 10 of Spanish Law 34/2002 on Information-Society Services and Electronic Commerce (LSSI-CE), the site owner’s identification details are as follows:
+
+- **Company name:** REAMIMA TECH, S.L.U.
+- **CIF:** B05931258
+- **E-mail:** [info@reamima.com](mailto:info@reamima.com)
+- **Web:** [www.reamima.com](https://www.reamima.com)
+
+### 2. Purpose and acceptance
+
+This legal notice governs the use of the website [www.reamima.com](https://www.reamima.com) (hereinafter, the “Website”), owned by REAMIMA TECH, S.L.U. Browsing the Website confers the status of user thereof and implies full and unreserved acceptance of every provision included in this Legal Notice.
+
+The user undertakes to use the Website appropriately, in accordance with the Law, this legal notice and any instructions REAMIMA may issue.
+
+### 3. Intellectual and industrial property
+
+The Website as a whole — design, source code, editorial texts, original photographs, trademarks, logos, sounds, images and, in general, any work eligible for protection — belongs to REAMIMA TECH, S.L.U. or to third parties who have expressly authorised its use.
+
+Reproduction, distribution, public communication, transformation or any other form of exploitation of the Website’s contents, in whole or in part, is strictly prohibited without prior, express, written authorisation from REAMIMA TECH, S.L.U., except where content is published under an open licence — in which case the terms of that licence prevail.
+
+The REAMIMA project (emergency ventilator, associated hardware and firmware) is published as **open hardware** under OSHWA certification **ES000009**. Its use, copying, modification and distribution are governed by the corresponding open licence.
+
+### 4. Liability disclaimer
+
+The information published on the Website is informative, technical and educational in nature. REAMIMA TECH, S.L.U. makes its best efforts to keep it accurate and up to date, but does not guarantee the absence of errors or omissions, nor uninterrupted service availability.
+
+The REAMIMA project documents an emergency-ventilator design. **It is not a certified medical device** and does not replace qualified clinical judgement. Any medical use must be supervised by competent healthcare staff and comply with the medical regulations applicable in each jurisdiction. REAMIMA TECH, S.L.U. accepts no liability arising from third-party clinical use of the design.
+
+### 5. Third-party links
+
+The Website may contain links to external sites (e.g., OSHWA, Arduino, OpenCircuits, YouTube). REAMIMA TECH, S.L.U. is not responsible for the content, privacy practices or availability of such sites and recommends that users review the terms of use and privacy policies of each before interacting with them.
+
+### 6. Privacy policy
+
+#### Data controller
+
+REAMIMA TECH, S.L.U., with the identification details listed in section 1 and contact address [info@reamima.com](mailto:info@reamima.com).
+
+#### Data processed and purpose
+
+When users contact us by e-mail, only the personal data they voluntarily provide (name, e-mail and message content) are processed, for the sole purpose of handling the enquiry.
+
+#### Legal basis
+
+Consent of the data subject and, where applicable, performance of pre-contractual measures or compliance with applicable legal obligations.
+
+#### Retention
+
+Data will be retained for the time strictly necessary to fulfil the stated purpose and, where applicable, for the legal limitation periods.
+
+#### Recipients
+
+Personal data will not be transferred to third parties, except where legally required. The strictly necessary technology providers acting as data processors under a contract pursuant to art. 28 GDPR may have access: the hosting provider, the e-mail provider and Web3Forms (web3forms.com), the web form processing provider through which messages submitted on this site are received.
+
+#### Rights
+
+Users may exercise their rights of access, rectification, erasure, objection, restriction and portability by writing to [info@reamima.com](mailto:info@reamima.com), attaching a copy of an identity document. If users consider that processing does not comply with the rules, they have the right to lodge a complaint with the Spanish Data Protection Agency ([www.aepd.es](https://www.aepd.es)).
+
+### 7. Cookies policy
+
+REAMIMA does not use its own analytics or advertising cookies. The contact form uses Web3Forms (web3forms.com), an external form-processing provider that may set strictly necessary technical cookies for form submission. The site does not incorporate any other third-party service that generates cookies.
+
+Users may configure or disable cookies at any time from their browser settings. For more information on Web3Forms cookies, please consult their privacy policy at web3forms.com.
+
+### 8. Open hardware and the REAMIMA project
+
+The REAMIMA emergency-ventilator design is **open hardware**. It is certified by the Open Source Hardware Association under the identifier **ES000009**. The published technical documentation, schematics and source code are subject to the terms of the open licence declared in each repository or publication.
+
+Open-licence publication does not imply any warranty of fitness for a specific clinical use, nor does it relieve any integrator, manufacturer or healthcare professional from complying with the medical-device regulations applicable in each jurisdiction.
+
+### 9. Applicable law and jurisdiction
+
+This Legal Notice is governed by Spanish law. For the resolution of any dispute arising from access to or use of the Website, the parties submit to the courts established under applicable procedural rules and, unless the Law provides otherwise, to those of the registered office of REAMIMA TECH, S.L.U.

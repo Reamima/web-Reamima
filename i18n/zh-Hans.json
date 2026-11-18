@@ -59,7 +59,7 @@
 "Documentación técnica": "技术文档",
 "Vídeos técnicos": "技术视频",
 "Información de la empresa": "公司信息",
-"REAMIMA TECH, S.L.U. — sociedad limitada unipersonal con sede en España, CIF B05931258. Datos completos (dirección registral y registro mercantil) en la página de aviso legal.": "<strong>REAMIMA TECH, S.L.U.</strong> — 总部设在西班牙的一人有限责任公司（sociedad limitada unipersonal），CIF B05931258。完整信息（注册地址和商业登记）请见<a href=\"legal.html\">法律声明</a>页面。",
+"REAMIMA TECH, S.L.U. — sociedad limitada unipersonal con sede en España, CIF B05931258. Datos completos (dirección registral y registro mercantil) en la página de aviso legal.": "<strong>REAMIMA TECH, S.L.U.</strong> — 总部设在西班牙的一人有限责任公司（sociedad limitada unipersonal），CIF B05931258。完整信息（注册地址和商业登记）请见<a href=\"/legal\">法律声明</a>页面。",
 "Ingeniería imposible por dentro,magia por fuera.": "内里是不可能的工程，<br/>外在是魔法。",
 "Otros ven lo que existe. Nosotros vemos lo que falta. Y lo diseñamos.": "别人看到已有的东西。我们看到缺失的东西。然后把它设计出来。",
 "REAMIMA es una ingeniería. Una que trata la complejidad como ventaja, no como obstáculo. De las pocas que saben cuándo es mejor lo difícil, aunque lo fácil exista.": "REAMIMA 是一家工程公司。把复杂性当作优势，而不是障碍。是少数在有简单之路时，仍懂得何时选择困难之路更好的公司之一。",
@@ -318,5 +318,9 @@
 "REAMIMA: equipo de ingeniería e I+D+i. Capacidades técnicas, principios y proyectos.": "REAMIMA：工程与研发团队。技术能力、原则和项目。",
 "Cardistream — entrenamiento personalizado": "Cardistream — 个性化训练",
 "iSoStream — render técnico": "IsoStream — 技术渲染图",
-"Idioma": "语言"
+"Idioma": "语言",
+"Página no encontrada": "找不到页面",
+"La página que buscas no existe o se ha movido.": "您要找的页面不存在或已被移动。",
+"Volver al inicio": "返回首页",
+"Página no encontrada · REAMIMA": "找不到页面 · REAMIMA"
 }

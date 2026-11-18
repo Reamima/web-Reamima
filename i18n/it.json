@@ -59,7 +59,7 @@
 "Documentación técnica": "Documentazione tecnica",
 "Vídeos técnicos": "Video tecnici",
 "Información de la empresa": "Informazioni sull’azienda",
-"REAMIMA TECH, S.L.U. — sociedad limitada unipersonal con sede en España, CIF B05931258. Datos completos (dirección registral y registro mercantil) en la página de aviso legal.": "<strong>REAMIMA TECH, S.L.U.</strong> — società spagnola a responsabilità limitata con socio unico, con sede in Spagna, CIF B05931258. Dati completi (sede legale e registro delle imprese) nella pagina delle <a href=\"legal.html\">note legali</a>.",
+"REAMIMA TECH, S.L.U. — sociedad limitada unipersonal con sede en España, CIF B05931258. Datos completos (dirección registral y registro mercantil) en la página de aviso legal.": "<strong>REAMIMA TECH, S.L.U.</strong> — società spagnola a responsabilità limitata con socio unico, con sede in Spagna, CIF B05931258. Dati completi (sede legale e registro delle imprese) nella pagina delle <a href=\"/legal\">note legali</a>.",
 "Ingeniería imposible por dentro,magia por fuera.": "Ingegneria impossibile all’interno,<br/>magia all’esterno.",
 "Otros ven lo que existe. Nosotros vemos lo que falta. Y lo diseñamos.": "Altri vedono ciò che esiste. Noi vediamo ciò che manca. E lo progettiamo.",
 "REAMIMA es una ingeniería. Una que trata la complejidad como ventaja, no como obstáculo. De las pocas que saben cuándo es mejor lo difícil, aunque lo fácil exista.": "REAMIMA è un’azienda di ingegneria. Una che tratta la complessità come un vantaggio, non come un ostacolo. Una delle poche che sanno quando il difficile è meglio, pur esistendo il facile.",
@@ -318,5 +318,9 @@
 "REAMIMA: equipo de ingeniería e I+D+i. Capacidades técnicas, principios y proyectos.": "REAMIMA: team di ingegneria e R&S. Competenze tecniche, principi e progetti.",
 "Cardistream — entrenamiento personalizado": "Cardistream — allenamento personalizzato",
 "iSoStream — render técnico": "IsoStream — render tecnico",
-"Idioma": "Lingua"
+"Idioma": "Lingua",
+"Página no encontrada": "Pagina non trovata",
+"La página que buscas no existe o se ha movido.": "La pagina che cerchi non esiste o è stata spostata.",
+"Volver al inicio": "Torna alla home",
+"Página no encontrada · REAMIMA": "Pagina non trovata · REAMIMA"
 }

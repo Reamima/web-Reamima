@@ -59,7 +59,7 @@
 "Documentación técnica": "技術ドキュメント",
 "Vídeos técnicos": "技術動画",
 "Información de la empresa": "会社情報",
-"REAMIMA TECH, S.L.U. — sociedad limitada unipersonal con sede en España, CIF B05931258. Datos completos (dirección registral y registro mercantil) en la página de aviso legal.": "<strong>REAMIMA TECH, S.L.U.</strong> — スペインに拠点を置く一人有限会社（sociedad limitada unipersonal）、CIF B05931258。詳細情報（登記上の住所および商業登記）は<a href=\"legal.html\">法的通知</a>のページをご覧ください。",
+"REAMIMA TECH, S.L.U. — sociedad limitada unipersonal con sede en España, CIF B05931258. Datos completos (dirección registral y registro mercantil) en la página de aviso legal.": "<strong>REAMIMA TECH, S.L.U.</strong> — スペインに拠点を置く一人有限会社（sociedad limitada unipersonal）、CIF B05931258。詳細情報（登記上の住所および商業登記）は<a href=\"/legal\">法的通知</a>のページをご覧ください。",
 "Ingeniería imposible por dentro,magia por fuera.": "内側は不可能なエンジニアリング、<br/>外側は魔法。",
 "Otros ven lo que existe. Nosotros vemos lo que falta. Y lo diseñamos.": "他の人は、すでにあるものを見ます。私たちは、足りないものを見ます。そして、それを設計します。",
 "REAMIMA es una ingeniería. Una que trata la complejidad como ventaja, no como obstáculo. De las pocas que saben cuándo es mejor lo difícil, aunque lo fácil exista.": "REAMIMAはエンジニアリング企業です。複雑さを障害ではなく強みとして扱います。簡単な道があっても、どんなときに難しい道のほうが良いかを知っている数少ない企業のひとつです。",
@@ -318,5 +318,9 @@
 "REAMIMA: equipo de ingeniería e I+D+i. Capacidades técnicas, principios y proyectos.": "REAMIMA：エンジニアリングと研究開発のチーム。技術的な能力、原則、プロジェクト。",
 "Cardistream — entrenamiento personalizado": "Cardistream — パーソナライズされたトレーニング",
 "iSoStream — render técnico": "IsoStream — 技術レンダリング",
-"Idioma": "言語"
+"Idioma": "言語",
+"Página no encontrada": "ページが見つかりません",
+"La página que buscas no existe o se ha movido.": "お探しのページは存在しないか、移動されました。",
+"Volver al inicio": "ホームに戻る",
+"Página no encontrada · REAMIMA": "ページが見つかりません · REAMIMA"
 }

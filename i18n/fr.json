@@ -59,7 +59,7 @@
 "Documentación técnica": "Documentation technique",
 "Vídeos técnicos": "Vidéos techniques",
 "Información de la empresa": "Informations sur l’entreprise",
-"REAMIMA TECH, S.L.U. — sociedad limitada unipersonal con sede en España, CIF B05931258. Datos completos (dirección registral y registro mercantil) en la página de aviso legal.": "<strong>REAMIMA TECH, S.L.U.</strong> — société à responsabilité limitée unipersonnelle de droit espagnol, établie en Espagne, CIF B05931258. Informations complètes (siège social et registre du commerce) sur la page des <a href=\"legal.html\">mentions légales</a>.",
+"REAMIMA TECH, S.L.U. — sociedad limitada unipersonal con sede en España, CIF B05931258. Datos completos (dirección registral y registro mercantil) en la página de aviso legal.": "<strong>REAMIMA TECH, S.L.U.</strong> — société à responsabilité limitée unipersonnelle de droit espagnol, établie en Espagne, CIF B05931258. Informations complètes (siège social et registre du commerce) sur la page des <a href=\"/legal\">mentions légales</a>.",
 "Ingeniería imposible por dentro,magia por fuera.": "Une ingénierie impossible à l’intérieur,<br/>de la magie à l’extérieur.",
 "Otros ven lo que existe. Nosotros vemos lo que falta. Y lo diseñamos.": "D’autres voient ce qui existe. Nous voyons ce qui manque. Et nous le concevons.",
 "REAMIMA es una ingeniería. Una que trata la complejidad como ventaja, no como obstáculo. De las pocas que saben cuándo es mejor lo difícil, aunque lo fácil exista.": "REAMIMA est une entreprise d’ingénierie. Une entreprise qui traite la complexité comme un atout, non comme un obstacle. L’une des rares à savoir quand le difficile vaut mieux, alors que le facile existe.",
@@ -318,5 +318,9 @@
 "REAMIMA: equipo de ingeniería e I+D+i. Capacidades técnicas, principios y proyectos.": "REAMIMA : équipe d’ingénierie et de R&D. Compétences techniques, principes et projets.",
 "Cardistream — entrenamiento personalizado": "Cardistream — entraînement personnalisé",
 "iSoStream — render técnico": "IsoStream — rendu technique",
-"Idioma": "Langue"
+"Idioma": "Langue",
+"Página no encontrada": "Page introuvable",
+"La página que buscas no existe o se ha movido.": "La page que vous cherchez n’existe pas ou a été déplacée.",
+"Volver al inicio": "Retour à l’accueil",
+"Página no encontrada · REAMIMA": "Page introuvable · REAMIMA"
 }

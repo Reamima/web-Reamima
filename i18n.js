@@ -13,6 +13,8 @@
   var CODES = LANGS.map(function (l) { return l[0]; });
   var STORE_KEY = 'rm-lang';
   var ATTRS = ['aria-label', 'alt', 'placeholder'];
+  // Los JSON viven junto a i18n.js, se sirva la página desde la ruta que sea (la 404 se sirve en cualquiera)
+  var BASE_JSON = document.currentScript && document.currentScript.src ? new URL('i18n/', document.currentScript.src).href : 'i18n/';
   var cache = {};
   var originals = new Map(); // elemento → {atributo: valor original en español}
   var originalTitle = '';
@@ -61,7 +63,7 @@
 
   function loadDict(code) {
     if (cache[code]) return cache[code];
-    cache[code] = fetch('i18n/' + code + '.json').then(function (r) {
+    cache[code] = fetch(BASE_JSON + code + '.json').then(function (r) {
       if (!r.ok) throw new Error('i18n/' + code + '.json → HTTP ' + r.status);
       return r.json();
     });
