@@ -68,6 +68,11 @@
     .hero-inicio .rm-hero__split { grid-template-columns: 1.0fr 1.0fr; }
   }
 
+  /* Manifiesto: foto propia (M5Stack, libreta, móvil) ya pasada a casi blanco en el propio WebP */
+  .manifiesto { position: relative; overflow: hidden;
+    background: #FFFFFF url('img/fondo-manifiesto.webp') center / cover no-repeat; }
+  .manifiesto > .rm-container { position: relative; }
+
   .pillars { display: grid; gap: 28px; grid-template-columns: 1fr; }
   @media (min-width: 760px) { .pillars { grid-template-columns: repeat(3, 1fr); } }
   .pillar { padding: 32px 0; border-top: 1px solid var(--rm-line); }
@@ -141,7 +146,7 @@
 </section>
 
 <!-- ========================== MANIFIESTO ========================== -->
-<section class="rm-section rm-section--paper">
+<section class="rm-section rm-section--paper manifiesto">
   <div class="rm-container rm-narrow rm-stack-lg">
     <p class="rm-quote rm-fade rm-fade--d1">
       <span data-lang="es">REAMIMA es una ingeniería. Una que trata la complejidad como ventaja, no como obstáculo. De las pocas que saben cuándo es mejor lo difícil, aunque lo fácil exista.</span>
