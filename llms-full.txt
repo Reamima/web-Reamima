@@ -173,7 +173,7 @@ Marzo · 2020
 
 ## When the world stopped, we didn’t.
 
-REAMIMA was born in the first weeks of lockdown, designing an emergency ventilator from materials anyone could order from home: off-the-shelf pumps from any hardware store, an Arduino board and a few sensors. Open, free, replicable hardware.
+REAMIMA was born in the first weeks of lockdown, designing an emergency ventilator from materials anyone could order from home: off-the-shelf pumps from any hardware store, a board with an open controller (such as Arduino) or a micro PLC, and a few sensors. Open, free, replicable hardware.
 
 March 2020 · engineer in laboratory developing the first prototype
 
