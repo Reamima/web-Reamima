@@ -30,7 +30,7 @@ During the first weeks of the COVID-19 lockdown, REAMIMA designed an open-hardwa
 
 - [Origins](https://www.reamima.com/origenes): The full project story, recognitions and the three ventilator models.
 - [OSHWA certification ES000009](https://certification.oshwa.org/es000009.html): Official OSHWA record of the REAMIMA ventilator (certified 7 April 2020; hardware CERN, software LGPL, documentation CC BY-SA).
-- [Simple Model](https://www.reamima.com/origenes-simple): Base ventilator — aquarium pumps, water columns, timers and relays.
+- [Simple Model](https://www.reamima.com/origenes-simple): Base ventilator — off-the-shelf pumps, water columns, timers and relays.
 - [Advanced Model](https://www.reamima.com/origenes-avanzado): Pressure control, assisted expiration, inline sensors (Bosch BME family), clinical monitoring. Siemens Simatic S7-1500 H redundancy reference for critical environments.
 - [Air Treatment](https://www.reamima.com/origenes-tratamiento-aire): UV sterilisation, heating and humidity conditioning of the air supply.
 

@@ -153,7 +153,11 @@ p a:hover { border-bottom-color: #F08468; }
   line-height: 1.04;
   letter-spacing: -0.025em;
   margin: 0;
+  /* palabra larguísima: se parte en vez de salirse de la pantalla (red de seguridad en cualquier idioma) */
+  overflow-wrap: break-word;
 }
+/* alemán: «Ingenieurunternehmen» no cabe en un iPhone; allí sí se guioniza. En el resto de idiomas, nunca «imposi-ble» */
+:lang(de) .rm-display, :lang(de) .rm-h1, :lang(de) .rm-h2 { hyphens: auto; }
 .rm-h1 { font-size: var(--rm-fs-h1); font-weight: 300; line-height: 1.12; letter-spacing: -0.02em; margin: 0; }
 .rm-h2 { font-size: var(--rm-fs-h2); font-weight: 400; line-height: 1.2; letter-spacing: -0.012em; margin: 0; }
 .rm-h3 { font-size: var(--rm-fs-h3); font-weight: 500; line-height: 1.35; letter-spacing: -0.005em; margin: 0; }
@@ -394,8 +398,8 @@ body:not([data-active-lang="es"]):not([data-active-lang="en"]) .i18n-note { disp
 
 /* Hero a dos columnas (estilo Apple Education) */
 .rm-hero--split { padding-top: clamp(96px, 12vw, 160px); padding-bottom: clamp(80px, 10vw, 140px); }
-.rm-hero__split { display: grid; gap: clamp(28px, 4vw, 56px); grid-template-columns: 1fr; align-items: center; }
-@media (min-width: 900px) { .rm-hero__split { grid-template-columns: 1.1fr .9fr; } }
+.rm-hero__split { display: grid; gap: clamp(28px, 4vw, 56px); grid-template-columns: minmax(0, 1fr); align-items: center; }
+@media (min-width: 900px) { .rm-hero__split { grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); } }
 .rm-hero__media {
   border-radius: var(--rm-radius-lg);
   overflow: hidden;

@@ -52,6 +52,8 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    /* el degradado solo pinta dentro de la caja: con interlínea 1,04 cortaba la cola de g/y/p/j y las tildes */
+    padding-block: .12em .16em;
   }
   .hero-inicio__lead { color: #C0C5DC; max-width: 56ch; }
   .hero-inicio .rm-hero__split { position: relative; z-index: 1; }

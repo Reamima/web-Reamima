@@ -173,7 +173,7 @@ Marzo · 2020
 
 ## When the world stopped, we didn’t.
 
-REAMIMA was born in the first weeks of lockdown, designing an emergency ventilator from materials anyone could order from home: aquarium pumps, an Arduino board and a few sensors. Open, free, replicable hardware.
+REAMIMA was born in the first weeks of lockdown, designing an emergency ventilator from materials anyone could order from home: off-the-shelf pumps from any hardware store, an Arduino board and a few sensors. Open, free, replicable hardware.
 
 March 2020 · engineer in laboratory developing the first prototype
 
@@ -183,7 +183,7 @@ Building a ventilator from off-the-shelf materials.
 
 REAMIMA is the open and free hardware design so that anyone can help by building ventilators with easily available materials, without needing a compressed-air line.
 
-The first prototype was assembled with empty bottles, a plastic container, two aquarium water pumps and electronics that anyone could buy on Amazon or at electronics stores. The idea was to walk into a hardware store and find everything needed to build a ventilator. In simple words: the ventilator McGyver would build.
+The first prototype was assembled with empty bottles, a plastic container, two standard water pumps, the kind found in any hardware store, and electronics that anyone could buy on Amazon or at electronics stores. The idea was to walk into a hardware store and find everything needed to build a ventilator. In simple words: the ventilator McGyver would build.
 
 The design is based on the use of water columns to produce gas exchange in the lung in a simple way. In an emergency, as we faced with the Coronavirus, it was necessary to build reliable-enough equipment quickly, without developing new material that would need many hours of validation.
 
@@ -255,13 +255,13 @@ Power relays
 
 Switch each pump’s 220 V supply based on timer commands.
 
-Aquarium heater
+Standard heater
 
 Same as in the air subsystem: keeps the water at temperature.
 
 The simplest model to build a ventilator is a large container that acts as a water reservoir and a smaller one we call the inspiration tank. At the output of the bottle that compresses the air (in the video, where the glove is mounted), the ventilator tube connects to a mask with a valve, so that exhalation occurs naturally.
 
-In the video, the materials used are visible: an empty milk bottle as inspiration tank, an empty soap bottle as inspiration container, and a transparent plastic box as system water tank. Inside the milk bottle there is an aquarium water pump; inside the system water tank, another pump. Both pumps are connected to two relays controlled by a timer.
+In the video, the materials used are visible: an empty milk bottle as inspiration tank, an empty soap bottle as inspiration container, and a transparent plastic box as system water tank. Inside the milk bottle there is a standard water pump; inside the system water tank, another pump. Both pumps are connected to two relays controlled by a timer.
 
 01 · Botella
 
@@ -285,7 +285,7 @@ In the video example, with a 800 ml bottle, the base was removed, the bottle pla
 
 ### Flow calculation
 
-Both pumps are aquarium water pumps. The flow must be enough to fill 1 litre inside the compression bottle, and it depends on the inspiration tank volume.
+Both pumps are standard water pumps, the kind sold in any hardware store. The flow must be enough to fill 1 litre inside the compression bottle, and it depends on the inspiration tank volume.
 
 Measure or calculate the height between level 0 and level 2 inside the inspiration bottle. Multiplied by the area of the inspiration tank, you get the cm³ the pump must move.
 
@@ -401,13 +401,13 @@ The air a patient breathes, in an emergency, may enter untreated — as in the m
 
 Components
 
-### Three parts you can buy at an aquarium shop.
+### Three standard parts you can buy at any shop.
 
-Aquarium air pump
+Standard air pump
 
 +20,000 hours of service. Releases air inside the warm water.
 
-Aquarium heater
+Standard heater
 
 Low failure rate, temperature range suited to the subsystem.
 
@@ -419,13 +419,13 @@ Sterilises the air chamber. Shielded, never visible directly.
 
 ### Heat and humidify
 
-The air must be heated to the right temperature and given the humidity it needs. An aquarium air pump — tested at over 20,000 hours of operation (check the manufacturer’s data sheet) — releases the air into a water tank at controlled temperature.
+The air must be heated to the right temperature and given the humidity it needs. A standard air pump — tested at over 20,000 hours of operation (check the manufacturer’s data sheet) — releases the air into a water tank at controlled temperature.
 
 02 · Calentamiento
 
-### Aquarium heater
+### Standard heating element
 
-To heat the air, we go back to the pet shop. Aquarium heaters have many years of field experience, a low failure rate, easy availability and a temperature range similar to what the subsystem needs.
+To heat the air, we again use a standard part. Heaters of this type have many years of field experience, a low failure rate, easy availability and a temperature range similar to what the subsystem needs.
 
 03 · Construcción
 
@@ -447,7 +447,7 @@ The pump must release the air into the hot water, as shown in the diagram, produ
 
 ### UV sterilisation
 
-The water must be replaced and the system cleaned regularly to prevent the proliferation of bacteria, fungi and other harmful elements. A good solution is to place a UV lamp in the tank — also from an aquarium shop — designed to eliminate bacteria and keep the water clean.
+The water must be replaced and the system cleaned regularly to prevent the proliferation of bacteria, fungi and other harmful elements. A good solution is to place a standard UV lamp in the tank — also on sale at any shop — designed to eliminate bacteria and keep the water clean.
 
 **Important:** the lamp must be protected and not directly visible. Ultraviolet light can cause serious damage — burns, blindness. Always follow the manufacturer’s instructions.
 
